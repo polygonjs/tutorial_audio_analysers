@@ -1,0 +1,50 @@
+{
+	"type": "geo",
+	"nodes": {
+		"plane1": {
+			"type": "plane",
+			"params": {
+				"size": [
+					13,
+					13
+				],
+				"direction": [
+					0,
+					0,
+					1
+				]
+			}
+		},
+		"objectProperties1": {
+			"type": "objectProperties",
+			"params": {
+				"tname": 1,
+				"name": "raycastTargetGeo",
+				"tvisible": 1,
+				"visible": 0
+			},
+			"inputs": [
+				"merge1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"sphere1": {
+			"type": "sphere"
+		},
+		"merge1": {
+			"type": "merge",
+			"params": {
+				"compact": 1
+			},
+			"inputs": [
+				"plane1",
+				"sphere1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

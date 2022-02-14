@@ -25,6 +25,7 @@ import {LineSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Line';
 import {MaterialSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Material';
 import {MaterialsNetworkSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/MaterialsNetwork';
 import {MergeSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Merge';
+import {ObjectPropertiesSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/ObjectProperties';
 import {ParticlesSystemGpuSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/ParticlesSystemGpu';
 import {PlaneSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Plane';
 import {RestAttributesSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/RestAttributes';
@@ -33,6 +34,8 @@ import {SphereSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Sphere';
 import {TransformSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Transform';
 // event
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/CameraOrbitControls';
+import {PointerEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Pointer';
+import {RaycastEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Raycast';
 import {SceneEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Scene';
 import {SetParamEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/SetParam';
 // audio
@@ -51,6 +54,7 @@ import {VolumeAudioNode} from '@polygonjs/polygonjs/src/engine/nodes/audio/Volum
 import {WaveformAudioNode} from '@polygonjs/polygonjs/src/engine/nodes/audio/Waveform';
 // cop
 import {AudioAnalyserCopNode} from '@polygonjs/polygonjs/src/engine/nodes/cop/AudioAnalyser';
+import {EnvMapCopNode} from '@polygonjs/polygonjs/src/engine/nodes/cop/EnvMap';
 import {ImageCopNode} from '@polygonjs/polygonjs/src/engine/nodes/cop/Image';
 // mat
 import {LineBasicBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/LineBasicBuilder';
@@ -91,8 +95,11 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/geo1/box1'): BoxSopNode;
 	node(path: '/geo1/sphere1'): SphereSopNode;
 	node(path: '/geo1/material1'): MaterialSopNode;
-	node(path: '/geo1/materialsNetwork1'): MaterialsNetworkSopNode;
-	node(path: '/geo1/materialsNetwork1/meshPhysical1'): MeshPhysicalMatNode;
+	node(path: '/geo1/COP'): CopNetworkSopNode;
+	node(path: '/geo1/COP/image1'): ImageCopNode;
+	node(path: '/geo1/COP/envMap1'): EnvMapCopNode;
+	node(path: '/geo1/MAT'): MaterialsNetworkSopNode;
+	node(path: '/geo1/MAT/meshPhysical1'): MeshPhysicalMatNode;
 	node(path: '/crowd'): GeoObjNode;
 	node(path: '/crowd/plane1'): PlaneSopNode;
 	node(path: '/crowd/scatter1'): ScatterSopNode;
@@ -121,6 +128,7 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/planeWithTexture/transform1'): TransformSopNode;
 	node(path: '/planeWithTexture/COP'): CopNetworkSopNode;
 	node(path: '/planeWithTexture/COP/image1'): ImageCopNode;
+	node(path: '/planeWithTexture/COP/image2'): ImageCopNode;
 	node(path: '/planeWithTexture/MAT'): MaterialsNetworkSopNode;
 	node(path: '/planeWithTexture/MAT/meshBasic1'): MeshBasicMatNode;
 	node(path: '/waveform'): GeoObjNode;
@@ -151,11 +159,19 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/particles/fuse1'): FuseSopNode;
 	node(path: '/particles/jitter1'): JitterSopNode;
 	node(path: '/particles/attribCreate2'): AttribCreateSopNode;
+	node(path: '/particles/eventsNetwork1'): EventsNetworkSopNode;
+	node(path: '/particles/eventsNetwork1/raycast1'): RaycastEventNode;
+	node(path: '/particles/eventsNetwork1/pointer1'): PointerEventNode;
 	node(path: '/blackSphere'): GeoObjNode;
 	node(path: '/blackSphere/sphere1'): SphereSopNode;
 	node(path: '/blackSphere/material1'): MaterialSopNode;
 	node(path: '/blackSphere/materialsNetwork1'): MaterialsNetworkSopNode;
 	node(path: '/blackSphere/materialsNetwork1/meshBasic1'): MeshBasicMatNode;
+	node(path: '/raycastTarget'): GeoObjNode;
+	node(path: '/raycastTarget/plane1'): PlaneSopNode;
+	node(path: '/raycastTarget/objectProperties1'): ObjectPropertiesSopNode;
+	node(path: '/raycastTarget/sphere1'): SphereSopNode;
+	node(path: '/raycastTarget/merge1'): MergeSopNode;
 	node(path: string):any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
 		return super.node(path);
 	}

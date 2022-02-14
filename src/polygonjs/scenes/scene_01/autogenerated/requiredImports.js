@@ -15,9 +15,12 @@ import {VolumeAudioNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/audio/
 import {WaveformAudioNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/audio/Waveform';
 // cop
 import {AudioAnalyserCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/AudioAnalyser';
+import {EnvMapCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/EnvMap';
 import {ImageCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image';
 // event
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls';
+import {PointerEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer';
+import {RaycastEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast';
 import {SceneEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Scene';
 import {SetParamEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/SetParam';
 // mat
@@ -53,6 +56,7 @@ import {LineSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Line';
 import {MaterialSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Material';
 import {MaterialsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/MaterialsNetwork';
 import {MergeSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Merge';
+import {ObjectPropertiesSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/ObjectProperties';
 import {ParticlesSystemGpuSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/ParticlesSystemGpu';
 import {PlaneSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Plane';
 import {RestAttributesSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/RestAttributes';
@@ -77,8 +81,11 @@ export const requiredImports_scene_01 = {
 		VolumeAudioNode,
 		WaveformAudioNode,
 		AudioAnalyserCopNode,
+		EnvMapCopNode,
 		ImageCopNode,
 		CameraOrbitControlsEventNode,
+		PointerEventNode,
+		RaycastEventNode,
 		SceneEventNode,
 		SetParamEventNode,
 		LineBasicBuilderMatNode,
@@ -111,6 +118,7 @@ export const requiredImports_scene_01 = {
 		MaterialSopNode,
 		MaterialsNetworkSopNode,
 		MergeSopNode,
+		ObjectPropertiesSopNode,
 		ParticlesSystemGpuSopNode,
 		PlaneSopNode,
 		RestAttributesSopNode,

@@ -1,0 +1,37 @@
+{
+	"type": "eventsNetwork",
+	"nodes": {
+		"raycast1": {
+			"type": "raycast",
+			"params": {
+				"mouse": [
+					0.3569321533923304,
+					0.9684103260869565
+				],
+				"objectMask": "*raycastTargetGeo*",
+				"traverseChildren": 0,
+				"tpositionTarget": 1,
+				"position": [
+					0.12434310869411302,
+					-4.60689798871908,
+					0
+				],
+				"positionTarget": "../../particlesSystemGpu1/mouseCenter"
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "pointer1",
+					"output": "pointermove"
+				}
+			]
+		},
+		"pointer1": {
+			"type": "pointer",
+			"params": {
+				"pointerdown": 0,
+				"pointermove": 1
+			}
+		}
+	}
+}

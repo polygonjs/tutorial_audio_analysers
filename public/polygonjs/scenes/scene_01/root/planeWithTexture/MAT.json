@@ -5,11 +5,8 @@
 			"type": "meshBasic",
 			"params": {
 				"useMap": 1,
-				"map": "../../../positionalAudio1/COP/audioAnalyser1"
+				"map": "../../COP/image2"
 			}
 		}
-	},
-	"selection": [
-		"meshBasic1"
-	]
+	}
 }

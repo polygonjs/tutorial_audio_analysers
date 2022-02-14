@@ -1,0 +1,20 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image1": {
+			"type": "image",
+			"params": {
+				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/textures/piz_compressed.exr"
+			}
+		},
+		"envMap1": {
+			"type": "envMap",
+			"inputs": [
+				"image1"
+			]
+		}
+	},
+	"selection": [
+		"envMap1"
+	]
+}

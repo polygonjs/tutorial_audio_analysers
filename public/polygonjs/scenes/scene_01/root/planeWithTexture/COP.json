@@ -3,9 +3,12 @@
 	"nodes": {
 		"image1": {
 			"type": "image"
+		},
+		"image2": {
+			"type": "image"
 		}
 	},
 	"selection": [
-		"image1"
+		"image2"
 	]
 }

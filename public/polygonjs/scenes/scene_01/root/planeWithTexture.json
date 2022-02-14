@@ -44,5 +44,8 @@
 	},
 	"flags": {
 		"display": false
-	}
+	},
+	"selection": [
+		"MAT"
+	]
 }

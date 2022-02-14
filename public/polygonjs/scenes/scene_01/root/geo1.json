@@ -10,7 +10,7 @@
 		"material1": {
 			"type": "material",
 			"params": {
-				"material": "../materialsNetwork1/meshPhysical1"
+				"material": "../MAT/meshPhysical1"
 			},
 			"inputs": [
 				"sphere1"
@@ -31,6 +31,6 @@
 		"display": false
 	},
 	"selection": [
-		"material1"
+		"MAT"
 	]
 }

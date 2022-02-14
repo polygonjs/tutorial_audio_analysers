@@ -4,6 +4,7 @@
 		"spotLight1": {
 			"type": "spotLight",
 			"params": {
+				"intensity": "ch(\"../areaLight1/intensity\")",
 				"castShadow": 1
 			},
 			"inputs": [
@@ -15,6 +16,9 @@
 		},
 		"audioListener1": {
 			"type": "audioListener",
+			"params": {
+				"soundOn": false
+			},
 			"inputs": [
 				"perspectiveCamera1"
 			],
@@ -30,6 +34,7 @@
 					1.4823705282545054,
 					5.950809644780402
 				],
+				"intensity": "10*(ch(\"/positionalAudio1/meter1/value\")-0.1)",
 				"width": 5.7,
 				"height": 2.3,
 				"showHelper": true
@@ -51,7 +56,7 @@
 		"hemisphereLight1": {
 			"type": "hemisphereLight",
 			"params": {
-				"intensity": 0.2
+				"intensity": 0.05
 			},
 			"flags": {
 				"display": false
