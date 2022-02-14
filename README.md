@@ -7,3 +7,8 @@ Created with [Polygonjs](https://polygonjs.com)
 - 3: open your browser on `http://localhost:8091`
 
 If you have any trouble installing it, the docs may be able to help: [https://polygonjs.com/docs/](https://polygonjs.com/docs/)
+
+
+# Assets
+
+- music from [https://www.scottbuckley.com.au/library/the-climb/](https://www.scottbuckley.com.au/library/the-climb/)
