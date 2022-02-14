@@ -1,15 +1,6 @@
 {
 	"type": "geo",
 	"nodes": {
-		"sphere1": {
-			"type": "sphere"
-		},
-		"scatter1": {
-			"type": "scatter",
-			"inputs": [
-				"sphere1"
-			]
-		},
 		"sphere2": {
 			"type": "sphere",
 			"params": {

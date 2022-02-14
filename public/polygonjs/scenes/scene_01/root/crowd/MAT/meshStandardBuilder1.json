@@ -239,8 +239,8 @@
 		}
 	},
 	"params": {
-		"metalness": 0,
-		"roughness": 1,
+		"metalness": 0.45,
+		"roughness": 0.4,
 		"texture1": {
 			"type": "node_path",
 			"default_value": "",
@@ -253,7 +253,7 @@
 					"context": "cop"
 				}
 			},
-			"raw_input": "../../../positionalAudio1/COP/audioAnalyser1",
+			"raw_input": "../../../positionalAudio1/COP/audioAnalyser_FFT_asOctaves",
 			"overriden_options": {
 				"spare": "true",
 				"computeOnDirty": "true",
@@ -275,8 +275,8 @@
 			"type": "MeshStandardMaterial",
 			"name": "/crowd/MAT/meshStandardBuilder1",
 			"color": 16777215,
-			"roughness": 1,
-			"metalness": 0,
+			"roughness": 0.4,
+			"metalness": 0.45,
 			"emissive": 0,
 			"envMapIntensity": 1,
 			"refractionRatio": 0.98,

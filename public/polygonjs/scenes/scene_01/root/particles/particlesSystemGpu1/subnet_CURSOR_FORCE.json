@@ -1,0 +1,587 @@
+{
+	"type": "subnet",
+	"nodes": {
+		"subnetInput1": {
+			"type": "subnetInput",
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "pos",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"param1": {
+			"type": "param",
+			"params": {
+				"name": "mouseCenter",
+				"type": 4
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"cross1": {
+			"type": "cross",
+			"params": {
+				"x": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				},
+				"y": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "normalize1",
+					"output": "normalized"
+				},
+				{
+					"index": 1,
+					"node": "constant1",
+					"output": "val"
+				}
+			]
+		},
+		"normalize2": {
+			"type": "normalize",
+			"params": {
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "subtract1",
+					"output": "subtract"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "normalized",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"distance1": {
+			"type": "distance",
+			"params": {
+				"p0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"p1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "subnetInput1",
+					"output": "pos"
+				},
+				{
+					"index": 1,
+					"node": "param1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "p0",
+						"type": "vec3"
+					},
+					{
+						"name": "p1",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"smoothstep1": {
+			"type": "smoothstep",
+			"params": {
+				"edge0": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.25
+				},
+				"edge1": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.89
+				},
+				"x": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				null,
+				null,
+				{
+					"index": 2,
+					"node": "distance1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "edge0",
+						"type": "float"
+					},
+					{
+						"name": "edge1",
+						"type": "float"
+					},
+					{
+						"name": "x",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"multScalar3": {
+			"type": "multScalar",
+			"params": {
+				"value": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						1,
+						1
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "cross1",
+					"output": "cross"
+				},
+				{
+					"index": 1,
+					"node": "multAdd1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "vec3"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"normalize1": {
+			"type": "normalize",
+			"params": {
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "subtract1",
+					"output": "subtract"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "normalized",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"subnetOutput1": {
+			"type": "subnetOutput",
+			"connection_points": {
+				"in": [
+					{
+						"name": "pos",
+						"type": "vec3"
+					}
+				],
+				"out": []
+			}
+		},
+		"subnetOutput2": {
+			"type": "subnetOutput",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "multScalar3",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "pos",
+						"type": "vec3"
+					}
+				],
+				"out": []
+			}
+		},
+		"subtract1": {
+			"type": "subtract",
+			"params": {
+				"sub0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"sub1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"sub2": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 3,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "subnetInput1",
+					"output": "pos"
+				},
+				{
+					"index": 1,
+					"node": "param1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "sub0",
+						"type": "vec3"
+					},
+					{
+						"name": "sub1",
+						"type": "vec3"
+					},
+					{
+						"name": "sub2",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "subtract",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"constant1": {
+			"type": "constant",
+			"params": {
+				"type": 4,
+				"vec3": [
+					0,
+					0,
+					1
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"complement1": {
+			"type": "complement",
+			"params": {
+				"in": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "smoothstep1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"multAdd1": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 10
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "complement1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "preAdd",
+						"type": "float"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					},
+					{
+						"name": "postAdd",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		}
+	},
+	"params": {
+		"inputType0": 4,
+		"inputName0": "pos",
+		"inputType1": 4,
+		"inputType2": 4,
+		"pos": {
+			"type": "vector3",
+			"default_value": [
+				0,
+				0,
+				0
+			],
+			"options": {
+				"spare": true,
+				"editable": false
+			}
+		}
+	},
+	"maxInputsCount": 1,
+	"inputs": [
+		{
+			"index": 0,
+			"node": "attribute1",
+			"output": "val"
+		}
+	],
+	"connection_points": {
+		"in": [
+			{
+				"name": "pos",
+				"type": "vec3"
+			}
+		],
+		"out": [
+			{
+				"name": "pos",
+				"type": "vec3"
+			}
+		]
+	},
+	"selection": [
+		"smoothstep1"
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"type": "materialsNetwork",
+	"nodes": {
+		"meshBasic1": {
+			"type": "meshBasic",
+			"params": {
+				"color": [
+					0.2196078431372549,
+					0.2196078431372549,
+					0.2196078431372549
+				],
+				"useMap": 1,
+				"map": "../../COP/image1",
+				"front": 0
+			}
+		}
+	}
+}

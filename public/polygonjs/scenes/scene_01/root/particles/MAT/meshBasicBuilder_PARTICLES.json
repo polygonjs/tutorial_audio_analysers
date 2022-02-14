@@ -74,7 +74,6 @@
 			"params": {
 				"name": "pti"
 			},
-			"maxInputsCount": 0,
 			"connection_points": {
 				"in": [],
 				"out": [
@@ -305,10 +304,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				},
 				"srcMin": {
@@ -409,10 +404,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				},
 				"blend": {
@@ -422,11 +413,7 @@
 						"spare": true,
 						"editable": false
 					},
-					"raw_input": 1,
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
-					}
+					"raw_input": 1
 				}
 			},
 			"inputs": [
@@ -552,10 +539,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				},
 				"preAdd": {
@@ -663,10 +646,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				},
 				"up": {
@@ -734,10 +713,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				}
 			},
@@ -819,6 +794,7 @@
 					"uuid": "/particles/MAT/meshBasicBuilder_PARTICLES-customDepthMaterial",
 					"type": "MeshDepthMaterial",
 					"name": "customDepthMaterial",
+					"side": 1,
 					"depthFunc": 3,
 					"depthTest": true,
 					"depthWrite": true,

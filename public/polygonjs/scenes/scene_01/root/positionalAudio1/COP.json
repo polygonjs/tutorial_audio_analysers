@@ -1,11 +1,22 @@
 {
 	"type": "copNetwork",
 	"nodes": {
-		"audioAnalyser1": {
+		"audioAnalyser_FFT_raw": {
+			"type": "audioAnalyser",
+			"params": {
+				"activeR": true,
+				"audioNodeR": "../../FFT_raw",
+				"rangeR": [
+					-0.05,
+					0.05
+				]
+			}
+		},
+		"audioAnalyser_FFT_asOctaves": {
 			"type": "audioAnalyser",
 			"params": {
 				"activeR": 1,
-				"audioNodeR": "../../FFT1",
+				"audioNodeR": "../../FFT_asOctaves",
 				"rangeR": [
 					-1,
 					1
@@ -14,6 +25,6 @@
 		}
 	},
 	"selection": [
-		"audioAnalyser1"
+		"audioAnalyser_FFT_raw"
 	]
 }

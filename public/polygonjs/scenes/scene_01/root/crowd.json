@@ -12,8 +12,12 @@
 		},
 		"scatter1": {
 			"type": "scatter",
+			"params": {
+				"pointsCount": 172,
+				"seed": 22
+			},
 			"inputs": [
-				"plane1"
+				"transform6"
 			]
 		},
 		"file1": {
@@ -39,7 +43,8 @@
 			},
 			"inputs": [
 				"file1"
-			]
+			],
+			"cloned_state_overriden": true
 		},
 		"transform1": {
 			"type": "transform",
@@ -52,7 +57,8 @@
 			},
 			"inputs": [
 				"hierarchy1"
-			]
+			],
+			"cloned_state_overriden": true
 		},
 		"transform2": {
 			"type": "transform",
@@ -60,8 +66,9 @@
 				"scale": 0.5
 			},
 			"inputs": [
-				"transform1"
-			]
+				"transform7"
+			],
+			"cloned_state_overriden": true
 		},
 		"file2": {
 			"type": "file",
@@ -76,7 +83,7 @@
 				"expression": "rand(@ptnum)>0.5"
 			},
 			"inputs": [
-				"scatter1"
+				"attribCreate1"
 			]
 		},
 		"delete2": {
@@ -87,7 +94,7 @@
 				"expression": "rand(@ptnum)>0.5"
 			},
 			"inputs": [
-				"scatter1"
+				"attribCreate1"
 			]
 		},
 		"hierarchy2": {
@@ -97,7 +104,8 @@
 			},
 			"inputs": [
 				"file2"
-			]
+			],
+			"cloned_state_overriden": true
 		},
 		"transform3": {
 			"type": "transform",
@@ -110,7 +118,8 @@
 			},
 			"inputs": [
 				"hierarchy2"
-			]
+			],
+			"cloned_state_overriden": true
 		},
 		"transform4": {
 			"type": "transform",
@@ -118,8 +127,9 @@
 				"scale": 0.5
 			},
 			"inputs": [
-				"transform3"
-			]
+				"transform8"
+			],
+			"cloned_state_overriden": true
 		},
 		"instance2": {
 			"type": "instance",
@@ -160,14 +170,75 @@
 		"transform5": {
 			"type": "transform",
 			"params": {
-				"scale": 1.7
+				"scale": 1.7,
+				"pivot": [
+					"$CEX",
+					"$CEY",
+					"$CEZ"
+				]
 			},
 			"inputs": [
-				"plane2"
+				"transform6"
+			]
+		},
+		"transform6": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					-2.7566263993401776,
+					4.9564742846378245
+				],
+				"s": [
+					1.7538028254741937,
+					1,
+					1
+				]
+			},
+			"inputs": [
+				"plane1"
+			]
+		},
+		"transform7": {
+			"type": "transform",
+			"params": {
+				"r": [
+					0,
+					0,
+					180
+				]
+			},
+			"inputs": [
+				"transform1"
+			],
+			"cloned_state_overriden": true
+		},
+		"transform8": {
+			"type": "transform",
+			"params": {
+				"r": [
+					0,
+					0,
+					180
+				]
+			},
+			"inputs": [
+				"transform3"
+			],
+			"cloned_state_overriden": true
+		},
+		"attribCreate1": {
+			"type": "attribCreate",
+			"params": {
+				"name": "pscale",
+				"value1": "0.85+0.25*rand(@ptnum)"
+			},
+			"inputs": [
+				"scatter1"
 			]
 		}
 	},
 	"flags": {
-		"display": false
+		"display": true
 	}
 }

@@ -26,6 +26,7 @@
 			"type": "file",
 			"params": {
 				"url": "audio/sb_theclimb.short.mp3?timestamp=1644783589273",
+				"autostart": 0,
 				"duration": 319.8530612244898
 			}
 		},
@@ -36,7 +37,7 @@
 			"type": "meter",
 			"params": {
 				"smoothing": 0.98,
-				"value": 0.23422354459762573,
+				"value": 0.087699294090271,
 				"maxRange": [
 					0,
 					6.456870079040527
@@ -48,9 +49,6 @@
 		},
 		"volume1": {
 			"type": "volume",
-			"params": {
-				"volume": 8
-			},
 			"inputs": [
 				"file1"
 			]
@@ -64,13 +62,46 @@
 				"envelope1"
 			]
 		},
-		"FFT1": {
+		"waveform1": {
+			"type": "waveform",
+			"params": {
+				"normalRange": 0,
+				"range": [
+					-0.024045374244451523,
+					0.032240934669971466
+				],
+				"maxRange": [
+					-1.046830415725708,
+					1.0652825832366943
+				]
+			},
+			"inputs": [
+				"FFT_raw"
+			]
+		},
+		"FFT_raw": {
+			"type": "FFT",
+			"params": {
+				"range": [
+					8.379095817190318e-8,
+					0.008799322880804539
+				],
+				"maxRange": [
+					-60233.8515625,
+					0.7003438472747803
+				]
+			},
+			"inputs": [
+				"FFT_asOctaves"
+			]
+		},
+		"FFT_asOctaves": {
 			"type": "FFT",
 			"params": {
 				"asOctaves": 1,
 				"range": [
-					0.0015428923070430756,
-					0.108256034553051
+					0.0005582986632362008,
+					0.028901679441332817
 				],
 				"maxRange": [
 					-60233.8515625,
@@ -80,40 +111,18 @@
 			"inputs": [
 				"meter1"
 			]
-		},
-		"waveform1": {
-			"type": "waveform",
-			"params": {
-				"normalRange": 0,
-				"range": [
-					-0.1366962194442749,
-					0.1448751986026764
-				],
-				"maxRange": [
-					-1.046830415725708,
-					1.0652825832366943
-				]
-			},
-			"inputs": [
-				"FFT1"
-			]
 		}
 	},
 	"params": {
-		"t": [
-			0.12654530441144252,
-			0,
-			0
-		],
 		"audioNode": "OUT",
 		"coneInnerAngle": 140.4,
 		"coneOuterAngle": 298.8,
 		"showHelper": 0
 	},
+	"inputs": [
+		"particles"
+	],
 	"flags": {
 		"display": true
-	},
-	"selection": [
-		"file1"
-	]
+	}
 }

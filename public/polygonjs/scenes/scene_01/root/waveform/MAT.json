@@ -1,4 +1,18 @@
 {
 	"type": "materialsNetwork",
-	"nodes": {}
+	"nodes": {
+		"lineBasic_CIRCLE": {
+			"type": "lineBasic",
+			"params": {
+				"color": [
+					0.07058823529411765,
+					0.07058823529411765,
+					0.07058823529411765
+				]
+			}
+		}
+	},
+	"selection": [
+		"lineBasicBuilder_FFT_raw_VALUE"
+	]
 }

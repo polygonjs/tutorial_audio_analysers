@@ -1,0 +1,193 @@
+{
+	"type": "subnet",
+	"nodes": {
+		"subnetInput1": {
+			"type": "subnetInput",
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "input0",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"subnetOutput1": {
+			"type": "subnetOutput",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "fitFrom01ToVariance1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "input0",
+						"type": "float"
+					}
+				],
+				"out": []
+			}
+		},
+		"attribute1": {
+			"type": "attribute",
+			"params": {
+				"name": "pti",
+				"texportWhenConnected": 1,
+				"in": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"random1": {
+			"type": "random",
+			"params": {
+				"seed": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "floatToVec2_1",
+					"output": "vec2"
+				}
+			]
+		},
+		"floatToVec2_1": {
+			"type": "floatToVec2",
+			"params": {
+				"x": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				},
+				"y": {
+					"overriden_options": {
+						"editable": "true"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute1",
+					"output": "val"
+				}
+			]
+		},
+		"fitFrom01ToVariance1": {
+			"type": "fitFrom01ToVariance",
+			"params": {
+				"val": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"center": {
+					"type": "float",
+					"default_value": 0.5,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 1.3
+				},
+				"variance": {
+					"type": "float",
+					"default_value": 0.5,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.3
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "random1",
+					"output": "rand"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "val",
+						"type": "float"
+					},
+					{
+						"name": "center",
+						"type": "float"
+					},
+					{
+						"name": "variance",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		}
+	},
+	"params": {
+		"input0": {
+			"type": "float",
+			"default_value": 0,
+			"options": {
+				"spare": true,
+				"editable": true
+			}
+		}
+	},
+	"maxInputsCount": 1,
+	"connection_points": {
+		"in": [
+			{
+				"name": "input0",
+				"type": "float"
+			}
+		],
+		"out": [
+			{
+				"name": "input0",
+				"type": "float"
+			}
+		]
+	},
+	"selection": [
+		"fitFrom01ToVariance1"
+	]
+}

@@ -4,23 +4,22 @@
 		"spotLight1": {
 			"type": "spotLight",
 			"params": {
-				"intensity": "ch(\"../areaLight1/intensity\")",
+				"intensity": 2.1,
+				"angle": 30.6,
+				"penumbra": 0.21,
 				"castShadow": 1
 			},
 			"inputs": [
 				"polarTransform1"
 			],
 			"flags": {
-				"display": false
+				"display": true
 			}
 		},
 		"audioListener1": {
 			"type": "audioListener",
-			"params": {
-				"soundOn": false
-			},
 			"inputs": [
-				"perspectiveCamera1"
+				"perspectiveCamera_MAIN"
 			],
 			"flags": {
 				"display": true
@@ -31,22 +30,32 @@
 			"params": {
 				"t": [
 					0,
-					1.4823705282545054,
-					5.950809644780402
+					-0.7925235025833661,
+					-2.893624611952526
 				],
-				"intensity": "10*(ch(\"/positionalAudio1/meter1/value\")-0.1)",
+				"r": [
+					0,
+					180,
+					0
+				],
+				"intensity": 2.8,
 				"width": 5.7,
-				"height": 2.3,
-				"showHelper": true
+				"height": 2.3
 			},
 			"flags": {
-				"display": false
+				"display": true
 			}
 		},
 		"polarTransform1": {
 			"type": "polarTransform",
 			"params": {
-				"latitude": 25.2,
+				"center": [
+					0,
+					-2.7,
+					0
+				],
+				"longitude": 183.6,
+				"latitude": 32.4,
 				"depth": 7.1
 			},
 			"flags": {
@@ -60,6 +69,24 @@
 			},
 			"flags": {
 				"display": false
+			}
+		},
+		"null1": {
+			"type": "null",
+			"params": {
+				"t": [
+					0,
+					-1.754,
+					9.1
+				],
+				"r": [
+					5.7,
+					0,
+					0
+				]
+			},
+			"flags": {
+				"display": true
 			}
 		}
 	},

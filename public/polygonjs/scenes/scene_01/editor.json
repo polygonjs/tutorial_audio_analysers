@@ -9,7 +9,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"camera": "/perspectiveCamera1",
+					"camera": "/perspectiveCamera_MAIN",
 					"linkIndex": 1
 				}
 			},
@@ -20,7 +20,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"active_folder": 5227,
+					"active_folder": 5252,
 					"linkIndex": 1
 				}
 			},
@@ -36,16 +36,16 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": 41.99329228491413,
-						"y": -523.6559644181123
+						"x": 113.13287849289948,
+						"y": -139.77010083951086
 					},
-					"zoom": 0.6154158449761552
+					"zoom": 0.6654789513793631
 				},
 				"history": {
 					"2": {
 						"position": {
-							"x": -425.33432936093266,
-							"y": 109.14639384059157
+							"x": -133.9925488181587,
+							"y": -83.13918131763921
 						},
 						"zoom": 0.6864789513793631
 					},
@@ -56,10 +56,17 @@
 						},
 						"zoom": 0.5
 					},
+					"168": {
+						"position": {
+							"x": -295.6872370193982,
+							"y": -80.2257635122115
+						},
+						"zoom": 0.6864789513793631
+					},
 					"213": {
 						"position": {
-							"x": -326.2781239763895,
-							"y": 91.66588700802507
+							"x": -336.4750862953865,
+							"y": -72.94221899864223
 						},
 						"zoom": 0.6864789513793631
 					},
@@ -72,8 +79,15 @@
 					},
 					"274": {
 						"position": {
-							"x": -278.2067301868318,
-							"y": -340.9766570979942
+							"x": -312.10361417259185,
+							"y": -236.1454929760892
+						},
+						"zoom": 0.554478951379363
+					},
+					"281": {
+						"position": {
+							"x": -281.12014799225955,
+							"y": -1083.8981974820676
 						},
 						"zoom": 0.6864789513793631
 					},
@@ -86,10 +100,31 @@
 					},
 					"326": {
 						"position": {
-							"x": -323.36470617096177,
-							"y": -339.51994819528034
+							"x": -368.91619398627466,
+							"y": -778.1334516646064
+						},
+						"zoom": 0.530478951379363
+					},
+					"352": {
+						"position": {
+							"x": -762.546630305675,
+							"y": -135.7446250544533
+						},
+						"zoom": 0.572478951379363
+					},
+					"378": {
+						"position": {
+							"x": -517.1069902319065,
+							"y": -30.697660819939927
 						},
 						"zoom": 0.6864789513793631
+					},
+					"430": {
+						"position": {
+							"x": 153.70516097311338,
+							"y": -308.0699392759534
+						},
+						"zoom": 0.6654789513793631
 					},
 					"437": {
 						"position": {
@@ -111,6 +146,20 @@
 							"y": -162.53661999999997
 						},
 						"zoom": 0.8467543904215146
+					},
+					"578": {
+						"position": {
+							"x": -305.8841993383954,
+							"y": -192.3923490211795
+						},
+						"zoom": 0.6864789513793631
+					},
+					"598": {
+						"position": {
+							"x": -305.8841993383954,
+							"y": -192.3923490211795
+						},
+						"zoom": 0.6864789513793631
 					},
 					"621": {
 						"position": {
@@ -182,6 +231,13 @@
 						},
 						"zoom": 0.8309388071625713
 					},
+					"1350": {
+						"position": {
+							"x": -461.7936967149914,
+							"y": -176.63015895320746
+						},
+						"zoom": 0.554478951379363
+					},
 					"1444": {
 						"position": {
 							"x": -314.6244527546786,
@@ -245,6 +301,27 @@
 						},
 						"zoom": 0.6864789513793631
 					},
+					"1833": {
+						"position": {
+							"x": -234.50546310541563,
+							"y": -301.64551672471964
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1836": {
+						"position": {
+							"x": -234.50546310541563,
+							"y": -301.64551672471964
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1862": {
+						"position": {
+							"x": -327.7348328791033,
+							"y": -285.6217187948671
+						},
+						"zoom": 0.6864789513793631
+					},
 					"1878": {
 						"position": {
 							"x": -413.6806581392217,
@@ -289,10 +366,17 @@
 					},
 					"2083": {
 						"position": {
-							"x": 41.99329228491413,
-							"y": -523.6559644181123
+							"x": -8.076346837074475,
+							"y": -418.74814911489807
 						},
-						"zoom": 0.6154158449761552
+						"zoom": 0.41941584497615503
+					},
+					"2084": {
+						"position": {
+							"x": -301.0529924277736,
+							"y": -376.60950911014163
+						},
+						"zoom": 0.530478951379363
 					},
 					"2109": {
 						"position": {
@@ -322,12 +406,40 @@
 						},
 						"zoom": 0.6864789513793631
 					},
+					"2359": {
+						"position": {
+							"x": -4.754712223623166,
+							"y": -384.21210587210044
+						},
+						"zoom": 0.542478951379363
+					},
+					"2376": {
+						"position": {
+							"x": -600.0952427464982,
+							"y": -153.21251618984866
+						},
+						"zoom": 0.572478951379363
+					},
 					"2483": {
 						"position": {
 							"x": -297.1439459221121,
 							"y": -394.8748864984073
 						},
 						"zoom": 0.6864789513793631
+					},
+					"2505": {
+						"position": {
+							"x": 1396.221303652284,
+							"y": -620.1659611775164
+						},
+						"zoom": 0.542478951379363
+					},
+					"2543": {
+						"position": {
+							"x": -56.23014174813068,
+							"y": -990.701419145207
+						},
+						"zoom": 0.7374789513793631
 					},
 					"2576": {
 						"position": {
@@ -336,12 +448,33 @@
 						},
 						"zoom": 0.9120946744942753
 					},
+					"3108": {
+						"position": {
+							"x": -234.97382826629013,
+							"y": -540.1359981472394
+						},
+						"zoom": 0.555478951379363
+					},
 					"3136": {
 						"position": {
 							"x": 1464.3810741489608,
 							"y": -520.4061336540486
 						},
 						"zoom": 0.7104641003833451
+					},
+					"3633": {
+						"position": {
+							"x": -517.1069902319065,
+							"y": -30.697660819939927
+						},
+						"zoom": 0.6864789513793631
+					},
+					"3792": {
+						"position": {
+							"x": -146.78566831183053,
+							"y": -215.09732548728056
+						},
+						"zoom": 0.8154789513793632
 					},
 					"4258": {
 						"position": {
@@ -350,12 +483,19 @@
 						},
 						"zoom": 0.6864789513793631
 					},
+					"4467": {
+						"position": {
+							"x": -238.49356966895363,
+							"y": -213.4012801554545
+						},
+						"zoom": 0.6654789513793631
+					},
 					"4470": {
 						"position": {
-							"x": -544.7844593834699,
-							"y": -96.24956144206408
+							"x": 113.13287849289948,
+							"y": -139.77010083951086
 						},
-						"zoom": 0.6864789513793631
+						"zoom": 0.6654789513793631
 					},
 					"4630": {
 						"position": {
@@ -364,12 +504,54 @@
 						},
 						"zoom": 1.0463023188223797
 					},
+					"4671": {
+						"position": {
+							"x": 28.385677318795928,
+							"y": -79.13582767664316
+						},
+						"zoom": 1.1625581320248664
+					},
+					"4925": {
+						"position": {
+							"x": -234.50546310541566,
+							"y": -67.11538338778665
+						},
+						"zoom": 0.6864789513793631
+					},
+					"4990": {
+						"position": {
+							"x": 17.505177064083796,
+							"y": -46.721458749792475
+						},
+						"zoom": 0.6864789513793631
+					},
+					"4993": {
+						"position": {
+							"x": -381.63306227951654,
+							"y": -40.894623138937
+						},
+						"zoom": 0.6864789513793631
+					},
+					"5041": {
+						"position": {
+							"x": -357.2050628518015,
+							"y": -444.813558005563
+						},
+						"zoom": 0.6654789513793631
+					},
 					"5224": {
 						"position": {
 							"x": -94.18491196014813,
 							"y": -996.8497808573911
 						},
 						"zoom": 0.9415855212292942
+					},
+					"5232": {
+						"position": {
+							"x": -114.90759577731887,
+							"y": 40.006636266712235
+						},
+						"zoom": 0.8536720869401415
 					}
 				},
 				"linkIndex": 1
@@ -378,7 +560,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/particles/particlesSystemGpu1",
+		"/perspectiveCamera_MAIN/animationsNetwork1",
 		"/",
 		"/",
 		"/",
@@ -390,106 +572,106 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/particles/MAT",
-				"/particles",
-				"/particles/MAT",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/",
+				"/positionalAudio1/COP",
 				"/positionalAudio1",
 				"/",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet1",
-				"/particles/particlesSystemGpu1",
-				"/particles",
+				"/waveform",
+				"/waveform/MAT",
+				"/waveform",
 				"/",
-				"/blackSphere",
-				"/",
-				"/particles",
+				"/crowd",
 				"/",
 				"/crowd",
 				"/crowd/MAT",
-				"/crowd/MAT/meshStandardBuilder1",
-				"/crowd/MAT",
 				"/crowd",
 				"/",
-				"/positionalAudio1",
+				"/perspectiveCamera_MAIN",
 				"/",
-				"/positionalAudio1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN",
 				"/",
-				"/planeWithTexture",
-				"/planeWithTexture/COP",
-				"/planeWithTexture",
-				"/planeWithTexture/MAT",
-				"/planeWithTexture",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN",
 				"/",
-				"/geo1",
-				"/geo1/MAT",
-				"/geo1",
-				"/geo1/COP",
-				"/geo1",
-				"/geo1/MAT",
-				"/geo1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
 				"/",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet1",
-				"/particles/particlesSystemGpu1",
-				"/particles",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/eventsNetwork1",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/perspectiveCamera_MAIN",
+				"/",
+				"/env",
+				"/env/COP",
+				"/env",
+				"/env/MAT",
+				"/env",
+				"/",
+				"/env",
+				"/env/MAT",
+				"/env",
+				"/",
+				"/env",
+				"/",
+				"/env",
 				"/",
 				"/waveform",
 				"/",
-				"/waveform",
-				"/waveform/MAT",
-				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
-				"/waveform/MAT",
-				"/waveform/MAT/lineBasicBuilder_SPEED",
-				"/waveform/MAT",
-				"/waveform",
+				"/env",
+				"/env/MAT",
+				"/env/MAT/meshBasicBuilder1",
+				"/env/MAT",
+				"/env",
+				"/env/MAT",
+				"/env/MAT/meshBasicBuilder1",
+				"/env/MAT",
+				"/env/MAT/meshBasicBuilder1",
+				"/env/MAT",
+				"/env/MAT/meshBasicBuilder1",
+				"/env/MAT",
+				"/env",
+				"/env/MAT",
+				"/env/MAT/meshBasicBuilder1",
+				"/env/MAT",
+				"/env",
 				"/",
-				"/waveform",
-				"/waveform/MAT",
-				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
-				"/waveform/MAT",
-				"/waveform",
-				"/",
-				"/positionalAudio1",
-				"/",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles",
-				"/",
-				"/raycastTarget",
-				"/",
-				"/raycastTarget",
-				"/",
-				"/particles",
-				"/particles/eventsNetwork1",
-				"/particles",
-				"/",
-				"/raycastTarget",
-				"/",
-				"/particles",
-				"/particles/eventsNetwork1",
-				"/particles",
-				"/particles/eventsNetwork1",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet2",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet2",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet2",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet2",
-				"/particles/particlesSystemGpu1",
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles/particlesSystemGpu1/subnet2",
-				"/particles/particlesSystemGpu1"
+				"/perspectiveCamera_MAIN",
+				"/perspectiveCamera_MAIN/animationsNetwork1"
 			],
 			"2": [],
 			"3": [],

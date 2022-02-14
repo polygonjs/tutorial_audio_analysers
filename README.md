@@ -11,4 +11,5 @@ If you have any trouble installing it, the docs may be able to help: [https://po
 
 # Assets
 
+- environment map: [https://www.eso.org/public/unitedkingdom/images/eso0932a/](https://www.eso.org/public/unitedkingdom/images/eso0932a/)
 - music from [https://www.scottbuckley.com.au/library/the-climb/](https://www.scottbuckley.com.au/library/the-climb/)

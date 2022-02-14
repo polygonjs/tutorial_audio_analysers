@@ -1,0 +1,14 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image1": {
+			"type": "image",
+			"params": {
+				"url": "tex/eso0932a.jpg?timestamp=1644869953799"
+			}
+		}
+	},
+	"selection": [
+		"image1"
+	]
+}

@@ -25,8 +25,5 @@
 	],
 	"flags": {
 		"display": true
-	},
-	"selection": [
-		"sphere1"
-	]
+	}
 }

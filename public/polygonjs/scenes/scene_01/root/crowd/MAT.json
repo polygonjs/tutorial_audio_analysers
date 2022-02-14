@@ -1,4 +1,7 @@
 {
 	"type": "materialsNetwork",
-	"nodes": {}
+	"nodes": {},
+	"selection": [
+		"meshStandardBuilder1"
+	]
 }

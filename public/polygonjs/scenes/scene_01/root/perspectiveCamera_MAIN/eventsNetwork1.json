@@ -1,0 +1,60 @@
+{
+	"type": "eventsNetwork",
+	"nodes": {
+		"raycast1": {
+			"type": "raycast",
+			"params": {
+				"mouse": [
+					0.8536977491961415,
+					0.9976744186046511
+				],
+				"intersectWith": 1,
+				"position": [
+					1.5054209944438794,
+					0,
+					6.277670399163301
+				]
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "throttle1",
+					"output": "output"
+				}
+			]
+		},
+		"pointer1": {
+			"type": "pointer",
+			"params": {
+				"pointerdown": 0,
+				"pointermove": 1
+			}
+		},
+		"throttle1": {
+			"type": "throttle",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "pointer1",
+					"output": "pointermove"
+				}
+			]
+		},
+		"animation1": {
+			"type": "animation",
+			"params": {
+				"animation": "../../animationsNetwork1/END"
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "throttle1",
+					"output": "output"
+				}
+			]
+		}
+	},
+	"selection": [
+		"animation1"
+	]
+}

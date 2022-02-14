@@ -21,7 +21,7 @@
 		"material1": {
 			"type": "material",
 			"params": {
-				"material": "../MAT/lineBasicBuilder_RAW_VALUE"
+				"material": "../MAT/lineBasicBuilder_FFT_asOctaves_VALUE"
 			},
 			"inputs": [
 				"attribCreate1"
@@ -40,7 +40,7 @@
 		"material3": {
 			"type": "material",
 			"params": {
-				"material": "../MAT/lineBasicBuilder_SPEED"
+				"material": "../MAT/lineBasicBuilder_FFT_asOctaves_SPEED"
 			},
 			"inputs": [
 				"attribCreate1"
@@ -72,18 +72,146 @@
 				null,
 				null,
 				"transform2"
+			]
+		},
+		"circle1": {
+			"type": "circle",
+			"params": {
+				"segments": 50,
+				"direction": [
+					0,
+					0,
+					1
+				]
+			}
+		},
+		"merge2": {
+			"type": "merge",
+			"inputs": [
+				"transform3",
+				"material2"
+			]
+		},
+		"transform3": {
+			"type": "transform",
+			"params": {
+				"applyOn": 1,
+				"t": [
+					0,
+					-0.09770666213599077,
+					0
+				],
+				"scale": 0.8
+			},
+			"inputs": [
+				"merge1"
+			]
+		},
+		"material2": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/lineBasic_CIRCLE"
+			},
+			"inputs": [
+				"circle1"
+			]
+		},
+		"hierarchy1": {
+			"type": "hierarchy",
+			"inputs": [
+				"merge2"
+			]
+		},
+		"transform4": {
+			"type": "transform",
+			"params": {
+				"applyOn": 1,
+				"t": [
+					3.9674877732417295,
+					0,
+					0
+				],
+				"scale": 0.5
+			},
+			"inputs": [
+				"hierarchy1"
+			]
+		},
+		"material4": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/lineBasicBuilder_FFT_raw_VALUE"
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"transform5": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					-2.3792528836029367,
+					0
+				]
+			},
+			"inputs": [
+				"material4"
+			]
+		},
+		"transform6": {
+			"type": "transform",
+			"params": {
+				"applyOn": 1,
+				"t": [
+					0,
+					-0.09770666213599077,
+					0
+				],
+				"scale": 0.8
+			},
+			"inputs": [
+				"transform5"
+			]
+		},
+		"hierarchy2": {
+			"type": "hierarchy",
+			"inputs": [
+				"merge3"
+			]
+		},
+		"transform7": {
+			"type": "transform",
+			"params": {
+				"applyOn": 1,
+				"t": [
+					-3.9674877732417295,
+					0,
+					0
+				],
+				"scale": 0.5
+			},
+			"inputs": [
+				"hierarchy2"
+			]
+		},
+		"merge3": {
+			"type": "merge",
+			"inputs": [
+				"transform6",
+				"material2"
+			]
+		},
+		"merge4": {
+			"type": "merge",
+			"inputs": [
+				"transform7",
+				"transform4"
 			],
 			"flags": {
 				"display": true
 			}
 		}
-	},
-	"params": {
-		"t": [
-			0,
-			-3.8446241575972664,
-			0
-		]
 	},
 	"flags": {
 		"display": true

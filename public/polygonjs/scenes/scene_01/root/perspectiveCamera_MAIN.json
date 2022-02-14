@@ -1,0 +1,15 @@
+{
+	"type": "perspectiveCamera",
+	"nodes": {},
+	"params": {
+		"matrixAutoUpdate": 0,
+		"near": 0.5,
+		"far": 1500
+	},
+	"inputs": [
+		"null1"
+	],
+	"flags": {
+		"display": true
+	}
+}

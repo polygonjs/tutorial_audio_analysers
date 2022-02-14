@@ -1,4 +1,13 @@
 
+// anim
+import {DurationAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Duration';
+import {EasingAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Easing';
+import {MergeAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Merge';
+import {NullAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Null';
+import {PlayAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Play';
+import {PropertyNameAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/PropertyName';
+import {PropertyValueAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/PropertyValue';
+import {TargetAnimNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/anim/Target';
 // audio
 import {AMSynthAudioNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/audio/AMSynth';
 import {FFTAudioNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/audio/FFT';
@@ -18,12 +27,15 @@ import {AudioAnalyserCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/c
 import {EnvMapCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/EnvMap';
 import {ImageCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image';
 // event
+import {AnimationEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Animation';
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls';
 import {PointerEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer';
 import {RaycastEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast';
 import {SceneEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Scene';
 import {SetParamEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/SetParam';
+import {ThrottleEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Throttle';
 // mat
+import {LineBasicMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/LineBasic';
 import {LineBasicBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/LineBasicBuilder';
 import {MeshBasicMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasic';
 import {MeshBasicBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasicBuilder';
@@ -36,13 +48,16 @@ import {AreaLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/A
 import {AudioListenerObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/AudioListener';
 import {GeoObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/Geo';
 import {HemisphereLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/HemisphereLight';
+import {NullObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/Null';
 import {PerspectiveCameraObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/PerspectiveCamera';
 import {PolarTransformObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/PolarTransform';
 import {PositionalAudioObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/PositionalAudio';
 import {SpotLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/SpotLight';
 // sop
+import {AnimationsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/AnimationsNetwork';
 import {AttribCreateSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/AttribCreate';
 import {BoxSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Box';
+import {CircleSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Circle';
 import {CopNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/CopNetwork';
 import {DeleteSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Delete';
 import {EventsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/EventsNetwork';
@@ -67,6 +82,14 @@ import {TransformSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/T
 
 export const requiredImports_scene_01 = {
 	nodes: [
+		DurationAnimNode,
+		EasingAnimNode,
+		MergeAnimNode,
+		NullAnimNode,
+		PlayAnimNode,
+		PropertyNameAnimNode,
+		PropertyValueAnimNode,
+		TargetAnimNode,
 		AMSynthAudioNode,
 		FFTAudioNode,
 		CopNetworkAudioNode,
@@ -83,11 +106,14 @@ export const requiredImports_scene_01 = {
 		AudioAnalyserCopNode,
 		EnvMapCopNode,
 		ImageCopNode,
+		AnimationEventNode,
 		CameraOrbitControlsEventNode,
 		PointerEventNode,
 		RaycastEventNode,
 		SceneEventNode,
 		SetParamEventNode,
+		ThrottleEventNode,
+		LineBasicMatNode,
 		LineBasicBuilderMatNode,
 		MeshBasicMatNode,
 		MeshBasicBuilderMatNode,
@@ -99,12 +125,15 @@ export const requiredImports_scene_01 = {
 		AudioListenerObjNode,
 		GeoObjNode,
 		HemisphereLightObjNode,
+		NullObjNode,
 		PerspectiveCameraObjNode,
 		PolarTransformObjNode,
 		PositionalAudioObjNode,
 		SpotLightObjNode,
+		AnimationsNetworkSopNode,
 		AttribCreateSopNode,
 		BoxSopNode,
+		CircleSopNode,
 		CopNetworkSopNode,
 		DeleteSopNode,
 		EventsNetworkSopNode,

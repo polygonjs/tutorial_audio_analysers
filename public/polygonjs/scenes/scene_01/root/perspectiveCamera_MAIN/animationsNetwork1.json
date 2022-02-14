@@ -1,0 +1,130 @@
+{
+	"type": "animationsNetwork",
+	"nodes": {
+		"duration1": {
+			"type": "duration",
+			"params": {
+				"duration": 20
+			}
+		},
+		"easing1": {
+			"type": "easing",
+			"params": {
+				"name": 3
+			},
+			"inputs": [
+				"duration1"
+			]
+		},
+		"target1": {
+			"type": "target",
+			"params": {
+				"objectMask": "*/perspectiveCamera_MAIN"
+			},
+			"inputs": [
+				"easing1"
+			]
+		},
+		"propertyName1": {
+			"type": "propertyName",
+			"params": {
+				"name": "position.x"
+			},
+			"inputs": [
+				"target1"
+			]
+		},
+		"propertyValue1": {
+			"type": "propertyValue",
+			"params": {
+				"size": 1,
+				"value1": "2*ch(\"../../eventsNetwork1/raycast1/mousex\")"
+			},
+			"inputs": [
+				"propertyName1"
+			]
+		},
+		"propertyValue2": {
+			"type": "propertyValue",
+			"params": {
+				"size": 1
+			},
+			"inputs": [
+				"propertyName1"
+			]
+		},
+		"END": {
+			"type": "null",
+			"inputs": [
+				"merge1"
+			]
+		},
+		"START": {
+			"type": "null",
+			"inputs": [
+				"merge2"
+			]
+		},
+		"PLAY": {
+			"type": "play",
+			"inputs": [
+				"START",
+				"END"
+			]
+		},
+		"duration2": {
+			"type": "duration",
+			"inputs": [
+				"propertyValue2"
+			]
+		},
+		"propertyName2": {
+			"type": "propertyName",
+			"params": {
+				"name": "rotation.y"
+			},
+			"inputs": [
+				"target1"
+			]
+		},
+		"propertyValue3": {
+			"type": "propertyValue",
+			"params": {
+				"size": 1,
+				"value1": "0.3*ch(\"../../eventsNetwork1/raycast1/mousex\")"
+			},
+			"inputs": [
+				"propertyName2"
+			]
+		},
+		"propertyValue4": {
+			"type": "propertyValue",
+			"params": {
+				"size": 1
+			},
+			"inputs": [
+				"propertyName2"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"propertyValue1",
+				"propertyValue3"
+			]
+		},
+		"duration3": {
+			"type": "duration",
+			"inputs": [
+				"propertyValue4"
+			]
+		},
+		"merge2": {
+			"type": "merge",
+			"inputs": [
+				"duration2",
+				"duration3"
+			]
+		}
+	}
+}
