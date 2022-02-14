@@ -1,0 +1,19 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"audioAnalyser1": {
+			"type": "audioAnalyser",
+			"params": {
+				"activeR": 1,
+				"audioNodeR": "../../FFT1",
+				"rangeR": [
+					-1,
+					1
+				]
+			}
+		}
+	},
+	"selection": [
+		"audioAnalyser1"
+	]
+}

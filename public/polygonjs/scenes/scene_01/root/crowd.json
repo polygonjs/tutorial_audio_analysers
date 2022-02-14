@@ -1,0 +1,173 @@
+{
+	"type": "geo",
+	"nodes": {
+		"plane1": {
+			"type": "plane",
+			"params": {
+				"size": [
+					7,
+					7
+				]
+			}
+		},
+		"scatter1": {
+			"type": "scatter",
+			"inputs": [
+				"plane1"
+			]
+		},
+		"file1": {
+			"type": "file",
+			"params": {
+				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_mei_posed_001_OBJ/rp_mei_posed_001_30k.obj"
+			}
+		},
+		"instance1": {
+			"type": "instance",
+			"params": {
+				"material": "../MAT/meshStandardBuilder1"
+			},
+			"inputs": [
+				"transform2",
+				"delete1"
+			]
+		},
+		"hierarchy1": {
+			"type": "hierarchy",
+			"params": {
+				"mode": 1
+			},
+			"inputs": [
+				"file1"
+			]
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"r": [
+					90,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"hierarchy1"
+			]
+		},
+		"transform2": {
+			"type": "transform",
+			"params": {
+				"scale": 0.5
+			},
+			"inputs": [
+				"transform1"
+			]
+		},
+		"file2": {
+			"type": "file",
+			"params": {
+				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_dennis_posed_004_OBJ/rp_dennis_posed_004_30k.obj"
+			}
+		},
+		"delete1": {
+			"type": "delete",
+			"params": {
+				"byExpression": 1,
+				"expression": "rand(@ptnum)>0.5"
+			},
+			"inputs": [
+				"scatter1"
+			]
+		},
+		"delete2": {
+			"type": "delete",
+			"params": {
+				"invert": 1,
+				"byExpression": true,
+				"expression": "rand(@ptnum)>0.5"
+			},
+			"inputs": [
+				"scatter1"
+			]
+		},
+		"hierarchy2": {
+			"type": "hierarchy",
+			"params": {
+				"mode": 1
+			},
+			"inputs": [
+				"file2"
+			]
+		},
+		"transform3": {
+			"type": "transform",
+			"params": {
+				"r": [
+					90,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"hierarchy2"
+			]
+		},
+		"transform4": {
+			"type": "transform",
+			"params": {
+				"scale": 0.5
+			},
+			"inputs": [
+				"transform3"
+			]
+		},
+		"instance2": {
+			"type": "instance",
+			"params": {
+				"material": "../MAT/meshStandardBuilder1"
+			},
+			"inputs": [
+				"transform4",
+				"delete2"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"instance1",
+				"instance2"
+			]
+		},
+		"merge2": {
+			"type": "merge",
+			"inputs": [
+				"merge1",
+				"transform5"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"plane2": {
+			"type": "plane",
+			"params": {
+				"size": [
+					7,
+					7
+				]
+			}
+		},
+		"transform5": {
+			"type": "transform",
+			"params": {
+				"scale": 1.7
+			},
+			"inputs": [
+				"plane2"
+			]
+		}
+	},
+	"flags": {
+		"display": false
+	}
+}

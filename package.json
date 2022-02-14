@@ -1,0 +1,12 @@
+{
+	"engines": {
+		"node": ">=16.13.1",
+		"yarn": ">=1.22.7"
+	},
+	"scripts": {
+		"polygon": "node node_modules/polygonjs-editor/build/index.js --port=8091"
+	},
+	"dependencies": {
+		"polygonjs-editor": "1.1.227-1"
+	}
+}

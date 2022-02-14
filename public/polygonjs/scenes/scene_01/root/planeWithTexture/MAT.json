@@ -1,0 +1,15 @@
+{
+	"type": "materialsNetwork",
+	"nodes": {
+		"meshBasic1": {
+			"type": "meshBasic",
+			"params": {
+				"useMap": 1,
+				"map": "../../../positionalAudio1/COP/audioAnalyser1"
+			}
+		}
+	},
+	"selection": [
+		"meshBasic1"
+	]
+}

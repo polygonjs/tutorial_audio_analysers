@@ -1,0 +1,11 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image1": {
+			"type": "image"
+		}
+	},
+	"selection": [
+		"image1"
+	]
+}

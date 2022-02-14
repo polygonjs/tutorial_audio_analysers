@@ -1,0 +1,103 @@
+{
+	"type": "geo",
+	"nodes": {
+		"sphere1": {
+			"type": "sphere"
+		},
+		"scatter1": {
+			"type": "scatter",
+			"inputs": [
+				"sphere1"
+			]
+		},
+		"sphere2": {
+			"type": "sphere",
+			"params": {
+				"radius": 0.03
+			}
+		},
+		"instance1": {
+			"type": "instance",
+			"params": {
+				"attributesToCopy": "instance* restP pti velocity",
+				"material": "../MAT/meshLambertBuilder_INSTANCES"
+			},
+			"inputs": [
+				"sphere2",
+				"attribCreate2"
+			]
+		},
+		"icosahedron1": {
+			"type": "icosahedron",
+			"params": {
+				"detail": 9
+			}
+		},
+		"restAttributes1": {
+			"type": "restAttributes",
+			"params": {
+				"tnormal": 0
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"attribCreate1": {
+			"type": "attribCreate",
+			"params": {
+				"name": "pti",
+				"value1": "@ptnum / (pointsCount(0)-1)"
+			},
+			"inputs": [
+				"icosahedron1"
+			]
+		},
+		"delete1": {
+			"type": "delete",
+			"params": {
+				"class": 1,
+				"invert": 1,
+				"keepPoints": 1
+			},
+			"inputs": [
+				"restAttributes1"
+			]
+		},
+		"fuse1": {
+			"type": "fuse",
+			"params": {
+				"dist": 0.06
+			},
+			"inputs": [
+				"delete1"
+			]
+		},
+		"jitter1": {
+			"type": "jitter",
+			"params": {
+				"amount": 0.02
+			},
+			"inputs": [
+				"fuse1"
+			]
+		},
+		"attribCreate2": {
+			"type": "attribCreate",
+			"params": {
+				"name": "velocity",
+				"size": 3,
+				"value3": [
+					"0.001*@P.x",
+					"0.001*@P.y",
+					"0.001*@P.z"
+				]
+			},
+			"inputs": [
+				"jitter1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

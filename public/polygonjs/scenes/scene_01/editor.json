@@ -1,0 +1,421 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.353125,
+		"split_panel0": {
+			"split_ratio": 0.5,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/perspectiveCamera1",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params",
+					"spreadsheet"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": 2211,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": -470.4923053450626,
+						"y": 110.60310274330544
+					},
+					"zoom": 0.6864789513793631
+				},
+				"history": {
+					"2": {
+						"position": {
+							"x": -470.4923053450626,
+							"y": 110.60310274330544
+						},
+						"zoom": 0.6864789513793631
+					},
+					"97": {
+						"position": {
+							"x": -48,
+							"y": -22
+						},
+						"zoom": 0.5
+					},
+					"213": {
+						"position": {
+							"x": -480.68926766405974,
+							"y": 23.200568580473192
+						},
+						"zoom": 0.6864789513793631
+					},
+					"326": {
+						"position": {
+							"x": -464.66546973420714,
+							"y": -556.569574699647
+						},
+						"zoom": 0.6864789513793631
+					},
+					"437": {
+						"position": {
+							"x": -313.97459852061735,
+							"y": -114.46981431000104
+						},
+						"zoom": 0.7310789513793631
+					},
+					"500": {
+						"position": {
+							"x": -112.68204845263074,
+							"y": -23.56972926256132
+						},
+						"zoom": 0.6810372916272426
+					},
+					"574": {
+						"position": {
+							"x": -46.819019999999995,
+							"y": -162.53661999999997
+						},
+						"zoom": 0.8467543904215146
+					},
+					"666": {
+						"position": {
+							"x": -66.89567999999998,
+							"y": -295.9873599999999
+						},
+						"zoom": 0.8467543904215146
+					},
+					"813": {
+						"position": {
+							"x": -244.04267999999993,
+							"y": -221.58561999999992
+						},
+						"zoom": 0.8467543904215146
+					},
+					"886": {
+						"position": {
+							"x": -173.18387999999993,
+							"y": -133.01211999999995
+						},
+						"zoom": 0.8467543904215146
+					},
+					"889": {
+						"position": {
+							"x": -149.56427999999994,
+							"y": -171.98445999999996
+						},
+						"zoom": 0.8467543904215146
+					},
+					"1054": {
+						"position": {
+							"x": -62.08672721883329,
+							"y": -587.0532269004289
+						},
+						"zoom": 0.6057543904215144
+					},
+					"1144": {
+						"position": {
+							"x": -367.3705236289897,
+							"y": -190.41887509191298
+						},
+						"zoom": 0.8309388071625713
+					},
+					"1147": {
+						"position": {
+							"x": -287.94229205394515,
+							"y": -212.08112006692514
+						},
+						"zoom": 0.8309388071625713
+					},
+					"1543": {
+						"position": {
+							"x": -410.76724033379395,
+							"y": -412.3553933309738
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1546": {
+						"position": {
+							"x": -185.64745060833826,
+							"y": -248.76369039315134
+						},
+						"zoom": 0.7691631706164103
+					},
+					"1638": {
+						"position": {
+							"x": 219.94227942381053,
+							"y": -524.9549415312963
+						},
+						"zoom": 1.1398337546811679
+					},
+					"1685": {
+						"position": {
+							"x": -102.7584957464413,
+							"y": -105.06119359458029
+						},
+						"zoom": 1.1625581320248664
+					},
+					"1694": {
+						"position": {
+							"x": 10.221632550514443,
+							"y": -243.3771606161649
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1878": {
+						"position": {
+							"x": -413.6806581392217,
+							"y": -289.99184550300873
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1905": {
+						"position": {
+							"x": -223.69707120913537,
+							"y": -47.44558948784023
+						},
+						"zoom": 0.7310789513793631
+					},
+					"1954": {
+						"position": {
+							"x": -323.36470617096194,
+							"y": -263.9167561444308
+						},
+						"zoom": 0.7627543904215145
+					},
+					"2003": {
+						"position": {
+							"x": -454.4685074152102,
+							"y": -137.03741071805248
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2020": {
+						"position": {
+							"x": -183.08363883961619,
+							"y": -248.18429999512082
+						},
+						"zoom": 0.7627543904215145
+					},
+					"2023": {
+						"position": {
+							"x": -288.5776047474351,
+							"y": -307.84941956265254
+						},
+						"zoom": 0.7013023188223793
+					},
+					"2083": {
+						"position": {
+							"x": 473.3324223670008,
+							"y": -334.0157181823868
+						},
+						"zoom": 0.6328697358888555
+					},
+					"2109": {
+						"position": {
+							"x": -297.1439459221121,
+							"y": -394.8748864984073
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2112": {
+						"position": {
+							"x": -206.82799395385217,
+							"y": -90.42272583120848
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2205": {
+						"position": {
+							"x": -262.18293225697914,
+							"y": 78.55550688360032
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2285": {
+						"position": {
+							"x": -342.30192190624206,
+							"y": -24.87082520908445
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2483": {
+						"position": {
+							"x": -297.1439459221121,
+							"y": -394.8748864984073
+						},
+						"zoom": 0.6864789513793631
+					},
+					"2576": {
+						"position": {
+							"x": 453.5042848796671,
+							"y": -393.24230969183805
+						},
+						"zoom": 0.9120946744942753
+					},
+					"3136": {
+						"position": {
+							"x": 1078.7176748974605,
+							"y": -565.4471145885303
+						},
+						"zoom": 0.7104641003833451
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/",
+		"/",
+		"/",
+		"/",
+		"/",
+		"/",
+		"/",
+		"/"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/waveform/MAT",
+				"/waveform",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_SPEED",
+				"/waveform/MAT",
+				"/waveform",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
+				"/waveform/MAT",
+				"/waveform",
+				"/",
+				"/waveform",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_RAW_VALUE",
+				"/waveform/MAT",
+				"/waveform/MAT/lineBasicBuilder_SPEED",
+				"/",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/",
+				"/blackSphere",
+				"/blackSphere/materialsNetwork1",
+				"/blackSphere",
+				"/",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/pointsParticles",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/",
+				"/waveform",
+				"/waveform/MAT/lineBasicBuilder_SPEED",
+				"/",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles/particlesSystemGpu1/subnet1",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/",
+				"/positionalAudio1",
+				"/",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles/particlesSystemGpu1/subnet1",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/",
+				"/blackSphere",
+				"/",
+				"/particles",
+				"/"
+			],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+			"6": [],
+			"7": [],
+			"8": []
+		},
+		"index": {
+			"1": 99,
+			"2": -1,
+			"3": -1,
+			"4": -1,
+			"5": -1,
+			"6": -1,
+			"7": -1,
+			"8": -1
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"compressJs": true,
+		"createZip": true
+	},
+	"paramsModal": []
+}

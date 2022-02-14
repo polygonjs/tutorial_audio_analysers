@@ -1,0 +1,48 @@
+{
+	"type": "geo",
+	"nodes": {
+		"plane1": {
+			"type": "plane",
+			"params": {
+				"direction": [
+					0,
+					0,
+					1
+				]
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshBasic1"
+			},
+			"inputs": [
+				"plane1"
+			]
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					0,
+					-1.122978833817659
+				],
+				"s": [
+					9.396984840078819,
+					4.730509234602973,
+					1
+				]
+			},
+			"inputs": [
+				"material1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"flags": {
+		"display": false
+	}
+}

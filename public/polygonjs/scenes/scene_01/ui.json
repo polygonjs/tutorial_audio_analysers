@@ -1,0 +1,1210 @@
+{
+	"nodes": {
+		"spotLight1": {
+			"pos": [
+				350,
+				250
+			]
+		},
+		"audioListener1": {
+			"pos": [
+				-200,
+				300
+			]
+		},
+		"areaLight1": {
+			"pos": [
+				150,
+				350
+			]
+		},
+		"polarTransform1": {
+			"pos": [
+				350,
+				150
+			]
+		},
+		"hemisphereLight1": {
+			"pos": [
+				150,
+				150
+			]
+		},
+		"perspectiveCamera1": {
+			"pos": [
+				-200,
+				100
+			],
+			"nodes": {
+				"events1": {
+					"pos": [
+						-200,
+						50
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								150,
+								50
+							]
+						}
+					}
+				}
+			}
+		},
+		"positionalAudio1": {
+			"pos": [
+				-50,
+				0
+			],
+			"nodes": {
+				"envelope1": {
+					"pos": [
+						-100,
+						-550
+					]
+				},
+				"AMSynth1": {
+					"pos": [
+						-400,
+						-450
+					]
+				},
+				"playInstrument1": {
+					"pos": [
+						-100,
+						200
+					]
+				},
+				"OUT": {
+					"pos": [
+						-100,
+						300
+					]
+				},
+				"file1": {
+					"pos": [
+						100,
+						-350
+					]
+				},
+				"userMedia1": {
+					"pos": [
+						300,
+						-350
+					]
+				},
+				"meter1": {
+					"pos": [
+						0,
+						-150
+					]
+				},
+				"volume1": {
+					"pos": [
+						-100,
+						-250
+					]
+				},
+				"sampler1": {
+					"pos": [
+						-100,
+						-450
+					]
+				},
+				"FFT1": {
+					"pos": [
+						0,
+						-50
+					]
+				},
+				"waveform1": {
+					"pos": [
+						0,
+						50
+					]
+				},
+				"COP": {
+					"pos": [
+						-400,
+						200
+					],
+					"nodes": {
+						"audioAnalyser1": {
+							"pos": [
+								-250,
+								50
+							]
+						}
+					}
+				},
+				"eventsNetwork1": {
+					"pos": [
+						-400,
+						100
+					],
+					"nodes": {
+						"scene1": {
+							"pos": [
+								-300,
+								50
+							]
+						},
+						"setParam1": {
+							"pos": [
+								-150,
+								50
+							]
+						}
+					}
+				}
+			}
+		},
+		"geo1": {
+			"pos": [
+				-50,
+				-400
+			],
+			"nodes": {
+				"box1": {
+					"pos": [
+						0,
+						0
+					]
+				},
+				"sphere1": {
+					"pos": [
+						-150,
+						-50
+					]
+				},
+				"material1": {
+					"pos": [
+						-150,
+						50
+					]
+				},
+				"materialsNetwork1": {
+					"pos": [
+						-400,
+						50
+					],
+					"nodes": {
+						"meshPhysical1": {
+							"pos": [
+								-250,
+								100
+							]
+						}
+					}
+				}
+			}
+		},
+		"crowd": {
+			"pos": [
+				350,
+				-400
+			],
+			"nodes": {
+				"plane1": {
+					"pos": [
+						400,
+						-50
+					]
+				},
+				"scatter1": {
+					"pos": [
+						100,
+						100
+					]
+				},
+				"file1": {
+					"pos": [
+						-250,
+						-200
+					]
+				},
+				"instance1": {
+					"pos": [
+						-50,
+						400
+					]
+				},
+				"hierarchy1": {
+					"pos": [
+						-250,
+						0
+					]
+				},
+				"transform1": {
+					"pos": [
+						-250,
+						100
+					]
+				},
+				"transform2": {
+					"pos": [
+						-250,
+						200
+					]
+				},
+				"file2": {
+					"pos": [
+						-100,
+						-200
+					]
+				},
+				"delete1": {
+					"pos": [
+						100,
+						200
+					]
+				},
+				"delete2": {
+					"pos": [
+						300,
+						200
+					]
+				},
+				"hierarchy2": {
+					"pos": [
+						-100,
+						0
+					]
+				},
+				"transform3": {
+					"pos": [
+						-100,
+						100
+					]
+				},
+				"transform4": {
+					"pos": [
+						-100,
+						200
+					]
+				},
+				"instance2": {
+					"pos": [
+						200,
+						400
+					]
+				},
+				"merge1": {
+					"pos": [
+						100,
+						600
+					]
+				},
+				"merge2": {
+					"pos": [
+						350,
+						850
+					]
+				},
+				"plane2": {
+					"pos": [
+						600,
+						350
+					]
+				},
+				"transform5": {
+					"pos": [
+						600,
+						450
+					]
+				},
+				"MAT": {
+					"pos": [
+						-450,
+						400
+					],
+					"nodes": {
+						"meshLambertBuilder_INSTANCES": {
+							"pos": [
+								0,
+								0
+							],
+							"nodes": {
+								"instanceTransform1": {
+									"pos": [
+										0,
+										0
+									]
+								},
+								"output1": {
+									"pos": [
+										200,
+										0
+									]
+								},
+								"globals1": {
+									"pos": [
+										-200,
+										0
+									]
+								}
+							}
+						},
+						"meshStandardBuilder1": {
+							"pos": [
+								0,
+								100
+							],
+							"nodes": {
+								"instanceTransform1": {
+									"pos": [
+										200,
+										150
+									]
+								},
+								"output1": {
+									"pos": [
+										400,
+										150
+									]
+								},
+								"globals1": {
+									"pos": [
+										-400,
+										50
+									]
+								},
+								"texture1": {
+									"pos": [
+										-150,
+										350
+									]
+								},
+								"vec4ToFloat1": {
+									"pos": [
+										-50,
+										350
+									]
+								},
+								"floatToVec3_1": {
+									"pos": [
+										50,
+										350
+									]
+								},
+								"constant1": {
+									"pos": [
+										-400,
+										350
+									]
+								},
+								"attribute1": {
+									"pos": [
+										-700,
+										550
+									]
+								},
+								"vec3ToFloat1": {
+									"pos": [
+										-600,
+										550
+									]
+								},
+								"floatToVec2_1": {
+									"pos": [
+										-300,
+										450
+									]
+								},
+								"mult1": {
+									"pos": [
+										-450,
+										500
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"planeWithTexture": {
+			"pos": [
+				150,
+				-400
+			],
+			"nodes": {
+				"plane1": {
+					"pos": [
+						150,
+						0
+					]
+				},
+				"material1": {
+					"pos": [
+						150,
+						100
+					]
+				},
+				"transform1": {
+					"pos": [
+						150,
+						200
+					]
+				},
+				"COP": {
+					"pos": [
+						-150,
+						200
+					],
+					"nodes": {
+						"image1": {
+							"pos": [
+								-100,
+								150
+							]
+						}
+					}
+				},
+				"MAT": {
+					"pos": [
+						-150,
+						100
+					],
+					"nodes": {
+						"meshBasic1": {
+							"pos": [
+								-100,
+								100
+							]
+						}
+					}
+				}
+			}
+		},
+		"waveform": {
+			"pos": [
+				150,
+				-250
+			],
+			"nodes": {
+				"line1": {
+					"pos": [
+						50,
+						-150
+					]
+				},
+				"material1": {
+					"pos": [
+						0,
+						200
+					]
+				},
+				"attribCreate1": {
+					"pos": [
+						50,
+						0
+					]
+				},
+				"material3": {
+					"pos": [
+						200,
+						200
+					]
+				},
+				"transform1": {
+					"pos": [
+						0,
+						350
+					]
+				},
+				"transform2": {
+					"pos": [
+						200,
+						350
+					]
+				},
+				"merge1": {
+					"pos": [
+						100,
+						500
+					]
+				},
+				"MAT": {
+					"pos": [
+						-200,
+						150
+					],
+					"nodes": {
+						"lineBasicBuilder_RAW_VALUE": {
+							"pos": [
+								-150,
+								150
+							],
+							"nodes": {
+								"globals1": {
+									"pos": [
+										-350,
+										-100
+									]
+								},
+								"output1": {
+									"pos": [
+										650,
+										-150
+									]
+								},
+								"texture1": {
+									"pos": [
+										-400,
+										150
+									]
+								},
+								"attribute1": {
+									"pos": [
+										-650,
+										150
+									]
+								},
+								"floatToVec2_1": {
+									"pos": [
+										-550,
+										150
+									]
+								},
+								"vec4ToFloat1": {
+									"pos": [
+										-300,
+										150
+									]
+								},
+								"vec3ToFloat1": {
+									"pos": [
+										-150,
+										-100
+									]
+								},
+								"floatToVec3_1": {
+									"pos": [
+										300,
+										-150
+									]
+								},
+								"mult1": {
+									"pos": [
+										200,
+										50
+									]
+								},
+								"compare1": {
+									"pos": [
+										-100,
+										200
+									]
+								},
+								"twoWaySwitch1": {
+									"pos": [
+										0,
+										250
+									]
+								},
+								"constant1": {
+									"pos": [
+										450,
+										0
+									]
+								}
+							}
+						},
+						"lineBasicBuilder_SPEED": {
+							"pos": [
+								-150,
+								250
+							],
+							"nodes": {
+								"attribute1": {
+									"pos": [
+										-650,
+										150
+									]
+								},
+								"compare1": {
+									"pos": [
+										-100,
+										100
+									]
+								},
+								"floatToVec2_1": {
+									"pos": [
+										-550,
+										150
+									]
+								},
+								"floatToVec3_1": {
+									"pos": [
+										300,
+										-150
+									]
+								},
+								"globals1": {
+									"pos": [
+										-350,
+										-100
+									]
+								},
+								"mult1": {
+									"pos": [
+										200,
+										50
+									]
+								},
+								"output1": {
+									"pos": [
+										700,
+										-50
+									]
+								},
+								"texture1": {
+									"pos": [
+										-400,
+										150
+									]
+								},
+								"twoWaySwitch1": {
+									"pos": [
+										0,
+										250
+									]
+								},
+								"vec3ToFloat1": {
+									"pos": [
+										-150,
+										-100
+									]
+								},
+								"vec4ToFloat1": {
+									"pos": [
+										-300,
+										150
+									]
+								},
+								"constant1": {
+									"pos": [
+										550,
+										100
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"particles": {
+			"pos": [
+				350,
+				-250
+			],
+			"nodes": {
+				"sphere1": {
+					"pos": [
+						150,
+						-100
+					]
+				},
+				"scatter1": {
+					"pos": [
+						150,
+						50
+					]
+				},
+				"particlesSystemGpu1": {
+					"pos": [
+						200,
+						550
+					],
+					"nodes": {
+						"globals1": {
+							"pos": [
+								-1050,
+								0
+							]
+						},
+						"output1": {
+							"pos": [
+								700,
+								0
+							]
+						},
+						"add1": {
+							"pos": [
+								400,
+								-150
+							]
+						},
+						"attribute1": {
+							"pos": [
+								-600,
+								-200
+							]
+						},
+						"attribute2": {
+							"pos": [
+								650,
+								-150
+							]
+						},
+						"compare1": {
+							"pos": [
+								-850,
+								250
+							]
+						},
+						"twoWaySwitch1": {
+							"pos": [
+								-750,
+								250
+							]
+						},
+						"acceleration1": {
+							"pos": [
+								350,
+								50
+							]
+						},
+						"multScalar1": {
+							"pos": [
+								-350,
+								250
+							]
+						},
+						"multScalar2": {
+							"pos": [
+								-300,
+								0
+							]
+						},
+						"attribute3": {
+							"pos": [
+								-500,
+								550
+							]
+						},
+						"subtract1": {
+							"pos": [
+								-350,
+								550
+							]
+						},
+						"add2": {
+							"pos": [
+								50,
+								350
+							]
+						},
+						"subnet1": {
+							"pos": [
+								-850,
+								450
+							],
+							"nodes": {
+								"attribute4": {
+									"pos": [
+										-1700,
+										750
+									]
+								},
+								"compare2": {
+									"pos": [
+										-1050,
+										550
+									]
+								},
+								"floatToVec2_1": {
+									"pos": [
+										-1500,
+										600
+									]
+								},
+								"texture1": {
+									"pos": [
+										-1350,
+										600
+									]
+								},
+								"twoWaySwitch2": {
+									"pos": [
+										-950,
+										700
+									]
+								},
+								"vec4ToFloat1": {
+									"pos": [
+										-1250,
+										600
+									]
+								},
+								"attribute5": {
+									"pos": [
+										-2200,
+										600
+									]
+								},
+								"vec2ToFloat1": {
+									"pos": [
+										-2050,
+										600
+									]
+								},
+								"length1": {
+									"pos": [
+										-1450,
+										450
+									]
+								},
+								"noise1": {
+									"pos": [
+										-1850,
+										300
+									]
+								},
+								"attribute6": {
+									"pos": [
+										-2050,
+										300
+									]
+								},
+								"add3": {
+									"pos": [
+										-1700,
+										450
+									]
+								},
+								"mult1": {
+									"pos": [
+										-700,
+										650
+									]
+								},
+								"mult2": {
+									"pos": [
+										-850,
+										400
+									]
+								},
+								"subnetOutput1": {
+									"pos": [
+										-700,
+										400
+									]
+								},
+								"fit1": {
+									"pos": [
+										-1900,
+										600
+									]
+								}
+							}
+						},
+						"noise1": {
+							"pos": [
+								-350,
+								750
+							]
+						},
+						"floatToVec3_1": {
+							"pos": [
+								-650,
+								750
+							]
+						}
+					}
+				},
+				"MAT": {
+					"pos": [
+						0,
+						550
+					],
+					"nodes": {
+						"pointsParticles": {
+							"pos": [
+								0,
+								50
+							],
+							"nodes": {
+								"output1": {
+									"pos": [
+										200,
+										0
+									]
+								},
+								"globals1": {
+									"pos": [
+										-450,
+										50
+									]
+								},
+								"constant_point_size": {
+									"pos": [
+										-250,
+										50
+									]
+								}
+							}
+						},
+						"meshLambertBuilder_INSTANCES": {
+							"pos": [
+								0,
+								200
+							],
+							"nodes": {
+								"instanceTransform1": {
+									"pos": [
+										0,
+										0
+									]
+								},
+								"output1": {
+									"pos": [
+										200,
+										0
+									]
+								},
+								"globals1": {
+									"pos": [
+										-200,
+										0
+									]
+								}
+							}
+						},
+						"meshBasicBuilder_PARTICLES": {
+							"pos": [
+								0,
+								450
+							],
+							"nodes": {
+								"globals1": {
+									"pos": [
+										-1100,
+										400
+									]
+								},
+								"instanceTransform1": {
+									"pos": [
+										50,
+										200
+									]
+								},
+								"output1": {
+									"pos": [
+										300,
+										300
+									]
+								},
+								"attribute1": {
+									"pos": [
+										-350,
+										0
+									]
+								},
+								"random1": {
+									"pos": [
+										-100,
+										0
+									]
+								},
+								"floatToVec2_1": {
+									"pos": [
+										-200,
+										0
+									]
+								},
+								"hsvToRgb1": {
+									"pos": [
+										100,
+										0
+									]
+								},
+								"floatToVec3_1": {
+									"pos": [
+										0,
+										0
+									]
+								},
+								"varyingWrite1": {
+									"pos": [
+										250,
+										0
+									]
+								},
+								"varyingRead1": {
+									"pos": [
+										-600,
+										900
+									]
+								},
+								"attribute2": {
+									"pos": [
+										-800,
+										1150
+									]
+								},
+								"constant1": {
+									"pos": [
+										-600,
+										750
+									]
+								},
+								"length1": {
+									"pos": [
+										-700,
+										1150
+									]
+								},
+								"fit1": {
+									"pos": [
+										-450,
+										1150
+									]
+								},
+								"mix1": {
+									"pos": [
+										-200,
+										850
+									]
+								},
+								"attribute3": {
+									"pos": [
+										-950,
+										400
+									]
+								},
+								"constant2": {
+									"pos": [
+										-250,
+										250
+									]
+								},
+								"length2": {
+									"pos": [
+										-550,
+										400
+									]
+								},
+								"multAdd1": {
+									"pos": [
+										-400,
+										400
+									]
+								},
+								"floatToVec3_2": {
+									"pos": [
+										-200,
+										350
+									]
+								},
+								"align1": {
+									"pos": [
+										-450,
+										200
+									]
+								},
+								"smoothstep1": {
+									"pos": [
+										-450,
+										1050
+									]
+								}
+							}
+						}
+					}
+				},
+				"sphere2": {
+					"pos": [
+						-50,
+						100
+					]
+				},
+				"instance1": {
+					"pos": [
+						200,
+						400
+					]
+				},
+				"icosahedron1": {
+					"pos": [
+						350,
+						-900
+					]
+				},
+				"restAttributes1": {
+					"pos": [
+						350,
+						-700
+					]
+				},
+				"attribCreate1": {
+					"pos": [
+						350,
+						-800
+					]
+				},
+				"delete1": {
+					"pos": [
+						350,
+						-400
+					]
+				},
+				"fuse1": {
+					"pos": [
+						350,
+						-200
+					]
+				},
+				"jitter1": {
+					"pos": [
+						350,
+						-50
+					]
+				},
+				"attribCreate2": {
+					"pos": [
+						350,
+						100
+					]
+				}
+			}
+		},
+		"blackSphere": {
+			"pos": [
+				350,
+				-150
+			],
+			"nodes": {
+				"sphere1": {
+					"pos": [
+						150,
+						-50
+					]
+				},
+				"material1": {
+					"pos": [
+						150,
+						100
+					]
+				},
+				"materialsNetwork1": {
+					"pos": [
+						-150,
+						100
+					],
+					"nodes": {
+						"meshBasic1": {
+							"pos": [
+								-50,
+								0
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

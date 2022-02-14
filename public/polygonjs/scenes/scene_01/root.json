@@ -1,0 +1,69 @@
+{
+	"type": "root",
+	"nodes": {
+		"spotLight1": {
+			"type": "spotLight",
+			"params": {
+				"castShadow": 1
+			},
+			"inputs": [
+				"polarTransform1"
+			],
+			"flags": {
+				"display": false
+			}
+		},
+		"audioListener1": {
+			"type": "audioListener",
+			"inputs": [
+				"perspectiveCamera1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"areaLight1": {
+			"type": "areaLight",
+			"params": {
+				"t": [
+					0,
+					1.4823705282545054,
+					5.950809644780402
+				],
+				"width": 5.7,
+				"height": 2.3,
+				"showHelper": true
+			},
+			"flags": {
+				"display": false
+			}
+		},
+		"polarTransform1": {
+			"type": "polarTransform",
+			"params": {
+				"latitude": 25.2,
+				"depth": 7.1
+			},
+			"flags": {
+				"display": false
+			}
+		},
+		"hemisphereLight1": {
+			"type": "hemisphereLight",
+			"params": {
+				"intensity": 0.2
+			},
+			"flags": {
+				"display": false
+			}
+		}
+	},
+	"params": {
+		"displayAudioIcon": 1,
+		"audioIconColor": [
+			1,
+			1,
+			1
+		]
+	}
+}

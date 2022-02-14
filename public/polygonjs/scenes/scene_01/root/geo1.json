@@ -1,0 +1,36 @@
+{
+	"type": "geo",
+	"nodes": {
+		"box1": {
+			"type": "box"
+		},
+		"sphere1": {
+			"type": "sphere"
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../materialsNetwork1/meshPhysical1"
+			},
+			"inputs": [
+				"sphere1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"params": {
+		"t": [
+			-2.302414086882751,
+			0,
+			0
+		]
+	},
+	"flags": {
+		"display": false
+	},
+	"selection": [
+		"material1"
+	]
+}

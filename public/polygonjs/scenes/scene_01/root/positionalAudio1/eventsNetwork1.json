@@ -1,0 +1,25 @@
+{
+	"type": "eventsNetwork",
+	"nodes": {
+		"scene1": {
+			"type": "scene"
+		},
+		"setParam1": {
+			"type": "setParam",
+			"params": {
+				"param": "../../file1/play",
+				"type": 1
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "scene1",
+					"output": "play"
+				}
+			]
+		}
+	},
+	"selection": [
+		"setParam1"
+	]
+}

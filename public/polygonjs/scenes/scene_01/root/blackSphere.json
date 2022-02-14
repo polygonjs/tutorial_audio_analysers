@@ -1,0 +1,32 @@
+{
+	"type": "geo",
+	"nodes": {
+		"sphere1": {
+			"type": "sphere",
+			"params": {
+				"radius": 0.83
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../materialsNetwork1/meshBasic1"
+			},
+			"inputs": [
+				"sphere1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"inputs": [
+		"particles"
+	],
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"sphere1"
+	]
+}

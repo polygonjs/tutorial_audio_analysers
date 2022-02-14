@@ -1,0 +1,972 @@
+{
+	"type": "particlesSystemGpu",
+	"nodes": {
+		"globals1": {
+			"type": "globals"
+		},
+		"output1": {
+			"type": "output",
+			"inputs": [
+				null,
+				{
+					"index": 1,
+					"node": "acceleration1",
+					"output": "velocity"
+				}
+			]
+		},
+		"add1": {
+			"type": "add",
+			"params": {
+				"add0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": [
+						0,
+						0.2,
+						0
+					]
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "add0",
+						"type": "vec3"
+					},
+					{
+						"name": "add1",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "sum",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"attribute1": {
+			"type": "attribute",
+			"params": {
+				"name": "instancePosition",
+				"type": 2,
+				"texportWhenConnected": 1,
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"attribute2": {
+			"type": "attribute",
+			"params": {
+				"name": "instancePosition",
+				"type": 2,
+				"texportWhenConnected": 1,
+				"exportWhenConnected": 1,
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "acceleration1",
+					"output": "position"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"compare1": {
+			"type": "compare",
+			"params": {
+				"value0": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"value1": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.11
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "time"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value0",
+						"type": "float"
+					},
+					{
+						"name": "value1",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "bool"
+					}
+				]
+			}
+		},
+		"twoWaySwitch1": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"ifTrue": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 5
+				},
+				"ifFalse": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "compare1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "bool"
+					},
+					{
+						"name": "ifTrue",
+						"type": "float"
+					},
+					{
+						"name": "ifFalse",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"acceleration1": {
+			"type": "acceleration",
+			"params": {
+				"position": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"velocity": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"mass": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"force": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						-9.8,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute1",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "multScalar2",
+					"output": "val"
+				},
+				null,
+				{
+					"index": 3,
+					"node": "add2",
+					"output": "sum"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "position",
+						"type": "vec3"
+					},
+					{
+						"name": "velocity",
+						"type": "vec3"
+					},
+					{
+						"name": "mass",
+						"type": "float"
+					},
+					{
+						"name": "force",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "position",
+						"type": "vec3"
+					},
+					{
+						"name": "velocity",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"multScalar1": {
+			"type": "multScalar",
+			"params": {
+				"value": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						1,
+						1
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute1",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "subnet1",
+					"output": "input0"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "vec3"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"multScalar2": {
+			"type": "multScalar",
+			"params": {
+				"value": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						1,
+						1
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.98
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "velocity"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "vec3"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"attribute3": {
+			"type": "attribute",
+			"params": {
+				"name": "restP",
+				"type": 2,
+				"texportWhenConnected": 1,
+				"in": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 1,
+			"connection_points": {
+				"in": [
+					{
+						"name": "in",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"subtract1": {
+			"type": "subtract",
+			"params": {
+				"sub0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"sub1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"sub2": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 3,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute3",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "attribute1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "sub0",
+						"type": "vec3"
+					},
+					{
+						"name": "sub1",
+						"type": "vec3"
+					},
+					{
+						"name": "sub2",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "subtract",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"add2": {
+			"type": "add",
+			"params": {
+				"add0": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add2": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"add3": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "multScalar1",
+					"output": "val"
+				},
+				{
+					"index": 1,
+					"node": "subtract1",
+					"output": "subtract"
+				},
+				{
+					"index": 2,
+					"node": "noise1",
+					"output": "noise"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "add0",
+						"type": "vec3"
+					},
+					{
+						"name": "add1",
+						"type": "vec3"
+					},
+					{
+						"name": "add2",
+						"type": "vec3"
+					},
+					{
+						"name": "add3",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "sum",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"noise1": {
+			"type": "noise",
+			"params": {
+				"amp": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						1,
+						1
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"position": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {
+						"spare": "true",
+						"editable": "false"
+					}
+				},
+				"freq": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						1,
+						1
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"offset": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				},
+				{
+					"index": 1,
+					"node": "attribute1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "amp",
+						"type": "vec3"
+					},
+					{
+						"name": "position",
+						"type": "vec3"
+					},
+					{
+						"name": "freq",
+						"type": "vec3"
+					},
+					{
+						"name": "offset",
+						"type": "vec3"
+					}
+				],
+				"out": [
+					{
+						"name": "noise",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				},
+				"y": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				},
+				"z": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "subnet1",
+					"output": "input0"
+				},
+				{
+					"index": 1,
+					"node": "subnet1",
+					"output": "input0"
+				},
+				{
+					"index": 2,
+					"node": "subnet1",
+					"output": "input0"
+				}
+			]
+		}
+	},
+	"params": {
+		"material": "../MAT/meshBasicBuilder_PARTICLES",
+		"texture1": {
+			"type": "node_path",
+			"default_value": "",
+			"options": {
+				"spare": true,
+				"computeOnDirty": true,
+				"cook": false,
+				"dependentOnFoundNode": true,
+				"nodeSelection": {
+					"context": "cop"
+				}
+			},
+			"raw_input": "../../positionalAudio1/COP/audioAnalyser1",
+			"overriden_options": {
+				"spare": "true",
+				"computeOnDirty": "true",
+				"cook": "false",
+				"dependentOnFoundNode": "true",
+				"callback": "{}",
+				"nodeSelection": "{\"context\":\"cop\"}"
+			}
+		}
+	},
+	"inputs": [
+		"instance1"
+	],
+	"flags": {
+		"display": true
+	},
+	"persisted_config": {
+		"shaders_by_name": {
+			"instancePosition": "#include <common>\n\n// removed:\n//// INSERT DEFINE\n\n\n\n// /particles/particlesSystemGpu1/subnet1/noise1\n// Modulo 289 without a division (only multiplications)\nfloat mod289(float x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec2 mod289(vec2 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec3 mod289(vec3 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 mod289(vec4 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n// Modulo 7 without a division\nvec3 mod7(vec3 x) {\n  return x - floor(x * (1.0 / 7.0)) * 7.0;\n}\n\n// Permutation polynomial: (34x^2 + x) mod 289\nfloat permute(float x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\nvec3 permute(vec3 x) {\n  return mod289((34.0 * x + 1.0) * x);\n}\nvec4 permute(vec4 x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\n\nfloat taylorInvSqrt(float r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\nvec4 taylorInvSqrt(vec4 r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\n\nvec2 fade(vec2 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\nvec3 fade(vec3 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\nvec4 fade(vec4 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\n//\n// Description : Array and textureless GLSL 2D/3D/4D simplex \n//               noise functions.\n//      Author : Ian McEwan, Ashima Arts.\n//  Maintainer : stegu\n//     Lastmod : 20110822 (ijm)\n//     License : Copyright (C) 2011 Ashima Arts. All rights reserved.\n//               Distributed under the MIT License. See LICENSE file.\n//               https://github.com/ashima/webgl-noise\n//               https://github.com/stegu/webgl-noise\n// \n\n\n\nfloat snoise(vec3 v)\n  { \n  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;\n  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);\n\n// First corner\n  vec3 i  = floor(v + dot(v, C.yyy) );\n  vec3 x0 =   v - i + dot(i, C.xxx) ;\n\n// Other corners\n  vec3 g = step(x0.yzx, x0.xyz);\n  vec3 l = 1.0 - g;\n  vec3 i1 = min( g.xyz, l.zxy );\n  vec3 i2 = max( g.xyz, l.zxy );\n\n  //   x0 = x0 - 0.0 + 0.0 * C.xxx;\n  //   x1 = x0 - i1  + 1.0 * C.xxx;\n  //   x2 = x0 - i2  + 2.0 * C.xxx;\n  //   x3 = x0 - 1.0 + 3.0 * C.xxx;\n  vec3 x1 = x0 - i1 + C.xxx;\n  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y\n  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y\n\n// Permutations\n  i = mod289(i); \n  vec4 p = permute( permute( permute( \n             i.z + vec4(0.0, i1.z, i2.z, 1.0 ))\n           + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) \n           + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));\n\n// Gradients: 7x7 points over a square, mapped onto an octahedron.\n// The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)\n  float n_ = 0.142857142857; // 1.0/7.0\n  vec3  ns = n_ * D.wyz - D.xzx;\n\n  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)\n\n  vec4 x_ = floor(j * ns.z);\n  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)\n\n  vec4 x = x_ *ns.x + ns.yyyy;\n  vec4 y = y_ *ns.x + ns.yyyy;\n  vec4 h = 1.0 - abs(x) - abs(y);\n\n  vec4 b0 = vec4( x.xy, y.xy );\n  vec4 b1 = vec4( x.zw, y.zw );\n\n  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;\n  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;\n  vec4 s0 = floor(b0)*2.0 + 1.0;\n  vec4 s1 = floor(b1)*2.0 + 1.0;\n  vec4 sh = -step(h, vec4(0.0));\n\n  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;\n  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;\n\n  vec3 p0 = vec3(a0.xy,h.x);\n  vec3 p1 = vec3(a0.zw,h.y);\n  vec3 p2 = vec3(a1.xy,h.z);\n  vec3 p3 = vec3(a1.zw,h.w);\n\n//Normalise gradients\n  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));\n  p0 *= norm.x;\n  p1 *= norm.y;\n  p2 *= norm.z;\n  p3 *= norm.w;\n\n// Mix final noise value\n  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n  m = m * m;\n  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1), \n                                dot(p2,x2), dot(p3,x3) ) );\n  }\n\n\nfloat fbm_snoise_noise1 (in vec3 st) {\n\tfloat value = 0.0;\n\tfloat amplitude = 1.0;\n\tfor (int i = 0; i < 3; i++) {\n\t\tvalue += amplitude * snoise(st);\n\t\tst *= 2.0;\n\t\tamplitude *= 0.5;\n\t}\n\treturn value;\n}\n\n\n// /particles/particlesSystemGpu1/subnet1/fit1\n//\n//\n// FIT\n//\n//\nfloat fit(float val, float srcMin, float srcMax, float destMin, float destMax){\n\tfloat src_range = srcMax - srcMin;\n\tfloat dest_range = destMax - destMin;\n\n\tfloat r = (val - srcMin) / src_range;\n\treturn (r * dest_range) + destMin;\n}\nvec2 fit(vec2 val, vec2 srcMin, vec2 srcMax, vec2 destMin, vec2 destMax){\n\treturn vec2(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y)\n\t);\n}\nvec3 fit(vec3 val, vec3 srcMin, vec3 srcMax, vec3 destMin, vec3 destMax){\n\treturn vec3(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y),\n\t\tfit(val.z, srcMin.z, srcMax.z, destMin.z, destMax.z)\n\t);\n}\nvec4 fit(vec4 val, vec4 srcMin, vec4 srcMax, vec4 destMin, vec4 destMax){\n\treturn vec4(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y),\n\t\tfit(val.z, srcMin.z, srcMax.z, destMin.z, destMax.z),\n\t\tfit(val.w, srcMin.w, srcMax.w, destMin.w, destMax.w)\n\t);\n}\n\n//\n//\n// FIT TO 01\n// fits the range [srcMin, srcMax] to [0, 1]\n//\nfloat fitTo01(float val, float srcMin, float srcMax){\n\tfloat size = srcMax - srcMin;\n\treturn (val - srcMin) / size;\n}\nvec2 fitTo01(vec2 val, vec2 srcMin, vec2 srcMax){\n\treturn vec2(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y)\n\t);\n}\nvec3 fitTo01(vec3 val, vec3 srcMin, vec3 srcMax){\n\treturn vec3(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y),\n\t\tfitTo01(val.z, srcMin.z, srcMax.z)\n\t);\n}\nvec4 fitTo01(vec4 val, vec4 srcMin, vec4 srcMax){\n\treturn vec4(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y),\n\t\tfitTo01(val.z, srcMin.z, srcMax.z),\n\t\tfitTo01(val.w, srcMin.w, srcMax.w)\n\t);\n}\n\n//\n//\n// FIT FROM 01\n// fits the range [0, 1] to [destMin, destMax]\n//\nfloat fitFrom01(float val, float destMin, float destMax){\n\treturn fit(val, 0.0, 1.0, destMin, destMax);\n}\nvec2 fitFrom01(vec2 val, vec2 srcMin, vec2 srcMax){\n\treturn vec2(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y)\n\t);\n}\nvec3 fitFrom01(vec3 val, vec3 srcMin, vec3 srcMax){\n\treturn vec3(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y),\n\t\tfitFrom01(val.z, srcMin.z, srcMax.z)\n\t);\n}\nvec4 fitFrom01(vec4 val, vec4 srcMin, vec4 srcMax){\n\treturn vec4(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y),\n\t\tfitFrom01(val.z, srcMin.z, srcMax.z),\n\t\tfitFrom01(val.w, srcMin.w, srcMax.w)\n\t);\n}\n\n//\n//\n// FIT FROM 01 TO VARIANCE\n// fits the range [0, 1] to [center - variance, center + variance]\n//\nfloat fitFrom01ToVariance(float val, float center, float variance){\n\treturn fitFrom01(val, center - variance, center + variance);\n}\nvec2 fitFrom01ToVariance(vec2 val, vec2 center, vec2 variance){\n\treturn vec2(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y)\n\t);\n}\nvec3 fitFrom01ToVariance(vec3 val, vec3 center, vec3 variance){\n\treturn vec3(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y),\n\t\tfitFrom01ToVariance(val.z, center.z, variance.z)\n\t);\n}\nvec4 fitFrom01ToVariance(vec4 val, vec4 center, vec4 variance){\n\treturn vec4(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y),\n\t\tfitFrom01ToVariance(val.z, center.z, variance.z),\n\t\tfitFrom01ToVariance(val.w, center.w, variance.w)\n\t);\n}\n\n// /particles/particlesSystemGpu1/acceleration1\nfloat velFromAccel(float vel, float force, float mass, float time_delta){\n\tfloat impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec2 velFromAccel(vec2 vel, vec2 force, float mass, float time_delta){\n\tvec2 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec3 velFromAccel(vec3 vel, vec3 force, float mass, float time_delta){\n\tvec3 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec4 velFromAccel(vec4 vel, vec4 force, float mass, float time_delta){\n\tvec4 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nfloat posFromVel(float position, float velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec2 posFromVel(vec2 position, vec2 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec3 posFromVel(vec3 position, vec3 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec4 posFromVel(vec4 position, vec4 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\n\n\n\n\n\n\n\n// /particles/particlesSystemGpu1/attribute1\nuniform sampler2D texture_instancePosition;\n\n// /particles/particlesSystemGpu1/globals1\nuniform float time;\nuniform sampler2D texture_velocity;\n\n// /particles/particlesSystemGpu1/subnet1/attribute5\nuniform sampler2D texture_instanceUv;\n\n// /particles/particlesSystemGpu1/subnet1/texture1\nuniform sampler2D v_POLY_texture_texture1;\n\n// /particles/particlesSystemGpu1/attribute3\nuniform sampler2D texture_restP;\n\n// /particles/particlesSystemGpu1/acceleration1\nuniform float delta_time;\n\n\n\n\n\nvoid main() {\n\n\tvec2 particleUV = (gl_FragCoord.xy / resolution.xy);\n\n// removed:\n//\t// INSERT BODY\n\n\n\n\t// /particles/particlesSystemGpu1/attribute1\n\tvec3 v_POLY_attribute1_val = texture2D( texture_instancePosition, particleUV ).xyz;\n\tgl_FragColor.xyz = v_POLY_attribute1_val;\n\t\n\t// /particles/particlesSystemGpu1/globals1\n\tfloat v_POLY_globals1_time = time;\n\tvec3 v_POLY_globals1_velocity = texture2D( texture_velocity, particleUV ).xyz;\n\t\n\t// /particles/particlesSystemGpu1/subnet1\n\tfloat v_POLY_subnet1_input0 = 0.0;\n\tif(true){\n\t\t// /particles/particlesSystemGpu1/subnet1/attribute6\n\t\tvec3 v_POLY_subnet1_attribute6_val = texture2D( texture_instancePosition, particleUV ).xyz;\n\t\tgl_FragColor.xyz = v_POLY_subnet1_attribute6_val;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/attribute5\n\t\tvec2 v_POLY_subnet1_attribute5_val = texture2D( texture_instanceUv, particleUV ).xy;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/noise1\n\t\tfloat v_POLY_subnet1_noise1_noise = 0.1*fbm_snoise_noise1((v_POLY_subnet1_attribute6_val*vec3(1.0, 1.0, 1.0))+vec3(0.0, 0.0, 0.0));\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/vec2ToFloat1\n\t\tfloat v_POLY_subnet1_vec2ToFloat1_y = v_POLY_subnet1_attribute5_val.y;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/fit1\n\t\tfloat v_POLY_subnet1_fit1_val = fit(v_POLY_subnet1_vec2ToFloat1_y, 0.0, 1.0, 0.0, 0.84);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/add3\n\t\tfloat v_POLY_subnet1_add3_sum = (v_POLY_subnet1_noise1_noise + v_POLY_subnet1_fit1_val + 0.0);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/floatToVec2_1\n\t\tvec2 v_POLY_subnet1_floatToVec2_1_vec2 = vec2(v_POLY_subnet1_add3_sum, 0.76);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/texture1\n\t\tvec4 v_POLY_subnet1_texture1_rgba = texture2D(v_POLY_texture_texture1, v_POLY_subnet1_floatToVec2_1_vec2);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/vec4ToFloat1\n\t\tfloat v_POLY_subnet1_vec4ToFloat1_x = v_POLY_subnet1_texture1_rgba.x;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/compare2\n\t\tbool v_POLY_subnet1_compare2_val = (v_POLY_subnet1_vec4ToFloat1_x > 0.01);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/twoWaySwitch2\n\t\tfloat v_POLY_subnet1_twoWaySwitch2_val;\n\t\tif(v_POLY_subnet1_compare2_val){\n\t\tv_POLY_subnet1_twoWaySwitch2_val = v_POLY_subnet1_vec4ToFloat1_x;\n\t\t} else {\n\t\tv_POLY_subnet1_twoWaySwitch2_val = 0.0;\n\t\t}\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/mult2\n\t\tfloat v_POLY_subnet1_mult2_product = (v_POLY_subnet1_twoWaySwitch2_val * 200.0);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/subnetOutput1\n\t\tv_POLY_subnet1_input0 = v_POLY_subnet1_mult2_product;\n\t}\n\t\n\t// /particles/particlesSystemGpu1/attribute3\n\tvec3 v_POLY_attribute3_val = texture2D( texture_restP, particleUV ).xyz;\n\t\n\t// /particles/particlesSystemGpu1/multScalar1\n\tvec3 v_POLY_multScalar1_val = (v_POLY_subnet1_input0*v_POLY_attribute1_val);\n\t\n\t// /particles/particlesSystemGpu1/subtract1\n\tvec3 v_POLY_subtract1_subtract = (v_POLY_attribute3_val - v_POLY_attribute1_val - vec3(0.0, 0.0, 0.0));\n\t\n\t// /particles/particlesSystemGpu1/multScalar2\n\tvec3 v_POLY_multScalar2_val = (0.98*v_POLY_globals1_velocity);\n\t\n\t// /particles/particlesSystemGpu1/floatToVec3_1\n\tvec3 v_POLY_floatToVec3_1_vec3 = vec3(v_POLY_subnet1_input0, v_POLY_subnet1_input0, v_POLY_subnet1_input0);\n\t\n\t// /particles/particlesSystemGpu1/noise1\n\tfloat v_POLY_noise1_noisex = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(0.0, 0.0, 0.0)))).x;\n\tfloat v_POLY_noise1_noisey = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(1000.0, 1000.0, 1000.0)))).y;\n\tfloat v_POLY_noise1_noisez = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(2000.0, 2000.0, 2000.0)))).z;\n\tvec3 v_POLY_noise1_noise = vec3(v_POLY_noise1_noisex, v_POLY_noise1_noisey, v_POLY_noise1_noisez);\n\t\n\t// /particles/particlesSystemGpu1/add2\n\tvec3 v_POLY_add2_sum = (v_POLY_multScalar1_val + v_POLY_subtract1_subtract + v_POLY_noise1_noise + vec3(0.0, 0.0, 0.0));\n\t\n\t// /particles/particlesSystemGpu1/acceleration1\n\tvec3 v_POLY_acceleration1_velocity = velFromAccel(v_POLY_multScalar2_val, v_POLY_add2_sum, 1.0, delta_time);\n\tvec3 v_POLY_acceleration1_position = posFromVel(v_POLY_attribute1_val, v_POLY_acceleration1_velocity, delta_time);\n\t\n\t// /particles/particlesSystemGpu1/attribute2\n\tgl_FragColor.xyz = v_POLY_acceleration1_position;\n\n\n\n\n}",
+			"velocity": "#include <common>\n\n// removed:\n//// INSERT DEFINE\n\n\n\n// /particles/particlesSystemGpu1/subnet1/noise1\n// Modulo 289 without a division (only multiplications)\nfloat mod289(float x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec2 mod289(vec2 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec3 mod289(vec3 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 mod289(vec4 x) {\n  return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\n// Modulo 7 without a division\nvec3 mod7(vec3 x) {\n  return x - floor(x * (1.0 / 7.0)) * 7.0;\n}\n\n// Permutation polynomial: (34x^2 + x) mod 289\nfloat permute(float x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\nvec3 permute(vec3 x) {\n  return mod289((34.0 * x + 1.0) * x);\n}\nvec4 permute(vec4 x) {\n     return mod289(((x*34.0)+1.0)*x);\n}\n\nfloat taylorInvSqrt(float r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\nvec4 taylorInvSqrt(vec4 r)\n{\n  return 1.79284291400159 - 0.85373472095314 * r;\n}\n\nvec2 fade(vec2 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\nvec3 fade(vec3 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\nvec4 fade(vec4 t) {\n  return t*t*t*(t*(t*6.0-15.0)+10.0);\n}\n//\n// Description : Array and textureless GLSL 2D/3D/4D simplex \n//               noise functions.\n//      Author : Ian McEwan, Ashima Arts.\n//  Maintainer : stegu\n//     Lastmod : 20110822 (ijm)\n//     License : Copyright (C) 2011 Ashima Arts. All rights reserved.\n//               Distributed under the MIT License. See LICENSE file.\n//               https://github.com/ashima/webgl-noise\n//               https://github.com/stegu/webgl-noise\n// \n\n\n\nfloat snoise(vec3 v)\n  { \n  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;\n  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);\n\n// First corner\n  vec3 i  = floor(v + dot(v, C.yyy) );\n  vec3 x0 =   v - i + dot(i, C.xxx) ;\n\n// Other corners\n  vec3 g = step(x0.yzx, x0.xyz);\n  vec3 l = 1.0 - g;\n  vec3 i1 = min( g.xyz, l.zxy );\n  vec3 i2 = max( g.xyz, l.zxy );\n\n  //   x0 = x0 - 0.0 + 0.0 * C.xxx;\n  //   x1 = x0 - i1  + 1.0 * C.xxx;\n  //   x2 = x0 - i2  + 2.0 * C.xxx;\n  //   x3 = x0 - 1.0 + 3.0 * C.xxx;\n  vec3 x1 = x0 - i1 + C.xxx;\n  vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y\n  vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y\n\n// Permutations\n  i = mod289(i); \n  vec4 p = permute( permute( permute( \n             i.z + vec4(0.0, i1.z, i2.z, 1.0 ))\n           + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) \n           + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));\n\n// Gradients: 7x7 points over a square, mapped onto an octahedron.\n// The ring size 17*17 = 289 is close to a multiple of 49 (49*6 = 294)\n  float n_ = 0.142857142857; // 1.0/7.0\n  vec3  ns = n_ * D.wyz - D.xzx;\n\n  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)\n\n  vec4 x_ = floor(j * ns.z);\n  vec4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)\n\n  vec4 x = x_ *ns.x + ns.yyyy;\n  vec4 y = y_ *ns.x + ns.yyyy;\n  vec4 h = 1.0 - abs(x) - abs(y);\n\n  vec4 b0 = vec4( x.xy, y.xy );\n  vec4 b1 = vec4( x.zw, y.zw );\n\n  //vec4 s0 = vec4(lessThan(b0,0.0))*2.0 - 1.0;\n  //vec4 s1 = vec4(lessThan(b1,0.0))*2.0 - 1.0;\n  vec4 s0 = floor(b0)*2.0 + 1.0;\n  vec4 s1 = floor(b1)*2.0 + 1.0;\n  vec4 sh = -step(h, vec4(0.0));\n\n  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy ;\n  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww ;\n\n  vec3 p0 = vec3(a0.xy,h.x);\n  vec3 p1 = vec3(a0.zw,h.y);\n  vec3 p2 = vec3(a1.xy,h.z);\n  vec3 p3 = vec3(a1.zw,h.w);\n\n//Normalise gradients\n  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));\n  p0 *= norm.x;\n  p1 *= norm.y;\n  p2 *= norm.z;\n  p3 *= norm.w;\n\n// Mix final noise value\n  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n  m = m * m;\n  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1), \n                                dot(p2,x2), dot(p3,x3) ) );\n  }\n\n\nfloat fbm_snoise_noise1 (in vec3 st) {\n\tfloat value = 0.0;\n\tfloat amplitude = 1.0;\n\tfor (int i = 0; i < 3; i++) {\n\t\tvalue += amplitude * snoise(st);\n\t\tst *= 2.0;\n\t\tamplitude *= 0.5;\n\t}\n\treturn value;\n}\n\n\n// /particles/particlesSystemGpu1/subnet1/fit1\n//\n//\n// FIT\n//\n//\nfloat fit(float val, float srcMin, float srcMax, float destMin, float destMax){\n\tfloat src_range = srcMax - srcMin;\n\tfloat dest_range = destMax - destMin;\n\n\tfloat r = (val - srcMin) / src_range;\n\treturn (r * dest_range) + destMin;\n}\nvec2 fit(vec2 val, vec2 srcMin, vec2 srcMax, vec2 destMin, vec2 destMax){\n\treturn vec2(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y)\n\t);\n}\nvec3 fit(vec3 val, vec3 srcMin, vec3 srcMax, vec3 destMin, vec3 destMax){\n\treturn vec3(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y),\n\t\tfit(val.z, srcMin.z, srcMax.z, destMin.z, destMax.z)\n\t);\n}\nvec4 fit(vec4 val, vec4 srcMin, vec4 srcMax, vec4 destMin, vec4 destMax){\n\treturn vec4(\n\t\tfit(val.x, srcMin.x, srcMax.x, destMin.x, destMax.x),\n\t\tfit(val.y, srcMin.y, srcMax.y, destMin.y, destMax.y),\n\t\tfit(val.z, srcMin.z, srcMax.z, destMin.z, destMax.z),\n\t\tfit(val.w, srcMin.w, srcMax.w, destMin.w, destMax.w)\n\t);\n}\n\n//\n//\n// FIT TO 01\n// fits the range [srcMin, srcMax] to [0, 1]\n//\nfloat fitTo01(float val, float srcMin, float srcMax){\n\tfloat size = srcMax - srcMin;\n\treturn (val - srcMin) / size;\n}\nvec2 fitTo01(vec2 val, vec2 srcMin, vec2 srcMax){\n\treturn vec2(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y)\n\t);\n}\nvec3 fitTo01(vec3 val, vec3 srcMin, vec3 srcMax){\n\treturn vec3(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y),\n\t\tfitTo01(val.z, srcMin.z, srcMax.z)\n\t);\n}\nvec4 fitTo01(vec4 val, vec4 srcMin, vec4 srcMax){\n\treturn vec4(\n\t\tfitTo01(val.x, srcMin.x, srcMax.x),\n\t\tfitTo01(val.y, srcMin.y, srcMax.y),\n\t\tfitTo01(val.z, srcMin.z, srcMax.z),\n\t\tfitTo01(val.w, srcMin.w, srcMax.w)\n\t);\n}\n\n//\n//\n// FIT FROM 01\n// fits the range [0, 1] to [destMin, destMax]\n//\nfloat fitFrom01(float val, float destMin, float destMax){\n\treturn fit(val, 0.0, 1.0, destMin, destMax);\n}\nvec2 fitFrom01(vec2 val, vec2 srcMin, vec2 srcMax){\n\treturn vec2(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y)\n\t);\n}\nvec3 fitFrom01(vec3 val, vec3 srcMin, vec3 srcMax){\n\treturn vec3(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y),\n\t\tfitFrom01(val.z, srcMin.z, srcMax.z)\n\t);\n}\nvec4 fitFrom01(vec4 val, vec4 srcMin, vec4 srcMax){\n\treturn vec4(\n\t\tfitFrom01(val.x, srcMin.x, srcMax.x),\n\t\tfitFrom01(val.y, srcMin.y, srcMax.y),\n\t\tfitFrom01(val.z, srcMin.z, srcMax.z),\n\t\tfitFrom01(val.w, srcMin.w, srcMax.w)\n\t);\n}\n\n//\n//\n// FIT FROM 01 TO VARIANCE\n// fits the range [0, 1] to [center - variance, center + variance]\n//\nfloat fitFrom01ToVariance(float val, float center, float variance){\n\treturn fitFrom01(val, center - variance, center + variance);\n}\nvec2 fitFrom01ToVariance(vec2 val, vec2 center, vec2 variance){\n\treturn vec2(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y)\n\t);\n}\nvec3 fitFrom01ToVariance(vec3 val, vec3 center, vec3 variance){\n\treturn vec3(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y),\n\t\tfitFrom01ToVariance(val.z, center.z, variance.z)\n\t);\n}\nvec4 fitFrom01ToVariance(vec4 val, vec4 center, vec4 variance){\n\treturn vec4(\n\t\tfitFrom01ToVariance(val.x, center.x, variance.x),\n\t\tfitFrom01ToVariance(val.y, center.y, variance.y),\n\t\tfitFrom01ToVariance(val.z, center.z, variance.z),\n\t\tfitFrom01ToVariance(val.w, center.w, variance.w)\n\t);\n}\n\n// /particles/particlesSystemGpu1/acceleration1\nfloat velFromAccel(float vel, float force, float mass, float time_delta){\n\tfloat impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec2 velFromAccel(vec2 vel, vec2 force, float mass, float time_delta){\n\tvec2 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec3 velFromAccel(vec3 vel, vec3 force, float mass, float time_delta){\n\tvec3 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nvec4 velFromAccel(vec4 vel, vec4 force, float mass, float time_delta){\n\tvec4 impulse = (time_delta * mass) * force;\n\treturn vel + impulse;\n}\nfloat posFromVel(float position, float velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec2 posFromVel(vec2 position, vec2 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec3 posFromVel(vec3 position, vec3 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\nvec4 posFromVel(vec4 position, vec4 velocity, float time_delta){\n\treturn position + (time_delta * velocity);\n}\n\n\n\n\n\n\n\n// /particles/particlesSystemGpu1/attribute1\nuniform sampler2D texture_instancePosition;\n\n// /particles/particlesSystemGpu1/globals1\nuniform float time;\nuniform sampler2D texture_velocity;\n\n// /particles/particlesSystemGpu1/subnet1/attribute5\nuniform sampler2D texture_instanceUv;\n\n// /particles/particlesSystemGpu1/subnet1/texture1\nuniform sampler2D v_POLY_texture_texture1;\n\n// /particles/particlesSystemGpu1/attribute3\nuniform sampler2D texture_restP;\n\n// /particles/particlesSystemGpu1/acceleration1\nuniform float delta_time;\n\n\n\n\n\nvoid main() {\n\n\tvec2 particleUV = (gl_FragCoord.xy / resolution.xy);\n\n// removed:\n//\t// INSERT BODY\n\n\n\n\t// /particles/particlesSystemGpu1/attribute1\n\tvec3 v_POLY_attribute1_val = texture2D( texture_instancePosition, particleUV ).xyz;\n\t\n\t// /particles/particlesSystemGpu1/globals1\n\tfloat v_POLY_globals1_time = time;\n\tvec3 v_POLY_globals1_velocity = texture2D( texture_velocity, particleUV ).xyz;\n\t\n\t// /particles/particlesSystemGpu1/subnet1\n\tfloat v_POLY_subnet1_input0 = 0.0;\n\tif(true){\n\t\t// /particles/particlesSystemGpu1/subnet1/attribute6\n\t\tvec3 v_POLY_subnet1_attribute6_val = texture2D( texture_instancePosition, particleUV ).xyz;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/attribute5\n\t\tvec2 v_POLY_subnet1_attribute5_val = texture2D( texture_instanceUv, particleUV ).xy;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/noise1\n\t\tfloat v_POLY_subnet1_noise1_noise = 0.1*fbm_snoise_noise1((v_POLY_subnet1_attribute6_val*vec3(1.0, 1.0, 1.0))+vec3(0.0, 0.0, 0.0));\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/vec2ToFloat1\n\t\tfloat v_POLY_subnet1_vec2ToFloat1_y = v_POLY_subnet1_attribute5_val.y;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/fit1\n\t\tfloat v_POLY_subnet1_fit1_val = fit(v_POLY_subnet1_vec2ToFloat1_y, 0.0, 1.0, 0.0, 0.84);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/add3\n\t\tfloat v_POLY_subnet1_add3_sum = (v_POLY_subnet1_noise1_noise + v_POLY_subnet1_fit1_val + 0.0);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/floatToVec2_1\n\t\tvec2 v_POLY_subnet1_floatToVec2_1_vec2 = vec2(v_POLY_subnet1_add3_sum, 0.76);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/texture1\n\t\tvec4 v_POLY_subnet1_texture1_rgba = texture2D(v_POLY_texture_texture1, v_POLY_subnet1_floatToVec2_1_vec2);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/vec4ToFloat1\n\t\tfloat v_POLY_subnet1_vec4ToFloat1_x = v_POLY_subnet1_texture1_rgba.x;\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/compare2\n\t\tbool v_POLY_subnet1_compare2_val = (v_POLY_subnet1_vec4ToFloat1_x > 0.01);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/twoWaySwitch2\n\t\tfloat v_POLY_subnet1_twoWaySwitch2_val;\n\t\tif(v_POLY_subnet1_compare2_val){\n\t\tv_POLY_subnet1_twoWaySwitch2_val = v_POLY_subnet1_vec4ToFloat1_x;\n\t\t} else {\n\t\tv_POLY_subnet1_twoWaySwitch2_val = 0.0;\n\t\t}\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/mult2\n\t\tfloat v_POLY_subnet1_mult2_product = (v_POLY_subnet1_twoWaySwitch2_val * 200.0);\n\t\n\t\t// /particles/particlesSystemGpu1/subnet1/subnetOutput1\n\t\tv_POLY_subnet1_input0 = v_POLY_subnet1_mult2_product;\n\t}\n\t\n\t// /particles/particlesSystemGpu1/attribute3\n\tvec3 v_POLY_attribute3_val = texture2D( texture_restP, particleUV ).xyz;\n\t\n\t// /particles/particlesSystemGpu1/multScalar1\n\tvec3 v_POLY_multScalar1_val = (v_POLY_subnet1_input0*v_POLY_attribute1_val);\n\t\n\t// /particles/particlesSystemGpu1/subtract1\n\tvec3 v_POLY_subtract1_subtract = (v_POLY_attribute3_val - v_POLY_attribute1_val - vec3(0.0, 0.0, 0.0));\n\t\n\t// /particles/particlesSystemGpu1/multScalar2\n\tvec3 v_POLY_multScalar2_val = (0.98*v_POLY_globals1_velocity);\n\t\n\t// /particles/particlesSystemGpu1/floatToVec3_1\n\tvec3 v_POLY_floatToVec3_1_vec3 = vec3(v_POLY_subnet1_input0, v_POLY_subnet1_input0, v_POLY_subnet1_input0);\n\t\n\t// /particles/particlesSystemGpu1/noise1\n\tfloat v_POLY_noise1_noisex = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(0.0, 0.0, 0.0)))).x;\n\tfloat v_POLY_noise1_noisey = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(1000.0, 1000.0, 1000.0)))).y;\n\tfloat v_POLY_noise1_noisez = (v_POLY_floatToVec3_1_vec3*fbm_snoise_noise1((v_POLY_attribute1_val*vec3(1.0, 1.0, 1.0))+(vec3(0.0, 0.0, 0.0)+vec3(2000.0, 2000.0, 2000.0)))).z;\n\tvec3 v_POLY_noise1_noise = vec3(v_POLY_noise1_noisex, v_POLY_noise1_noisey, v_POLY_noise1_noisez);\n\t\n\t// /particles/particlesSystemGpu1/add2\n\tvec3 v_POLY_add2_sum = (v_POLY_multScalar1_val + v_POLY_subtract1_subtract + v_POLY_noise1_noise + vec3(0.0, 0.0, 0.0));\n\t\n\t// /particles/particlesSystemGpu1/acceleration1\n\tvec3 v_POLY_acceleration1_velocity = velFromAccel(v_POLY_multScalar2_val, v_POLY_add2_sum, 1.0, delta_time);\n\tvec3 v_POLY_acceleration1_position = posFromVel(v_POLY_attribute1_val, v_POLY_acceleration1_velocity, delta_time);\n\t\n\t// /particles/particlesSystemGpu1/output1\n\tgl_FragColor.xyz = v_POLY_acceleration1_velocity;\n\n\n\n\n}"
+		},
+		"texture_allocations": {
+			"writable": [
+				{
+					"instancePosition": [
+						{
+							"name": "instancePosition",
+							"size": 3,
+							"nodes": [
+								"/particles/particlesSystemGpu1/attribute2",
+								"/particles/particlesSystemGpu1/attribute1",
+								"/particles/particlesSystemGpu1/subnet1/attribute6"
+							]
+						}
+					]
+				},
+				{
+					"velocity": [
+						{
+							"name": "velocity",
+							"size": 3,
+							"nodes": [
+								"/particles/particlesSystemGpu1/output1"
+							]
+						}
+					]
+				}
+			],
+			"readonly": [
+				{
+					"restP": [
+						{
+							"name": "restP",
+							"size": 3,
+							"nodes": [
+								"/particles/particlesSystemGpu1/attribute3"
+							]
+						}
+					]
+				},
+				{
+					"instanceUv": [
+						{
+							"name": "instanceUv",
+							"size": 2,
+							"nodes": [
+								"/particles/particlesSystemGpu1/subnet1/attribute5"
+							]
+						}
+					]
+				}
+			]
+		},
+		"param_uniform_pairs": [
+			[
+				"texture1",
+				"v_POLY_texture_texture1"
+			]
+		],
+		"uniforms_owner": {
+			"metadata": {
+				"version": 4.5,
+				"type": "Material",
+				"generator": "Material.toJSON"
+			},
+			"uuid": "/particles/particlesSystemGpu1-main",
+			"type": "ShaderMaterial",
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"colorWrite": true,
+			"stencilWrite": false,
+			"stencilWriteMask": 255,
+			"stencilFunc": 519,
+			"stencilRef": 0,
+			"stencilFuncMask": 255,
+			"stencilFail": 7680,
+			"stencilZFail": 7680,
+			"stencilZPass": 7680,
+			"glslVersion": null,
+			"uniforms": {
+				"v_POLY_texture_texture1": {
+					"value": null
+				}
+			},
+			"vertexShader": "\nvoid main() {\n\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}\n",
+			"fragmentShader": "\nvoid main() {\n\tgl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );\n}\n",
+			"shadowSide": null,
+			"lights": false
+		}
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"type": "positionalAudio",
+	"nodes": {
+		"envelope1": {
+			"type": "envelope"
+		},
+		"AMSynth1": {
+			"type": "AMSynth",
+			"inputs": [
+				"envelope1"
+			]
+		},
+		"playInstrument1": {
+			"type": "playInstrument",
+			"inputs": [
+				"waveform1"
+			]
+		},
+		"OUT": {
+			"type": "null",
+			"inputs": [
+				"playInstrument1"
+			]
+		},
+		"file1": {
+			"type": "file",
+			"params": {
+				"url": "audio/sb_theclimb.short.mp3?timestamp=1644783589273",
+				"duration": 319.8530612244898
+			}
+		},
+		"userMedia1": {
+			"type": "userMedia"
+		},
+		"meter1": {
+			"type": "meter",
+			"params": {
+				"value": 0.0007595316274091601,
+				"maxRange": [
+					0,
+					6.456870079040527
+				]
+			},
+			"inputs": [
+				"volume1"
+			]
+		},
+		"volume1": {
+			"type": "volume",
+			"params": {
+				"volume": 8
+			},
+			"inputs": [
+				"file1"
+			]
+		},
+		"sampler1": {
+			"type": "sampler",
+			"params": {
+				"baseUrl": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/audio/resources/tonejs.github.io/samples"
+			},
+			"inputs": [
+				"envelope1"
+			]
+		},
+		"FFT1": {
+			"type": "FFT",
+			"params": {
+				"asOctaves": 1,
+				"range": [
+					0.000004628395345207537,
+					0.0007610773318447173
+				],
+				"maxRange": [
+					-60233.8515625,
+					0.7003438472747803
+				]
+			},
+			"inputs": [
+				"meter1"
+			]
+		},
+		"waveform1": {
+			"type": "waveform",
+			"params": {
+				"normalRange": 0,
+				"range": [
+					-0.000738060858566314,
+					0.0005652172258123755
+				],
+				"maxRange": [
+					-1.038861632347107,
+					1.0652825832366943
+				]
+			},
+			"inputs": [
+				"FFT1"
+			]
+		}
+	},
+	"params": {
+		"t": [
+			0.12654530441144252,
+			0,
+			0
+		],
+		"audioNode": "OUT",
+		"coneInnerAngle": 140.4,
+		"coneOuterAngle": 298.8,
+		"showHelper": 0
+	},
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"file1"
+	]
+}

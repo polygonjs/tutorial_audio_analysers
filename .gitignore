@@ -1,0 +1,5 @@
+node_modules/
+build/
+public/polygonjs/backup
+public/polygonjs/js
+public/polygonjs/build

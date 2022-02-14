@@ -1,0 +1,89 @@
+{
+	"type": "geo",
+	"nodes": {
+		"line1": {
+			"type": "line",
+			"params": {
+				"length": 5,
+				"pointsCount": 1024,
+				"direction": [
+					0,
+					0,
+					1
+				]
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/lineBasicBuilder_RAW_VALUE"
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"attribCreate1": {
+			"type": "attribCreate",
+			"params": {
+				"name": "pti",
+				"value1": "@ptnum / (pointsCount(0)-1)"
+			},
+			"inputs": [
+				"line1"
+			]
+		},
+		"material3": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/lineBasicBuilder_SPEED"
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0.3143197362724952,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"material1"
+			]
+		},
+		"transform2": {
+			"type": "transform",
+			"inputs": [
+				"material3"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"transform1",
+				null,
+				null,
+				"transform2"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"params": {
+		"t": [
+			0,
+			1.629773234137308,
+			-2.0754869137867966
+		]
+	},
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"material3"
+	]
+}
