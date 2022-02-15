@@ -3,7 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<title>scene_01</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png?v=1" />
+		<link rel="stylesheet" href="/css/foundation/foundation.css?v=1" />
+		<link rel="stylesheet" href="/css/main.css?v=2" />
+		<script src="/js/main.js?v=1"></script>
+		<meta property="og:title" content="Audio Visual Experience" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./polygonjs/screenshots/scenes/scene_01/poster.png" />
+		<meta property="og:url" content="https://particles-music.netlify.app" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:description" content="Audio Visual Experience made with @polygonjs" />
+		<meta property="og:site_name" content="Audio Visual Experience made with @polygonjs" />
+		<meta name="twitter:image:alt" content="Audio Visual Experience made with @polygonjs" />
+		<meta name="twitter:site" content="@polygonjs" />
+		<title>Audio Visual Experience</title>
 
 		<style id="polygonjs-default">
 			html,
@@ -96,7 +109,7 @@
 		</style>
 
 		<script id="load-scene-scene_01" type="module">
-			import {loadSceneAndMountAsync_scene_01} from './polygonjs/js/scene_01/loadSceneAndMountAsync.js?t=1644887184691';
+			import {loadSceneAndMountAsync_scene_01} from './polygonjs/js/scene_01/loadSceneAndMountAsync.js?t=1644954949444';
 
 			const container = document.getElementById('polygonjs-progress-bar-container');
 			const barElement = document.getElementById('polygonjs-progress-bar');
@@ -132,6 +145,7 @@
 					return;
 				}
 				loadSceneAndMountAsync_scene_01({
+					autoPlay: false,
 					onProgress,
 					domElement,
 					moduleImportSuffix: '.js?' + 'polygon=1_1_228',
@@ -143,234 +157,240 @@
 		<link rel="preload" href="tex/eso0932a.jpg?timestamp=1644869953799" as="image" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/js/scene_01/loadSceneAndMountAsync.js?t=1644887184691"
+			href="polygonjs/js/scene_01/loadSceneAndMountAsync.js?t=1644954949444"
 			as="script"
 			crossorigin
 		/>
 		<link rel="preload" href="polygonjs/js/scene_01/modules/EXRLoader.js?polygon=1_1_228" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/js/scene_01/modules/OBJLoader.js?polygon=1_1_228" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_01/chunk-4EIDCPOJ.js" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/js/scene_01/chunk-CQ5QUQVH.js" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/js/scene_01/chunk-EF7P6KSQ.js" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/js/scene_01/chunk-KBNISIIW.js" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_01/chunk-SPQ2A64L.js" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/js/scene_01/chunk-UWFHNPCD.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_01/root.json?t=1644887185227" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_01/properties.json?t=1644887185227" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/root.json?t=1644954949947" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/properties.json?t=1644954949947" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/positionalAudio1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/positionalAudio1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/positionalAudio1/COP.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/positionalAudio1/COP.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/positionalAudio1/eventsNetwork1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/positionalAudio1/eventsNetwork1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/scenes/scene_01/root/geo1.json?t=1644887185227" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/root/geo1.json?t=1644954949947" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/geo1/COP.json?t=1644887185227"
-			as="fetch"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="polygonjs/scenes/scene_01/root/geo1/MAT.json?t=1644887185227"
-			as="fetch"
-			crossorigin
-		/>
-		<link rel="preload" href="polygonjs/scenes/scene_01/root/crowd.json?t=1644887185227" as="fetch" crossorigin />
-		<link
-			rel="preload"
-			href="polygonjs/scenes/scene_01/root/crowd/MAT.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/geo1/COP.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/crowd/MAT/meshLambertBuilder_INSTANCES.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/geo1/MAT.json?t=1644954949947"
+			as="fetch"
+			crossorigin
+		/>
+		<link rel="preload" href="polygonjs/scenes/scene_01/root/crowd.json?t=1644954949947" as="fetch" crossorigin />
+		<link
+			rel="preload"
+			href="polygonjs/scenes/scene_01/root/crowd/MAT.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/crowd/MAT/meshStandardBuilder1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/crowd/MAT/meshLambertBuilder_INSTANCES.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/planeWithTexture.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/crowd/MAT/meshStandardBuilder1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/planeWithTexture/COP.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/planeWithTexture.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/planeWithTexture/MAT.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/planeWithTexture/COP.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/waveform.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/planeWithTexture/MAT.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/waveform/MAT.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/waveform.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_asOctaves_SPEED.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/waveform/MAT.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_asOctaves_VALUE.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_asOctaves_SPEED.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_raw_VALUE.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_asOctaves_VALUE.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/waveform/MAT/lineBasicBuilder_FFT_raw_VALUE.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_FORCE_FROM_MUSIC.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_CURSOR_FORCE.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_FORCE_FROM_MUSIC.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_RANDOMISE_MASS.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_CURSOR_FORCE.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/MAT.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/particlesSystemGpu1/subnet_RANDOMISE_MASS.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/MAT/pointsParticles.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/MAT.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/MAT/meshLambertBuilder_INSTANCES.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/MAT/pointsParticles.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/MAT/meshBasicBuilder_PARTICLES.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/MAT/meshLambertBuilder_INSTANCES.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/particles/eventsNetwork1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/MAT/meshBasicBuilder_PARTICLES.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/blackSphere.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/particles/eventsNetwork1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/blackSphere/materialsNetwork1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/blackSphere.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/raycastTarget.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/blackSphere/materialsNetwork1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera_DEBUG.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/raycastTarget.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera_DEBUG/events1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera_DEBUG.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera_DEBUG/events1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN/eventsNetwork1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN/animationsNetwork1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN/eventsNetwork1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/scenes/scene_01/root/env.json?t=1644887185227" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_01/root/env/MAT.json?t=1644887185227" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/env/MAT/meshBasicBuilder1.json?t=1644887185227"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera_MAIN/animationsNetwork1.json?t=1644954949947"
 			as="fetch"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/scenes/scene_01/root/env/COP.json?t=1644887185227" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/root/env.json?t=1644954949947" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/root/env/MAT.json?t=1644954949947" as="fetch" crossorigin />
+		<link
+			rel="preload"
+			href="polygonjs/scenes/scene_01/root/env/MAT/meshBasicBuilder1.json?t=1644954949947"
+			as="fetch"
+			crossorigin
+		/>
+		<link rel="preload" href="polygonjs/scenes/scene_01/root/env/COP.json?t=1644954949947" as="fetch" crossorigin />
+		<link
+			rel="preload"
+			href="polygonjs/scenes/scene_01/root/eventsNetwork1.json?t=1644954949947"
+			as="fetch"
+			crossorigin
+		/>
 	</head>
 	<body>
 		<div id="polygonjs-app-scene_01" class="polygonjs-app"></div>
@@ -378,6 +398,64 @@
 		<div id="polygonjs-loading-poster"></div>
 		<div id="polygonjs-progress-bar-container" class="polygonjs-progress-bar-container fadeable">
 			<div id="polygonjs-progress-bar" class="polygonjs-progress-bar"></div>
+		</div>
+
+		<div id="sound-notice-container">
+			<div id="sound-notice-overlay"></div>
+			<div id="sound-notice-message-body">
+				<div id="headset-container">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-headset"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"
+						/>
+					</svg>
+				</div>
+				<p>
+					This is an audio-visual experience brought to you by
+					<a href="https://polygonjs.com">Polygonjs</a>
+				</p>
+
+				<div id="sound-notice-button-container">
+					<div id="sound-notice-start-button">START EXPERIENCE</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="links-container">
+			<a href="https://polygonjs.com">
+				<span class="made-with">Made with Polygonjs </span>
+				<img src="/images/favicon.png?v=1" />
+			</a>
+			<a href="https://twitter.com/polygonjs">
+				<img src="/images/twitter.png?v=1" />
+			</a>
+			<a href="https://github.com/polygonjs/tutorial_audio_analysers">
+				<img src="/images/github.png?v=1" />
+			</a>
+			<a href="https://polygonjs.com/youtube">
+				<img src="/images/youtube.png?v=1" />
+			</a>
+		</div>
+
+		<div id="audio-selectors-container">
+			<p id="music-author">
+				Musics by
+				<a href="https://www.scottbuckley.com.au">Scott Buckley</a>
+			</p>
+			<div id="audio-selectors-list">
+				<span class="selector">The Climb</span>
+				<span class="selector">Goliath</span>
+				<span class="selector">Pathfinder</span>
+				<span class="selector">Terminus</span>
+				<span class="selector">Catalyst</span>
+			</div>
 		</div>
 	</body>
 </html>
