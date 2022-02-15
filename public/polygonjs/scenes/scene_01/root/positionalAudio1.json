@@ -37,7 +37,6 @@
 			"type": "meter",
 			"params": {
 				"smoothing": 0.98,
-				"value": 0.087699294090271,
 				"maxRange": [
 					0,
 					6.456870079040527
@@ -66,10 +65,6 @@
 			"type": "waveform",
 			"params": {
 				"normalRange": 0,
-				"range": [
-					-0.024045374244451523,
-					0.032240934669971466
-				],
 				"maxRange": [
 					-1.046830415725708,
 					1.0652825832366943
@@ -82,10 +77,6 @@
 		"FFT_raw": {
 			"type": "FFT",
 			"params": {
-				"range": [
-					8.379095817190318e-8,
-					0.008799322880804539
-				],
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
@@ -99,10 +90,6 @@
 			"type": "FFT",
 			"params": {
 				"asOctaves": 1,
-				"range": [
-					0.0005582986632362008,
-					0.028901679441332817
-				],
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
@@ -117,6 +104,7 @@
 		"audioNode": "OUT",
 		"coneInnerAngle": 140.4,
 		"coneOuterAngle": 298.8,
+		"listenerTransformAutoUpdate": 0,
 		"showHelper": 0
 	},
 	"inputs": [

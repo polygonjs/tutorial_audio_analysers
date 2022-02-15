@@ -23,7 +23,7 @@
 		"file1": {
 			"type": "file",
 			"params": {
-				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_mei_posed_001_OBJ/rp_mei_posed_001_30k.obj"
+				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_mei_posed_001_OBJ/rp_mei_posed_001_1k.obj?t=2"
 			}
 		},
 		"instance1": {
@@ -73,7 +73,7 @@
 		"file2": {
 			"type": "file",
 			"params": {
-				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_dennis_posed_004_OBJ/rp_dennis_posed_004_30k.obj"
+				"url": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_dennis_posed_004_OBJ/rp_dennis_posed_004_1k.obj"
 			}
 		},
 		"delete1": {
@@ -143,20 +143,25 @@
 		},
 		"merge1": {
 			"type": "merge",
+			"params": {
+				"compact": 1
+			},
 			"inputs": [
-				"instance1",
-				"instance2"
-			]
+				"copy1",
+				"copy2"
+			],
+			"cloned_state_overriden": true
 		},
 		"merge2": {
 			"type": "merge",
+			"params": {
+				"compact": 1
+			},
 			"inputs": [
 				"merge1",
-				"transform5"
+				"attribDelete1"
 			],
-			"flags": {
-				"display": true
-			}
+			"cloned_state_overriden": true
 		},
 		"plane2": {
 			"type": "plane",
@@ -234,7 +239,78 @@
 				"value1": "0.85+0.25*rand(@ptnum)"
 			},
 			"inputs": [
-				"scatter1"
+				"scatter2"
+			]
+		},
+		"copy1": {
+			"type": "copy",
+			"inputs": [
+				"transform2",
+				"delete1"
+			]
+		},
+		"copy2": {
+			"type": "copy",
+			"inputs": [
+				"transform2",
+				"delete2"
+			]
+		},
+		"scatter2": {
+			"type": "scatter",
+			"params": {
+				"pointsCount": 69,
+				"seed": 22
+			},
+			"inputs": [
+				"transform9"
+			]
+		},
+		"transform9": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					-2.7566263993401776,
+					4.9564742846378245
+				],
+				"s": [
+					1.2,
+					1,
+					1
+				]
+			},
+			"inputs": [
+				"plane1"
+			]
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshPhong1"
+			},
+			"inputs": [
+				"merge2"
+			],
+			"cloned_state_overriden": true
+		},
+		"OUT": {
+			"type": "null",
+			"inputs": [
+				"material1"
+			],
+			"flags": {
+				"display": true
+			},
+			"cloned_state_overriden": true
+		},
+		"attribDelete1": {
+			"type": "attribDelete",
+			"params": {
+				"name": "uv"
+			},
+			"inputs": [
+				"transform5"
 			]
 		}
 	},

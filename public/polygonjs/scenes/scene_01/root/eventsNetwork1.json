@@ -1,0 +1,57 @@
+{
+	"type": "eventsNetwork",
+	"nodes": {
+		"nodeCook1": {
+			"type": "nodeCook",
+			"params": {
+				"mask": "/crowd/OUT"
+			}
+		},
+		"setParam1": {
+			"type": "setParam",
+			"params": {
+				"param": "/spotLight1/shadowUpdateOnNextRender",
+				"type": 0,
+				"toggle": 1
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "scene1",
+					"output": "play"
+				}
+			]
+		},
+		"delay1": {
+			"type": "delay",
+			"params": {
+				"delay": 392
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "setParam1",
+					"output": "output"
+				}
+			]
+		},
+		"setParam2": {
+			"type": "setParam",
+			"params": {
+				"param": "/spotLight1/shadowUpdateOnNextRender",
+				"type": 0,
+				"toggle": true
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "delay1",
+					"output": "out"
+				}
+			]
+		},
+		"scene1": {
+			"type": "scene"
+		}
+	}
+}

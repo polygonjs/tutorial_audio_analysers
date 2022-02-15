@@ -29,6 +29,8 @@ import {ImageCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image
 // event
 import {AnimationEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Animation';
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls';
+import {DelayEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Delay';
+import {NodeCookEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/NodeCook';
 import {PointerEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Pointer';
 import {RaycastEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Raycast';
 import {SceneEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/Scene';
@@ -40,12 +42,14 @@ import {LineBasicBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/node
 import {MeshBasicMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasic';
 import {MeshBasicBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasicBuilder';
 import {MeshLambertBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshLambertBuilder';
+import {MeshPhongMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshPhong';
 import {MeshPhysicalMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshPhysical';
 import {MeshStandardBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshStandardBuilder';
 import {PointsBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/PointsBuilder';
 // obj
 import {AreaLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/AreaLight';
 import {AudioListenerObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/AudioListener';
+import {EventsNetworkObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/EventsNetwork';
 import {GeoObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/Geo';
 import {HemisphereLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/HemisphereLight';
 import {NullObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/Null';
@@ -54,11 +58,14 @@ import {PolarTransformObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/
 import {PositionalAudioObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/PositionalAudio';
 import {SpotLightObjNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/obj/SpotLight';
 // sop
+import {BVHSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/BVH';
 import {AnimationsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/AnimationsNetwork';
 import {AttribCreateSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/AttribCreate';
+import {AttribDeleteSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/AttribDelete';
 import {BoxSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Box';
 import {CircleSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Circle';
 import {CopNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/CopNetwork';
+import {CopySopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Copy';
 import {DeleteSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Delete';
 import {EventsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/EventsNetwork';
 import {FileSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/File';
@@ -69,8 +76,10 @@ import {InstanceSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/In
 import {JitterSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Jitter';
 import {LineSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Line';
 import {MaterialSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Material';
+import {MaterialPropertiesSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/MaterialProperties';
 import {MaterialsNetworkSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/MaterialsNetwork';
 import {MergeSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Merge';
+import {NullSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Null';
 import {ObjectPropertiesSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/ObjectProperties';
 import {ParticlesSystemGpuSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/ParticlesSystemGpu';
 import {PlaneSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/Plane';
@@ -108,6 +117,8 @@ export const requiredImports_scene_01 = {
 		ImageCopNode,
 		AnimationEventNode,
 		CameraOrbitControlsEventNode,
+		DelayEventNode,
+		NodeCookEventNode,
 		PointerEventNode,
 		RaycastEventNode,
 		SceneEventNode,
@@ -118,11 +129,13 @@ export const requiredImports_scene_01 = {
 		MeshBasicMatNode,
 		MeshBasicBuilderMatNode,
 		MeshLambertBuilderMatNode,
+		MeshPhongMatNode,
 		MeshPhysicalMatNode,
 		MeshStandardBuilderMatNode,
 		PointsBuilderMatNode,
 		AreaLightObjNode,
 		AudioListenerObjNode,
+		EventsNetworkObjNode,
 		GeoObjNode,
 		HemisphereLightObjNode,
 		NullObjNode,
@@ -130,11 +143,14 @@ export const requiredImports_scene_01 = {
 		PolarTransformObjNode,
 		PositionalAudioObjNode,
 		SpotLightObjNode,
+		BVHSopNode,
 		AnimationsNetworkSopNode,
 		AttribCreateSopNode,
+		AttribDeleteSopNode,
 		BoxSopNode,
 		CircleSopNode,
 		CopNetworkSopNode,
+		CopySopNode,
 		DeleteSopNode,
 		EventsNetworkSopNode,
 		FileSopNode,
@@ -145,8 +161,10 @@ export const requiredImports_scene_01 = {
 		JitterSopNode,
 		LineSopNode,
 		MaterialSopNode,
+		MaterialPropertiesSopNode,
 		MaterialsNetworkSopNode,
 		MergeSopNode,
+		NullSopNode,
 		ObjectPropertiesSopNode,
 		ParticlesSystemGpuSopNode,
 		PlaneSopNode,

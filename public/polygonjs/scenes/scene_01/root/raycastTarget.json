@@ -8,6 +8,7 @@
 					13,
 					13
 				],
+				"useSegmentsCount": 1,
 				"direction": [
 					0,
 					0,
@@ -24,14 +25,19 @@
 				"visible": 0
 			},
 			"inputs": [
-				"merge1"
+				"BVH1"
 			],
 			"flags": {
 				"display": true
 			}
 		},
 		"sphere1": {
-			"type": "sphere"
+			"type": "sphere",
+			"params": {
+				"radius": 0.94,
+				"open": 1,
+				"phiLength": "$PI"
+			}
 		},
 		"merge1": {
 			"type": "merge",
@@ -41,6 +47,22 @@
 			"inputs": [
 				"plane1",
 				"sphere1"
+			]
+		},
+		"BVH1": {
+			"type": "BVH",
+			"inputs": [
+				"merge1"
+			]
+		},
+		"materialProperties1": {
+			"type": "materialProperties",
+			"params": {
+				"tside": 1,
+				"doubleSided": 1
+			},
+			"inputs": [
+				"merge1"
 			]
 		}
 	},

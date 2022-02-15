@@ -9,7 +9,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"camera": "/perspectiveCamera_MAIN",
+					"camera": "/perspectiveCamera_DEBUG",
 					"linkIndex": 1
 				}
 			},
@@ -20,7 +20,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"active_folder": 5252,
+					"active_folder": 5562,
 					"linkIndex": 1
 				}
 			},
@@ -36,16 +36,16 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": 113.13287849289948,
-						"y": -139.77010083951086
+						"x": -419.5946227055192,
+						"y": -142.02270812512515
 					},
-					"zoom": 0.6654789513793631
+					"zoom": 0.6854789513793631
 				},
 				"history": {
 					"2": {
 						"position": {
-							"x": -133.9925488181587,
-							"y": -83.13918131763921
+							"x": -235.9621720081296,
+							"y": -78.7690546094976
 						},
 						"zoom": 0.6864789513793631
 					},
@@ -76,6 +76,13 @@
 							"y": -10.303736181945759
 						},
 						"zoom": 0.6864789513793631
+					},
+					"252": {
+						"position": {
+							"x": -419.5946227055192,
+							"y": -142.02270812512515
+						},
+						"zoom": 0.6854789513793631
 					},
 					"274": {
 						"position": {
@@ -119,6 +126,13 @@
 						},
 						"zoom": 0.6864789513793631
 					},
+					"382": {
+						"position": {
+							"x": -302.9707815329676,
+							"y": -68.5720922905005
+						},
+						"zoom": 0.6864789513793631
+					},
 					"430": {
 						"position": {
 							"x": 153.70516097311338,
@@ -139,6 +153,13 @@
 							"y": -23.56972926256132
 						},
 						"zoom": 0.6810372916272426
+					},
+					"524": {
+						"position": {
+							"x": -431.105810033485,
+							"y": -51.570842686926945
+						},
+						"zoom": 0.9416720869401416
 					},
 					"574": {
 						"position": {
@@ -251,6 +272,20 @@
 							"y": -54.00500326336184
 						},
 						"zoom": 0.6864789513793631
+					},
+					"1501": {
+						"position": {
+							"x": -240.33229871627117,
+							"y": -164.7148798696159
+						},
+						"zoom": 0.6864789513793631
+					},
+					"1523": {
+						"position": {
+							"x": -266.417052790772,
+							"y": -327.2946260220099
+						},
+						"zoom": 0.6854789513793631
 					},
 					"1543": {
 						"position": {
@@ -497,6 +532,13 @@
 						},
 						"zoom": 0.6654789513793631
 					},
+					"4519": {
+						"position": {
+							"x": 113.13287849289948,
+							"y": -139.77010083951086
+						},
+						"zoom": 0.6654789513793631
+					},
 					"4630": {
 						"position": {
 							"x": -66.69143214565594,
@@ -552,6 +594,13 @@
 							"y": 40.006636266712235
 						},
 						"zoom": 0.8536720869401415
+					},
+					"5454": {
+						"position": {
+							"x": -431.105810033485,
+							"y": -51.570842686926945
+						},
+						"zoom": 0.9416720869401416
 					}
 				},
 				"linkIndex": 1
@@ -560,7 +609,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/perspectiveCamera_MAIN/animationsNetwork1",
+		"/crowd",
 		"/",
 		"/",
 		"/",
@@ -572,34 +621,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/positionalAudio1/COP",
-				"/positionalAudio1",
-				"/",
-				"/waveform",
-				"/waveform/MAT",
-				"/waveform",
-				"/",
-				"/crowd",
-				"/",
-				"/crowd",
-				"/crowd/MAT",
-				"/crowd",
-				"/",
-				"/perspectiveCamera_MAIN",
-				"/",
-				"/perspectiveCamera_MAIN",
-				"/perspectiveCamera_MAIN/eventsNetwork1",
-				"/perspectiveCamera_MAIN",
-				"/",
-				"/perspectiveCamera_MAIN",
-				"/perspectiveCamera_MAIN/eventsNetwork1",
-				"/perspectiveCamera_MAIN",
-				"/",
-				"/perspectiveCamera_MAIN",
-				"/perspectiveCamera_MAIN/animationsNetwork1",
-				"/perspectiveCamera_MAIN",
-				"/",
-				"/perspectiveCamera_MAIN",
 				"/perspectiveCamera_MAIN/animationsNetwork1",
 				"/perspectiveCamera_MAIN",
 				"/perspectiveCamera_MAIN/eventsNetwork1",
@@ -671,7 +692,35 @@
 				"/env",
 				"/",
 				"/perspectiveCamera_MAIN",
-				"/perspectiveCamera_MAIN/animationsNetwork1"
+				"/perspectiveCamera_MAIN/animationsNetwork1",
+				"/",
+				"/crowd",
+				"/",
+				"/crowd",
+				"/crowd/MAT",
+				"/crowd",
+				"/crowd/MAT",
+				"/crowd",
+				"/",
+				"/eventsNetwork1",
+				"/",
+				"/crowd",
+				"/",
+				"/eventsNetwork1",
+				"/",
+				"/eventsNetwork1",
+				"/",
+				"/eventsNetwork1",
+				"/",
+				"/eventsNetwork1",
+				"/",
+				"/raycastTarget",
+				"/",
+				"/raycastTarget",
+				"/",
+				"/crowd",
+				"/crowd/MAT",
+				"/crowd"
 			],
 			"2": [],
 			"3": [],

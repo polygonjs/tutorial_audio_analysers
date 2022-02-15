@@ -139,10 +139,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				},
 				"mult": {

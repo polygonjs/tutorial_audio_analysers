@@ -1,7 +1,11 @@
 {
 	"type": "materialsNetwork",
-	"nodes": {},
-	"selection": [
-		"meshStandardBuilder1"
-	]
+	"nodes": {
+		"meshPhong1": {
+			"type": "meshPhong",
+			"params": {
+				"flatShading": 1
+			}
+		}
+	}
 }

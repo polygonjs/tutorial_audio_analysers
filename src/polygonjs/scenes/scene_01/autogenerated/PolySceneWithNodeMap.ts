@@ -3,6 +3,7 @@ import {PolyScene} from '@polygonjs/polygonjs/src/engine/scene/PolyScene';
 // obj
 import {AreaLightObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/AreaLight';
 import {AudioListenerObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/AudioListener';
+import {EventsNetworkObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/EventsNetwork';
 import {GeoObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/Geo';
 import {HemisphereLightObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/HemisphereLight';
 import {NullObjNode} from '@polygonjs/polygonjs/src/engine/nodes/obj/Null';
@@ -31,6 +32,8 @@ import {ImageCopNode} from '@polygonjs/polygonjs/src/engine/nodes/cop/Image';
 // event
 import {AnimationEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Animation';
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/CameraOrbitControls';
+import {DelayEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Delay';
+import {NodeCookEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/NodeCook';
 import {PointerEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Pointer';
 import {RaycastEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Raycast';
 import {SceneEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Scene';
@@ -39,9 +42,12 @@ import {ThrottleEventNode} from '@polygonjs/polygonjs/src/engine/nodes/event/Thr
 // sop
 import {AnimationsNetworkSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/AnimationsNetwork';
 import {AttribCreateSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/AttribCreate';
+import {AttribDeleteSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/AttribDelete';
+import {BVHSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/BVH';
 import {BoxSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Box';
 import {CircleSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Circle';
 import {CopNetworkSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/CopNetwork';
+import {CopySopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Copy';
 import {DeleteSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Delete';
 import {EventsNetworkSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/EventsNetwork';
 import {FileSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/File';
@@ -51,9 +57,11 @@ import {IcosahedronSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Icos
 import {InstanceSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Instance';
 import {JitterSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Jitter';
 import {LineSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Line';
+import {MaterialPropertiesSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/MaterialProperties';
 import {MaterialSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Material';
 import {MaterialsNetworkSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/MaterialsNetwork';
 import {MergeSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Merge';
+import {NullSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Null';
 import {ObjectPropertiesSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/ObjectProperties';
 import {ParticlesSystemGpuSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/ParticlesSystemGpu';
 import {PlaneSopNode} from '@polygonjs/polygonjs/src/engine/nodes/sop/Plane';
@@ -67,6 +75,7 @@ import {LineBasicMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/LineBa
 import {MeshBasicBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshBasicBuilder';
 import {MeshBasicMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshBasic';
 import {MeshLambertBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshLambertBuilder';
+import {MeshPhongMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshPhong';
 import {MeshPhysicalMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshPhysical';
 import {MeshStandardBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshStandardBuilder';
 import {PointsBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/PointsBuilder';
@@ -86,6 +95,7 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/areaLight1'): AreaLightObjNode;
 	node(path: '/polarTransform1'): PolarTransformObjNode;
 	node(path: '/hemisphereLight1'): HemisphereLightObjNode;
+	node(path: '/null1'): NullObjNode;
 	node(path: '/positionalAudio1'): PositionalAudioObjNode;
 	node(path: '/positionalAudio1/envelope1'): EnvelopeAudioNode;
 	node(path: '/positionalAudio1/AMSynth1'): AMSynthAudioNode;
@@ -137,9 +147,17 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/crowd/transform7'): TransformSopNode;
 	node(path: '/crowd/transform8'): TransformSopNode;
 	node(path: '/crowd/attribCreate1'): AttribCreateSopNode;
+	node(path: '/crowd/copy1'): CopySopNode;
+	node(path: '/crowd/copy2'): CopySopNode;
+	node(path: '/crowd/scatter2'): ScatterSopNode;
+	node(path: '/crowd/transform9'): TransformSopNode;
+	node(path: '/crowd/material1'): MaterialSopNode;
+	node(path: '/crowd/OUT'): NullSopNode;
 	node(path: '/crowd/MAT'): MaterialsNetworkSopNode;
+	node(path: '/crowd/MAT/meshPhong1'): MeshPhongMatNode;
 	node(path: '/crowd/MAT/meshLambertBuilder_INSTANCES'): MeshLambertBuilderMatNode;
 	node(path: '/crowd/MAT/meshStandardBuilder1'): MeshStandardBuilderMatNode;
+	node(path: '/crowd/attribDelete1'): AttribDeleteSopNode;
 	node(path: '/planeWithTexture'): GeoObjNode;
 	node(path: '/planeWithTexture/plane1'): PlaneSopNode;
 	node(path: '/planeWithTexture/material1'): MaterialSopNode;
@@ -203,6 +221,8 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/raycastTarget/objectProperties1'): ObjectPropertiesSopNode;
 	node(path: '/raycastTarget/sphere1'): SphereSopNode;
 	node(path: '/raycastTarget/merge1'): MergeSopNode;
+	node(path: '/raycastTarget/BVH1'): BVHSopNode;
+	node(path: '/raycastTarget/materialProperties1'): MaterialPropertiesSopNode;
 	node(path: '/perspectiveCamera_DEBUG'): PerspectiveCameraObjNode;
 	node(path: '/perspectiveCamera_DEBUG/events1'): EventsNetworkSopNode;
 	node(path: '/perspectiveCamera_DEBUG/events1/cameraOrbitControls1'): CameraOrbitControlsEventNode;
@@ -229,18 +249,23 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/perspectiveCamera_MAIN/animationsNetwork1/merge1'): MergeAnimNode;
 	node(path: '/perspectiveCamera_MAIN/animationsNetwork1/duration3'): DurationAnimNode;
 	node(path: '/perspectiveCamera_MAIN/animationsNetwork1/merge2'): MergeAnimNode;
-	node(path: '/null1'): NullObjNode;
 	node(path: '/env'): GeoObjNode;
 	node(path: '/env/sphere1'): SphereSopNode;
+	node(path: '/env/material1'): MaterialSopNode;
+	node(path: '/env/transform1'): TransformSopNode;
+	node(path: '/env/plane1'): PlaneSopNode;
+	node(path: '/env/material2'): MaterialSopNode;
 	node(path: '/env/MAT'): MaterialsNetworkSopNode;
 	node(path: '/env/MAT/meshBasic1'): MeshBasicMatNode;
 	node(path: '/env/MAT/meshBasicBuilder1'): MeshBasicBuilderMatNode;
 	node(path: '/env/COP'): CopNetworkSopNode;
 	node(path: '/env/COP/image1'): ImageCopNode;
-	node(path: '/env/material1'): MaterialSopNode;
-	node(path: '/env/transform1'): TransformSopNode;
-	node(path: '/env/plane1'): PlaneSopNode;
-	node(path: '/env/material2'): MaterialSopNode;
+	node(path: '/eventsNetwork1'): EventsNetworkObjNode;
+	node(path: '/eventsNetwork1/nodeCook1'): NodeCookEventNode;
+	node(path: '/eventsNetwork1/setParam1'): SetParamEventNode;
+	node(path: '/eventsNetwork1/delay1'): DelayEventNode;
+	node(path: '/eventsNetwork1/setParam2'): SetParamEventNode;
+	node(path: '/eventsNetwork1/scene1'): SceneEventNode;
 	node(path: string):any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
 		return super.node(path);
 	}
