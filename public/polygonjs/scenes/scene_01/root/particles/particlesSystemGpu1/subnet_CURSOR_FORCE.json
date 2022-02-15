@@ -308,18 +308,6 @@
 				]
 			}
 		},
-		"subnetOutput1": {
-			"type": "subnetOutput",
-			"connection_points": {
-				"in": [
-					{
-						"name": "pos",
-						"type": "vec3"
-					}
-				],
-				"out": []
-			}
-		},
 		"subnetOutput2": {
 			"type": "subnetOutput",
 			"inputs": [
@@ -580,8 +568,5 @@
 				"type": "vec3"
 			}
 		]
-	},
-	"selection": [
-		"smoothstep1"
-	]
+	}
 }

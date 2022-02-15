@@ -101,7 +101,6 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/positionalAudio1/AMSynth1'): AMSynthAudioNode;
 	node(path: '/positionalAudio1/playInstrument1'): PlayInstrumentAudioNode;
 	node(path: '/positionalAudio1/OUT'): NullAudioNode;
-	node(path: '/positionalAudio1/file1'): FileAudioNode;
 	node(path: '/positionalAudio1/userMedia1'): UserMediaAudioNode;
 	node(path: '/positionalAudio1/meter1'): MeterAudioNode;
 	node(path: '/positionalAudio1/volume1'): VolumeAudioNode;
@@ -109,6 +108,7 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/positionalAudio1/waveform1'): WaveformAudioNode;
 	node(path: '/positionalAudio1/FFT_raw'): FFTAudioNode;
 	node(path: '/positionalAudio1/FFT_asOctaves'): FFTAudioNode;
+	node(path: '/positionalAudio1/file_main'): FileAudioNode;
 	node(path: '/positionalAudio1/COP'): CopNetworkAudioNode;
 	node(path: '/positionalAudio1/COP/audioAnalyser_FFT_raw'): AudioAnalyserCopNode;
 	node(path: '/positionalAudio1/COP/audioAnalyser_FFT_asOctaves'): AudioAnalyserCopNode;
@@ -199,10 +199,12 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/particles/icosahedron1'): IcosahedronSopNode;
 	node(path: '/particles/restAttributes1'): RestAttributesSopNode;
 	node(path: '/particles/attribCreate1'): AttribCreateSopNode;
-	node(path: '/particles/delete1'): DeleteSopNode;
 	node(path: '/particles/fuse1'): FuseSopNode;
 	node(path: '/particles/jitter1'): JitterSopNode;
 	node(path: '/particles/attribCreate2'): AttribCreateSopNode;
+	node(path: '/particles/delete2'): DeleteSopNode;
+	node(path: '/particles/box1'): BoxSopNode;
+	node(path: '/particles/transform1'): TransformSopNode;
 	node(path: '/particles/particlesSystemGpu1'): ParticlesSystemGpuSopNode;
 	node(path: '/particles/MAT'): MaterialsNetworkSopNode;
 	node(path: '/particles/MAT/pointsParticles'): PointsBuilderMatNode;

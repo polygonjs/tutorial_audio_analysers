@@ -7,7 +7,7 @@ import {requiredImports_scene_01} from './requiredImports';
 
 
 const loadSceneFromSceneData_scene_01 = async function (options) {
-	const {domElement, sceneData, onProgress} = options;
+	const {domElement, sceneData, onProgress, autoPlay} = options;
 	const runRegister = options.runRegister != null ? options.runRegister : true;
 
 	if( runRegister ){
@@ -33,6 +33,7 @@ const loadSceneFromSceneData_scene_01 = async function (options) {
 		sceneData,
 		onProgress,
 		assetsRoot: '',
+		autoPlay,
 	});
 	return {
 		scene: scene,

@@ -1,13 +1,13 @@
-import {loadSceneData_scene_01} from './loadSceneData.js?t=1644927405386';
+import {loadSceneData_scene_01} from './loadSceneData.js?t=1644954949444';
 
 export const loadSceneAndMountAsync_scene_01 = async function (options) {
-	const {onProgress, domElement, configureSceneData} = options;
+	const {onProgress, domElement, configureSceneData, autoPlay} = options;
 	const runRegister = options.runRegister != null ? options.runRegister : true;
 	const loadModules = options.loadModules != null ? options.loadModules : true;
 
 	const moduleNames = loadModules ? ["EXRLoader", "OBJLoader"] : [];
 	const modulePromises = moduleNames.map((moduleName) => import('./modules/' + moduleName + (options.moduleImportSuffix || '')));
-	const promises = [import('./loadSceneFromSceneData.js?t=1644927405386'), loadSceneData_scene_01({onProgress}), ...modulePromises];
+	const promises = [import('./loadSceneFromSceneData.js?t=1644954949444'), loadSceneData_scene_01({onProgress}), ...modulePromises];
 	const results = await Promise.all(promises);
 	const {Poly, loadSceneFromSceneData_scene_01} = results[0];
 	const sceneData = results[1];
@@ -27,6 +27,6 @@ export const loadSceneAndMountAsync_scene_01 = async function (options) {
 		i++;
 	}
 
-	const loadedData = await loadSceneFromSceneData_scene_01({onProgress, sceneData, domElement, runRegister});
+	const loadedData = await loadSceneFromSceneData_scene_01({onProgress, sceneData, domElement, runRegister, autoPlay});
 	return loadedData;
 };

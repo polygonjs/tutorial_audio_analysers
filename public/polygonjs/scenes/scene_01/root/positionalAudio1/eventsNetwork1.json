@@ -7,7 +7,7 @@
 		"setParam1": {
 			"type": "setParam",
 			"params": {
-				"param": "../../file1/play",
+				"param": "../../file_main/play",
 				"type": 1
 			},
 			"inputs": [

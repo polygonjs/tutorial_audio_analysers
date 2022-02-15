@@ -90,12 +90,7 @@
 						"editable": "false"
 					}
 				},
-				"to": 2,
-				"gammaFactor": {
-					"overriden_options": {
-						"editable": "true"
-					}
-				}
+				"to": 2
 			},
 			"inputs": [
 				{

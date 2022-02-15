@@ -4,7 +4,11 @@
 		"sphere2": {
 			"type": "sphere",
 			"params": {
-				"radius": 0.03
+				"radius": 0.03,
+				"resolution": [
+					12,
+					12
+				]
 			}
 		},
 		"instance1": {
@@ -21,7 +25,8 @@
 		"icosahedron1": {
 			"type": "icosahedron",
 			"params": {
-				"detail": 9
+				"detail": 9,
+				"pointsOnly": 1
 			}
 		},
 		"restAttributes1": {
@@ -43,24 +48,13 @@
 				"icosahedron1"
 			]
 		},
-		"delete1": {
-			"type": "delete",
-			"params": {
-				"class": 1,
-				"invert": 1,
-				"keepPoints": 1
-			},
-			"inputs": [
-				"restAttributes1"
-			]
-		},
 		"fuse1": {
 			"type": "fuse",
 			"params": {
 				"dist": 0.06
 			},
 			"inputs": [
-				"delete1"
+				"delete2"
 			]
 		},
 		"jitter1": {
@@ -85,6 +79,37 @@
 			},
 			"inputs": [
 				"jitter1"
+			]
+		},
+		"delete2": {
+			"type": "delete",
+			"params": {
+				"byBoundingObject": 1
+			},
+			"inputs": [
+				"restAttributes1",
+				"transform1"
+			]
+		},
+		"box1": {
+			"type": "box"
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					0,
+					-0.8718041784697679
+				],
+				"s": [
+					2.715425678204114,
+					2.3542801139684926,
+					1
+				]
+			},
+			"inputs": [
+				"box1"
 			]
 		}
 	},

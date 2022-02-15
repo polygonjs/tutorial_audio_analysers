@@ -8,6 +8,17 @@ body {
     position: relative;
 }
 
+/*
+FADE IN/OUT
+*/
+.fade-out {
+	opacity: 0 !important;
+	transition: opacity 0.5s linear !important;
+}
+.fade-in {
+	opacity: 1 !important;
+	transition: opacity 1s linear !important;
+}
 
 /*
 SOUND NOTICE
@@ -37,16 +48,105 @@ SOUND NOTICE
     background-color: #111;
     border: 1px solid lightgray;
     color: #eee;
+    text-align: center;
+}
+#headset-container {
+    display: inline-block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #888;
+    border-radius: 100px;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+}
+#headset-container svg {
+    position: relative;
+    top: 1px;
 }
 #sound-notice-message-body a {
-    border-bottom: 2px solid rgb(43, 55, 163);
+    color: inherit;
+    border-bottom: 2px solid #eee;
+}
+#sound-notice-button-container {
+    text-align: center;
 }
 #sound-notice-start-button {
     display: inline-block;
     margin: 10px auto;
-    padding: 10px;
+    padding: 16px;
     cursor: pointer;
     border: 1px solid lightgray;
     border-radius: 3px;
     line-height: 1rem;
+    color: #111;
+    background-color: #eee;
+}
+
+/*
+LINKS CONTAINER
+*/
+#links-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: darkgrey;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    height: 34px;
+    opacity: 0;
+}
+.made-with {
+    margin: 0px 10px;
+    display: inline-block;
+}
+#links-container svg, #links-container img {
+    height: 24px;
+    min-height: 24px;
+    margin-right: 5px
+}
+#links-container a {
+    color: #111;
+    height: 24px;
+    min-height: 24px;
+    display: inline-block;
+}
+
+/*
+AUDIO SELECTORS
+*/
+
+#audio-selectors-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #111;
+    color: #eee;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    opacity: 0;
+}
+#audio-selectors-container .selector {
+    display: block;
+    border-left: 2px solid transparent;
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 0px 5px;
+    margin-top: 2px;
+    opacity: 0.8;
+}
+#audio-selectors-container .selector.active, #audio-selectors-container .selector:hover {
+    border-left: 2px solid #eee;
+    opacity: 1;
+}
+#audio-selectors-container #music-author {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+#audio-selectors-container #music-author a {
+    color: #eee;
+    border-bottom: 2px solid #aaa;
 }

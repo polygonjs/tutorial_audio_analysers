@@ -22,14 +22,6 @@
 				"playInstrument1"
 			]
 		},
-		"file1": {
-			"type": "file",
-			"params": {
-				"url": "audio/sb_theclimb.short.mp3?timestamp=1644783589273",
-				"autostart": 0,
-				"duration": 319.8530612244898
-			}
-		},
 		"userMedia1": {
 			"type": "userMedia"
 		},
@@ -37,6 +29,7 @@
 			"type": "meter",
 			"params": {
 				"smoothing": 0.98,
+				"value": 9.949949753007559e-10,
 				"maxRange": [
 					0,
 					6.456870079040527
@@ -49,7 +42,7 @@
 		"volume1": {
 			"type": "volume",
 			"inputs": [
-				"file1"
+				"file_main"
 			]
 		},
 		"sampler1": {
@@ -65,6 +58,10 @@
 			"type": "waveform",
 			"params": {
 				"normalRange": 0,
+				"range": [
+					-2.802596928649634e-45,
+					2.802596928649634e-45
+				],
 				"maxRange": [
 					-1.046830415725708,
 					1.0652825832366943
@@ -77,6 +74,10 @@
 		"FFT_raw": {
 			"type": "FFT",
 			"params": {
+				"range": [
+					2.802596928649634e-45,
+					2.802596928649634e-45
+				],
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
@@ -90,6 +91,10 @@
 			"type": "FFT",
 			"params": {
 				"asOctaves": 1,
+				"range": [
+					2.802596928649634e-45,
+					1.4349296274686127e-42
+				],
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
@@ -98,6 +103,15 @@
 			"inputs": [
 				"meter1"
 			]
+		},
+		"file_main": {
+			"type": "file",
+			"params": {
+				"url": "audio/sb_theclimb.short.mp3?timestamp=1644783589273",
+				"autostart": 0,
+				"duration": 319.8530612244898,
+				"loop": 0
+			}
 		}
 	},
 	"params": {
