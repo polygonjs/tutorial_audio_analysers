@@ -5,8 +5,8 @@
 			"type": "raycast",
 			"params": {
 				"mouse": [
-					0.864306784660767,
-					-0.8576766304347827
+					0.9562841530054644,
+					0.756453804347826
 				],
 				"objectMask": "*raycastTargetGeo*",
 				"traverseChildren": 0,

@@ -1,0 +1,191 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:NotoSans-Bold
+FamilyName:Noto Sans
+StyleName:Bold
+FullName:Noto Sans Bold
+MenuName:Noto Sans
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\NotoSans-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:398652
+FileModTime:1638818440
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Noto Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:NotoSans
+FamilyName:Noto Sans
+StyleName:Regular
+FullName:Noto Sans
+MenuName:Noto Sans
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\NotoSans-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:398968
+FileModTime:1638818440
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Noto Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NotoSansTC-Bold
+FamilyName:Noto Sans TC
+StyleName:Bold
+FullName:Noto Sans TC Bold
+MenuName:Noto Sans TC Bold
+StyleBits:0
+FamilyNameNative:Noto Sans TC
+StyleNameNative:Bold
+FullNameNative:Noto Sans TC Bold
+WritingScript:Japanese
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\NotoSansTC-Bold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:5815944
+FileModTime:1540208262
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Noto Sans TC Bold
+NameArray:0,Win,16,Noto Sans TC
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:NotoSansTC-Regular
+FamilyName:Noto Sans TC
+StyleName:Regular
+FullName:Noto Sans TC
+MenuName:Noto Sans TC Regular
+StyleBits:0
+FamilyNameNative:Noto Sans TC
+StyleNameNative:Regular
+FullNameNative:Noto Sans TC Regular
+WritingScript:Japanese
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\NotoSansTC-Regular.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:5641188
+FileModTime:1540208262
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Noto Sans TC Regular
+NameArray:0,Win,16,Noto Sans TC
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Bold
+FamilyName:Raleway
+StyleName:Bold
+FullName:Raleway Bold
+MenuName:Raleway
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\Raleway-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:163276
+FileModTime:1638818440
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Regular
+FamilyName:Raleway
+StyleName:Regular
+FullName:Raleway Regular
+MenuName:Raleway
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\Raleway-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:163388
+FileModTime:1638818440
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TrebuchetMS
+FamilyName:Trebuchet MS
+StyleName:Regular
+FullName:Trebuchet MS
+MenuName:Trebuchet MS
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\trebuc.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:254396
+FileModTime:1575709707
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Trebuchet MS
+NameArray:0,Win,1,Trebuchet MS
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TrebuchetMS-Bold
+FamilyName:Trebuchet MS
+StyleName:Bold
+FullName:Trebuchet MS Bold
+MenuName:Trebuchet MS
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:E:\!!! Work\2021\!!! Exhibition\Auguries of Innocence\!!! Project\!!! Project Album\Indesign\Title and Icons\Document fonts\trebucbd.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:244124
+FileModTime:1575709707
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Trebuchet MS Bold
+NameArray:0,Win,1,Trebuchet MS
+%EndFont
+

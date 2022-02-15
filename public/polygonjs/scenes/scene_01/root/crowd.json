@@ -252,7 +252,7 @@
 		"copy2": {
 			"type": "copy",
 			"inputs": [
-				"transform2",
+				"transform4",
 				"delete2"
 			]
 		},

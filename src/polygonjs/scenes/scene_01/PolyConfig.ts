@@ -10,4 +10,5 @@ export function configurePolygonjs(poly: PolyEngine) {
 export function configureScene(scene: PolyScene) {
 	// see scene and node API:
 	// https://polygonjs.com/docs/api
+	(window as any).scene = scene;
 }
