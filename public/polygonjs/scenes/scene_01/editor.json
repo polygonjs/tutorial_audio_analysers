@@ -36,10 +36,10 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": -354.02519401380306,
-						"y": -327.09657675469686
+						"x": -155.80307311777344,
+						"y": -470.2836944555364
 					},
-					"zoom": 0.560478951379363
+					"zoom": 1.3020247265276332
 				},
 				"history": {
 					"2": {
@@ -532,6 +532,13 @@
 						},
 						"zoom": 0.6916432793104034
 					},
+					"3199": {
+						"position": {
+							"x": -155.80307311777344,
+							"y": -470.2836944555364
+						},
+						"zoom": 1.3020247265276332
+					},
 					"3325": {
 						"position": {
 							"x": 1847.9394519577909,
@@ -665,7 +672,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/particles",
+		"/particles/eventsNetwork1",
 		"/",
 		"/",
 		"/",
@@ -677,7 +684,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/env",
 				"/env/MAT",
 				"/env",
 				"/",
@@ -776,7 +782,8 @@
 				"/particles/particlesSystemGpu1",
 				"/particles",
 				"/",
-				"/particles"
+				"/particles",
+				"/particles/eventsNetwork1"
 			],
 			"2": [],
 			"3": [],

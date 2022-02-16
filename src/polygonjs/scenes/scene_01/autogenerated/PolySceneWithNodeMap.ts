@@ -213,6 +213,7 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/particles/eventsNetwork1'): EventsNetworkSopNode;
 	node(path: '/particles/eventsNetwork1/raycast1'): RaycastEventNode;
 	node(path: '/particles/eventsNetwork1/pointer1'): PointerEventNode;
+	node(path: '/particles/eventsNetwork1/setParam1'): SetParamEventNode;
 	node(path: '/blackSphere'): GeoObjNode;
 	node(path: '/blackSphere/sphere1'): SphereSopNode;
 	node(path: '/blackSphere/material1'): MaterialSopNode;

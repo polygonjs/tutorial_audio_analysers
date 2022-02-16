@@ -32,6 +32,25 @@
 				"pointerdown": 0,
 				"pointermove": 1
 			}
+		},
+		"setParam1": {
+			"type": "setParam",
+			"params": {
+				"param": "../../particlesSystemGpu1/mouseCenter",
+				"type": 4,
+				"vector3": [
+					-1000,
+					-1000,
+					-1000
+				]
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "pointer1",
+					"output": "pointerup"
+				}
+			]
 		}
 	}
 }
