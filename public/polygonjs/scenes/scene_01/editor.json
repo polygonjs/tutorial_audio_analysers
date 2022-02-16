@@ -36,10 +36,10 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": -177.69381589957484,
-						"y": 171.784876657288
+						"x": -354.02519401380306,
+						"y": -327.09657675469686
 					},
-					"zoom": 0.6864789513793631
+					"zoom": 0.560478951379363
 				},
 				"history": {
 					"2": {
@@ -65,8 +65,8 @@
 					},
 					"191": {
 						"position": {
-							"x": -177.69381589957484,
-							"y": 171.784876657288
+							"x": -276.75002128411796,
+							"y": 75.64208907817262
 						},
 						"zoom": 0.6864789513793631
 					},
@@ -527,10 +527,17 @@
 					},
 					"3179": {
 						"position": {
-							"x": 276.2338891670883,
-							"y": -935.0923852006235
+							"x": 520.4188526316043,
+							"y": -371.2178972003268
 						},
-						"zoom": 0.622478951379363
+						"zoom": 0.6916432793104034
+					},
+					"3325": {
+						"position": {
+							"x": 1847.9394519577909,
+							"y": -483.7251176559952
+						},
+						"zoom": 0.8993039667232366
 					},
 					"3363": {
 						"position": {
@@ -658,7 +665,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/positionalAudio1",
+		"/particles",
 		"/",
 		"/",
 		"/",
@@ -670,14 +677,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/perspectiveCamera_MAIN",
-				"/",
-				"/env",
-				"/env/COP",
-				"/env",
-				"/env/MAT",
-				"/env",
-				"/",
 				"/env",
 				"/env/MAT",
 				"/env",
@@ -769,7 +768,15 @@
 				"/",
 				"/positionalAudio1",
 				"/",
-				"/positionalAudio1"
+				"/positionalAudio1",
+				"/",
+				"/particles",
+				"/particles/particlesSystemGpu1",
+				"/particles/particlesSystemGpu1/subnet_FORCE_FROM_MUSIC",
+				"/particles/particlesSystemGpu1",
+				"/particles",
+				"/",
+				"/particles"
 			],
 			"2": [],
 			"3": [],

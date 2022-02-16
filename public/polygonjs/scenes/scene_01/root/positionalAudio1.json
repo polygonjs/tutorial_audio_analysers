@@ -14,12 +14,15 @@
 			"type": "playInstrument",
 			"inputs": [
 				"waveform1"
-			]
+			],
+			"flags": {
+				"bypass": true
+			}
 		},
 		"OUT": {
 			"type": "null",
 			"inputs": [
-				"playInstrument1"
+				"FFT_raw"
 			]
 		},
 		"userMedia1": {
@@ -29,7 +32,7 @@
 			"type": "meter",
 			"params": {
 				"smoothing": 0.98,
-				"value": 9.949949753007559e-10,
+				"updateRangeParam": 0,
 				"maxRange": [
 					0,
 					6.456870079040527
@@ -37,13 +40,19 @@
 			},
 			"inputs": [
 				"volume1"
-			]
+			],
+			"flags": {
+				"bypass": true
+			}
 		},
 		"volume1": {
 			"type": "volume",
 			"inputs": [
 				"file_main"
-			]
+			],
+			"flags": {
+				"bypass": true
+			}
 		},
 		"sampler1": {
 			"type": "sampler",
@@ -67,17 +76,15 @@
 					1.0652825832366943
 				]
 			},
-			"inputs": [
-				"FFT_raw"
-			]
+			"flags": {
+				"bypass": true
+			}
 		},
 		"FFT_raw": {
 			"type": "FFT",
 			"params": {
-				"range": [
-					2.802596928649634e-45,
-					2.802596928649634e-45
-				],
+				"sizeExponent": 8,
+				"updateRangeParam": 0,
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
@@ -91,17 +98,14 @@
 			"type": "FFT",
 			"params": {
 				"asOctaves": 1,
-				"range": [
-					2.802596928649634e-45,
-					1.4349296274686127e-42
-				],
+				"updateRangeParam": 0,
 				"maxRange": [
 					-60233.8515625,
 					0.7003438472747803
 				]
 			},
 			"inputs": [
-				"meter1"
+				"file_main"
 			]
 		},
 		"file_main": {

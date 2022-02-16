@@ -334,7 +334,7 @@
 					],
 					"options": {
 						"spare": true,
-						"editable": true
+						"editable": false
 					}
 				}
 			},
@@ -345,6 +345,12 @@
 					"index": 1,
 					"node": "attribute6",
 					"output": "val"
+				},
+				null,
+				{
+					"index": 3,
+					"node": "floatToVec3_1",
+					"output": "vec3"
 				}
 			],
 			"connection_points": {
@@ -962,6 +968,108 @@
 					}
 				]
 			}
+		},
+		"globals1": {
+			"type": "globals"
+		},
+		"multAdd1": {
+			"type": "multAdd",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"preAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"mult": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.15
+				},
+				"postAdd": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "globals1",
+					"output": "time"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float"
+					},
+					{
+						"name": "preAdd",
+						"type": "float"
+					},
+					{
+						"name": "mult",
+						"type": "float"
+					},
+					{
+						"name": "postAdd",
+						"type": "float"
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float"
+					}
+				]
+			}
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {
+						"editable": "true"
+					}
+				},
+				"y": {
+					"overriden_options": {
+						"editable": "false"
+					}
+				},
+				"z": {
+					"overriden_options": {
+						"editable": "true"
+					}
+				}
+			},
+			"inputs": [
+				null,
+				{
+					"index": 1,
+					"node": "multAdd1",
+					"output": "val"
+				}
+			]
 		}
 	},
 	"params": {
@@ -988,5 +1096,8 @@
 				"type": "float"
 			}
 		]
-	}
+	},
+	"selection": [
+		"multAdd1"
+	]
 }

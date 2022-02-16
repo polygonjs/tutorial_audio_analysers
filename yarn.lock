@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@polygonjs/polygonjs@1.1.228":
-  version "1.1.228"
-  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.228.tgz#f3a0a2934e8b9f413d6ef815a3b55b6ace9f4c1f"
-  integrity sha512-tDqqKGDDR8Ojjng4maDRPljOO2VuCV9TCogFJ7CjL0VVXGC91niOsIk//Qd9IoXawvBRtSy4A4oMRPTIwT+kmg==
+"@polygonjs/polygonjs@1.1.229":
+  version "1.1.229"
+  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.229.tgz#cc5eace692d27dd63c975c0021f49ffbdffd65d8"
+  integrity sha512-tGREq96Z2B2dFf2rpPI8SnufsSbbv7o+bgz6jnPt3zv8ET6PDUwLjmSvp5YXRQPFVQTTZ+dLLA3mkAtvI+Xvrw==
   dependencies:
     "@types/three" "0.137.0"
     chromotome "1.20.0"
@@ -651,12 +651,12 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-polygonjs-editor@1.1.228-1:
-  version "1.1.228-1"
-  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.228-1.tgz#0968e11babe540194b6b01523e10fc35481f4f5e"
-  integrity sha512-q3MyFUVSPVxFzAu37pviIhhAdM+CUQL5HTMIJ18URpIgl/cEyW4cFxd1RIxkf0lesr2ztcPHZDWu62UE7UEjMw==
+polygonjs-editor@1.1.229-1:
+  version "1.1.229-1"
+  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.229-1.tgz#a110946577a4799677fde5eee32414a814a34c66"
+  integrity sha512-OjW4WNSJLsqf65H6pGGDKZtg3/zJtqpfgU5iiD3aXAy3mbo3MC0fDYjm+mM7MsoCq4jc7YmdXgU7/YQLNe6dlA==
   dependencies:
-    "@polygonjs/polygonjs" "1.1.228"
+    "@polygonjs/polygonjs" "1.1.229"
     btoa "1.2.1"
     chalk "4.1.0"
     cors "2.8.5"

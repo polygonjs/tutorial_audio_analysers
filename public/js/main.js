@@ -1,5 +1,6 @@
 let sceneReady=false;
 let userActionPerformed=false;
+let scene;
 
 function onSceneReadyAndUserActionPerformed(){
     if(!( sceneReady && userActionPerformed)){
@@ -48,17 +49,14 @@ function setupSoundSelectors(){
     const fileAudioNode = scene.node('/positionalAudio1/file_main');
     fileAudioNode.onStop(playNextMusic);
     const children = Array.from(listContainer.children);
-    console.log(children.map(c=>c.innerText))
     const childrenCount = children.length;
 
     let currentIndex=0;
     async function playCurrentMusic(){
-        console.log('playCurrentMusic', currentIndex);
         children.forEach(c=>c.classList.remove('active'));
         const child = children[currentIndex];
         child.classList.add('active');
         const fileName = AUDIO_FILE_NAMES[currentIndex];
-        console.log(fileName);
         fileAudioNode.p.url.set(`/audio/${fileName}?timestamp=${PAGE_LOAD_TIMESTAMP}`);
         await fileAudioNode.compute();
         fileAudioNode.p.restart.pressButton();
@@ -82,8 +80,9 @@ function setupSoundSelectors(){
     playCurrentMusic();
 }
 
-document.addEventListener('POLYSceneReady', ()=>{
+document.addEventListener('POLYSceneReady', (event)=>{
     sceneReady=true;
+    scene = event.detail.scene;
     onSceneReadyAndUserActionPerformed();
 })
 document.addEventListener('DOMContentLoaded', ()=>{

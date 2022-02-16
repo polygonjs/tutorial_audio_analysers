@@ -7,6 +7,6 @@
 		"polygon": "node node_modules/polygonjs-editor/build/index.js --port=8091"
 	},
 	"dependencies": {
-		"polygonjs-editor": "1.1.228-1"
+		"polygonjs-editor": "1.1.229-1"
 	}
 }
