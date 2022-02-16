@@ -1,5 +1,6 @@
 Created with [Polygonjs](https://polygonjs.com)
 
+I'm preparing a tutorial on how to create this type of effect, which I'll release on [twitter](https://twitter.com/fradingue).
 # Open Polygonjs Editor
 
 - 1: install dependencies, with `yarn` or `npm install`
