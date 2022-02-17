@@ -20,7 +20,6 @@
 		"audioListener1": {
 			"type": "audioListener",
 			"params": {
-				"soundOn": false,
 				"listenerTransformAutoUpdate": 0
 			},
 			"inputs": [
