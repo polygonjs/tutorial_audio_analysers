@@ -1,5 +1,5 @@
 
-# Realtime Particles with Music in WebGL
+# 🎵 Realtime Particles with Music in WebGL 🔊
 
 <a href="https://polygonjs.com/particles-music" target="_blank"><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/particles_music.gif?raw=true" /></a>
 
