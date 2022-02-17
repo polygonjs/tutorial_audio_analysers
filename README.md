@@ -1,7 +1,7 @@
 
 # Realtime Particles with Music in WebGL
 
-<a href="https://polygonjs.com/particles-music" target="_blank"><img width="512" src="./master/images/particles_music.gif" /></a>
+<a href="https://polygonjs.com/particles-music" target="_blank"><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/particles_music.gif?raw=true" /></a>
 
 [See experience live >](https://polygonjs.com/particles-music)
 
@@ -9,11 +9,11 @@ This repo contains the project to create page above, which showcases particles a
 
 This is created the node-based WebGL engine [Polygonjs](https://polygonjs.com), and can be edited or adapted without any coding required.
 
-I'm preparing a tutorial on how to create this type of effect, which I'll release on [twitter](https://twitter.com/fradingue) in a few days.
+I'm preparing a tutorial on how to create this type of effect, which I'll release on [my twitter](https://twitter.com/fradingue) and [@polygonjs](https://twitter.com/polygonjs) in a few days.
 
-<img width="512" src="./master/images/tutorial_screenshot1.png" />
-<img width="512" src="./master/images/tutorial_screenshot2.png" />
-<img width="512" src="./master/images/tutorial_screenshot3.png" />
+<img width="256" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.png?raw=true" />
+<img width="256" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.png?raw=true" />
+<img width="256" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.png?raw=true" />
 
 # Open Polygonjs Editor
 
