@@ -1,0 +1,132 @@
+{
+	"type": "ifThen",
+	"nodes": {
+		"subnetInput1": {
+			"type": "subnetInput",
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "v",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"subnetOutput1": {
+			"type": "subnetOutput",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "attribute4",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "v",
+						"type": "vec3"
+					}
+				],
+				"out": []
+			}
+		},
+		"attribute4": {
+			"type": "attribute",
+			"params": {
+				"name": "instancePosition",
+				"type": 2
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		},
+		"constant1": {
+			"type": "constant",
+			"params": {
+				"type": 4,
+				"vec3": [
+					0,
+					0,
+					1
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "vec3"
+					}
+				]
+			}
+		}
+	},
+	"params": {
+		"inputType0": 4,
+		"inputName0": "v",
+		"inputType1": 4,
+		"inputName1": "P",
+		"condition": {
+			"type": "boolean",
+			"default_value": false,
+			"options": {
+				"spare": true,
+				"editable": false
+			}
+		},
+		"v": {
+			"type": "vector3",
+			"default_value": [
+				0,
+				0,
+				0
+			],
+			"options": {
+				"spare": true,
+				"editable": false
+			}
+		}
+	},
+	"maxInputsCount": 2,
+	"inputs": [
+		{
+			"index": 0,
+			"node": "or1",
+			"output": "or"
+		},
+		{
+			"index": 1,
+			"node": "attribute3",
+			"output": "val"
+		}
+	],
+	"connection_points": {
+		"in": [
+			{
+				"name": "condition",
+				"type": "bool"
+			},
+			{
+				"name": "v",
+				"type": "vec3"
+			}
+		],
+		"out": [
+			{
+				"name": "v",
+				"type": "vec3"
+			}
+		]
+	},
+	"selection": [
+		"constant1"
+	]
+}

@@ -263,12 +263,12 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/env/MAT/meshBasicBuilder1'): MeshBasicBuilderMatNode;
 	node(path: '/env/COP'): CopNetworkSopNode;
 	node(path: '/env/COP/image1'): ImageCopNode;
-	node(path: '/eventsNetwork1'): EventsNetworkObjNode;
-	node(path: '/eventsNetwork1/nodeCook1'): NodeCookEventNode;
-	node(path: '/eventsNetwork1/setParam1'): SetParamEventNode;
-	node(path: '/eventsNetwork1/delay1'): DelayEventNode;
-	node(path: '/eventsNetwork1/setParam2'): SetParamEventNode;
-	node(path: '/eventsNetwork1/scene1'): SceneEventNode;
+	node(path: '/eventsNetwork_light_shadow'): EventsNetworkObjNode;
+	node(path: '/eventsNetwork_light_shadow/nodeCook1'): NodeCookEventNode;
+	node(path: '/eventsNetwork_light_shadow/setParam1'): SetParamEventNode;
+	node(path: '/eventsNetwork_light_shadow/delay1'): DelayEventNode;
+	node(path: '/eventsNetwork_light_shadow/setParam2'): SetParamEventNode;
+	node(path: '/eventsNetwork_light_shadow/scene1'): SceneEventNode;
 	node(path: string):any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
 		return super.node(path);
 	}

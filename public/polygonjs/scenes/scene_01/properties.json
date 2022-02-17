@@ -5,6 +5,6 @@
 	"realtimeState": true,
 	"mainCameraNodePath": "/perspectiveCamera_MAIN",
 	"versions": {
-		"polygonjs": "1.1.229"
+		"polygonjs": "1.1.231"
 	}
 }

@@ -80,9 +80,19 @@ function setupSoundSelectors(){
     playCurrentMusic();
 }
 
+function setupSpotlightShadow(){
+    const node = scene.node('/spotLight1');
+    const param = node.p.shadowUpdateOnNextRender;
+    param.set(1)
+    setTimeout(()=>{
+        param.set(0)
+    }, 1000);
+}
+
 document.addEventListener('POLYSceneReady', (event)=>{
     sceneReady=true;
     scene = event.detail.scene;
+    setupSpotlightShadow();
     onSceneReadyAndUserActionPerformed();
 })
 document.addEventListener('DOMContentLoaded', ()=>{

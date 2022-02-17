@@ -36,18 +36,18 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": -155.80307311777344,
-						"y": -470.2836944555364
+						"x": 536.8534991061954,
+						"y": -435.53658434131637
 					},
-					"zoom": 1.3020247265276332
+					"zoom": 0.6477314626485862
 				},
 				"history": {
 					"2": {
 						"position": {
-							"x": -49.50343246075428,
-							"y": 14.46031516419006
+							"x": -12.84692934232664,
+							"y": 204.5692059454904
 						},
-						"zoom": 0.6864789513793631
+						"zoom": 0.5639766126437368
 					},
 					"97": {
 						"position": {
@@ -121,10 +121,10 @@
 					},
 					"330": {
 						"position": {
-							"x": -354.02519401380306,
-							"y": -327.09657675469686
+							"x": -511.8290489228817,
+							"y": 49.48080427833179
 						},
-						"zoom": 0.560478951379363
+						"zoom": 0.4249766126437366
 					},
 					"352": {
 						"position": {
@@ -532,10 +532,17 @@
 						},
 						"zoom": 0.6916432793104034
 					},
+					"3196": {
+						"position": {
+							"x": -417.70622237211217,
+							"y": -277.33456568961805
+						},
+						"zoom": 0.5829583163837266
+					},
 					"3199": {
 						"position": {
-							"x": -155.80307311777344,
-							"y": -470.2836944555364
+							"x": -168.0916262258779,
+							"y": -458.7631759166885
 						},
 						"zoom": 1.3020247265276332
 					},
@@ -574,6 +581,13 @@
 						},
 						"zoom": 0.8074789513793632
 					},
+					"4085": {
+						"position": {
+							"x": 536.8534991061954,
+							"y": -435.53658434131637
+						},
+						"zoom": 0.6477314626485862
+					},
 					"4258": {
 						"position": {
 							"x": -348.12875751709754,
@@ -601,6 +615,13 @@
 							"y": -139.77010083951086
 						},
 						"zoom": 0.6654789513793631
+					},
+					"4553": {
+						"position": {
+							"x": -334.82117422587595,
+							"y": -127.33273005110033
+						},
+						"zoom": 0.6477314626485862
 					},
 					"4630": {
 						"position": {
@@ -664,6 +685,13 @@
 							"y": -51.570842686926945
 						},
 						"zoom": 0.9416720869401416
+					},
+					"5608": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.9872450276613101
 					}
 				},
 				"linkIndex": 1
@@ -672,7 +700,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/particles/eventsNetwork1",
+		"/particles/MAT/meshBasicBuilder_PARTICLES",
 		"/",
 		"/",
 		"/",
@@ -684,35 +712,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/env/MAT",
-				"/env",
-				"/",
-				"/env",
-				"/",
-				"/env",
-				"/",
-				"/waveform",
-				"/",
-				"/env",
-				"/env/MAT",
-				"/env/MAT/meshBasicBuilder1",
-				"/env/MAT",
-				"/env",
-				"/env/MAT",
-				"/env/MAT/meshBasicBuilder1",
-				"/env/MAT",
-				"/env/MAT/meshBasicBuilder1",
-				"/env/MAT",
-				"/env/MAT/meshBasicBuilder1",
-				"/env/MAT",
-				"/env",
-				"/env/MAT",
-				"/env/MAT/meshBasicBuilder1",
-				"/env/MAT",
-				"/env",
-				"/",
-				"/perspectiveCamera_MAIN",
-				"/perspectiveCamera_MAIN/animationsNetwork1",
 				"/",
 				"/crowd",
 				"/",
@@ -722,17 +721,17 @@
 				"/crowd/MAT",
 				"/crowd",
 				"/",
-				"/eventsNetwork1",
+				"/eventsNetwork_light_shadow",
 				"/",
 				"/crowd",
 				"/",
-				"/eventsNetwork1",
+				"/eventsNetwork_light_shadow",
 				"/",
-				"/eventsNetwork1",
+				"/eventsNetwork_light_shadow",
 				"/",
-				"/eventsNetwork1",
+				"/eventsNetwork_light_shadow",
 				"/",
-				"/eventsNetwork1",
+				"/eventsNetwork_light_shadow",
 				"/",
 				"/raycastTarget",
 				"/",
@@ -783,7 +782,36 @@
 				"/particles",
 				"/",
 				"/particles",
-				"/particles/eventsNetwork1"
+				"/particles/eventsNetwork1",
+				"/particles",
+				"/",
+				"/particles",
+				"/",
+				"/particles",
+				"/particles/MAT",
+				"/particles",
+				"/",
+				"/eventsNetwork_light_shadow",
+				"/",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT",
+				"/particles",
+				"/particles/MAT",
+				"/particles/MAT/meshBasicBuilder_PARTICLES",
+				"/particles/MAT/meshBasicBuilder_PARTICLES/ifThen1",
+				"/particles/MAT/meshBasicBuilder_PARTICLES"
 			],
 			"2": [],
 			"3": [],

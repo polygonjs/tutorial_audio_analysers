@@ -876,7 +876,6 @@
 		}
 	},
 	"params": {
-		"dataType": 1,
 		"material": "../MAT/meshBasicBuilder_PARTICLES",
 		"texture1": {
 			"type": "node_path",
@@ -914,9 +913,9 @@
 				"dependentOnFoundNode": true
 			},
 			"raw_input": [
-				5.835044577793805,
-				3.6162022670341054,
-				1.7763568394002505e-15
+				-0.6462193117521269,
+				-4.634829227376919,
+				0
 			],
 			"overriden_options": {
 				"spare": "true",
@@ -1035,9 +1034,9 @@
 				"v_POLY_param_mouseCenter": {
 					"type": "v3",
 					"value": [
-						5.835044577793805,
-						3.6162022670341054,
-						1.7763568394002505e-15
+						-0.6462193117521269,
+						-4.634829227376919,
+						0
 					]
 				}
 			},
