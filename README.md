@@ -26,5 +26,6 @@ If you have any trouble installing it, the docs may be able to help: [https://po
 
 # Assets
 
-- environment map: [https://www.eso.org/public/unitedkingdom/images/eso0932a/](https://www.eso.org/public/unitedkingdom/images/eso0932a/)
-- music from [https://www.scottbuckley.com.au/library/the-climb/](https://www.scottbuckley.com.au/library/the-climb/)
+- Music tracks from the composer [Scott Buckley](https://www.scottbuckley.com.au/library/the-climb/).
+- Character models [https://renderpeople.com](https://renderpeople.com).
+- Milky Way image: [https://www.eso.org/public/unitedkingdom/images/eso0932a/](https://www.eso.org/public/unitedkingdom/images/eso0932a/).
