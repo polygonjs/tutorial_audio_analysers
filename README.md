@@ -7,7 +7,7 @@
 
 This repo contains the project to create page above, which showcases particles animated with music.
 
-This is created the node-based WebGL engine [Polygonjs](https://polygonjs.com), and can be edited or adapted without any coding required.
+This is created the node-based WebGL engine [Polygonjs](https://polygonjs.com), and can be edited or adapted without any coding required. And if you know how to code, you can also extend [the open source engine](https://github.com/polygonjs/polygonjs) by [creating your own nodes](https://github.com/polygonjs/plugins_tutorials).
 
 I'm preparing a tutorial on how to create this type of effect, which I'll release on [my twitter](https://twitter.com/fradingue) and [@polygonjs](https://twitter.com/polygonjs) in a few days.
 
