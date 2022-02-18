@@ -11,10 +11,16 @@ This is created using the node-based WebGL engine [Polygonjs](https://polygonjs.
 
 I'm preparing a tutorial on how to create this type of effect, which I'll release on [my twitter](https://twitter.com/fradingue) and [@polygonjs](https://twitter.com/polygonjs) in a few days.
 
-<img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" />
-<img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" />
-<img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" />
-<img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" />
+<table>
+    <tr>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" /></td>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" /></td>
+    </tr>
+    <tr>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" /></td>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" /></td>
+    </tr>
+</table>
 
 # Open Polygonjs Editor
 
