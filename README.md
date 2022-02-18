@@ -11,14 +11,22 @@ This is created using the node-based WebGL engine [Polygonjs](https://polygonjs.
 
 I'm preparing a tutorial on how to create this type of effect, which I'll release on [my twitter](https://twitter.com/fradingue) and [@polygonjs](https://twitter.com/polygonjs) in a few days.
 
-<table>
-    <tr>
-        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" /></td>
-        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" /></td>
+<table style='border:0px'>
+    <tr style='border:0px'>
+        <td style='border:0px;padding:0px'>
+            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" />
+        </td>
+        <td style='border:0px;padding:0px'style='border:0px'>
+            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" />
+            </td>
     </tr>
-    <tr>
-        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" /></td>
-        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" /></td>
+    <tr style='border:0px'>
+        <td style='border:0px;padding:0px'>
+            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" />
+        </td>
+        <td style='border:0px;padding:0px'>
+            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" />
+        </td>
     </tr>
 </table>
 
@@ -37,7 +45,7 @@ I'm preparing a tutorial on how to create this type of effect, which I'll releas
 
 - 6: And then press play to start the music and particles simulation:
 
-![Polygonjs Login](https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_play.jpg)
+![Play Button](https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_play_button.jpg)
 
 If you have any trouble installing it, the docs may be able to help: [https://polygonjs.com/docs/](https://polygonjs.com/docs/)
 
