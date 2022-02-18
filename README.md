@@ -11,22 +11,15 @@ This is created using the node-based WebGL engine [Polygonjs](https://polygonjs.
 
 I'm preparing a tutorial on how to create this type of effect, which I'll release on [my twitter](https://twitter.com/fradingue) and [@polygonjs](https://twitter.com/polygonjs) in a few days.
 
-<table style='border:0px'>
-    <tr style='border:0px'>
-        <td style='border:0px;padding:0px'>
-            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" />
-        </td>
-        <td style='border:0px;padding:0px'style='border:0px'>
-            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" />
-            </td>
+
+<table>
+    <tr>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot1.jpg?raw=true" /></td>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot2.jpg?raw=true" /></td>
     </tr>
-    <tr style='border:0px'>
-        <td style='border:0px;padding:0px'>
-            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" />
-        </td>
-        <td style='border:0px;padding:0px'>
-            <img style='display:block' width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" />
-        </td>
+    <tr>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot3.jpg?raw=true" /></td>
+        <td><img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/tutorial_screenshot4.jpg?raw=true" /></td>
     </tr>
 </table>
 
@@ -52,6 +45,6 @@ If you have any trouble installing it, the docs may be able to help: [https://po
 
 # Assets
 
-- Music tracks from the composer [Scott Buckley](https://www.scottbuckley.com.au/library/the-climb/).
+- Music tracks by the composer [Scott Buckley](https://www.scottbuckley.com.au/library/the-climb/).
 - Character models: [https://renderpeople.com](https://renderpeople.com).
 - Milky Way image: [https://www.eso.org/public/unitedkingdom/images/eso0932a/](https://www.eso.org/public/unitedkingdom/images/eso0932a/).
