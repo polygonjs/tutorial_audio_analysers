@@ -6,7 +6,7 @@
 			"params": {
 				"intensity": 2.1,
 				"angle": 30.6,
-				"penumbra": 0.21,
+				"penumbra": 0.47,
 				"castShadow": 1,
 				"shadowAutoUpdate": 0
 			},
@@ -90,7 +90,7 @@
 				]
 			},
 			"flags": {
-				"display": true
+				"display": false
 			}
 		}
 	},
@@ -100,9 +100,7 @@
 			1,
 			1,
 			1
-		]
-	},
-	"selection": [
-		"particles"
-	]
+		],
+		"nodesMask": "*/file* */image* */envMap* /crowd/OUT /particles/particlesSystemGpu1 /positionalAudio*/OUT"
+	}
 }

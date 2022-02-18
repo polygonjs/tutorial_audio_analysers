@@ -75,6 +75,7 @@ import {LineBasicMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/LineBa
 import {MeshBasicBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshBasicBuilder';
 import {MeshBasicMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshBasic';
 import {MeshLambertBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshLambertBuilder';
+import {MeshPhongBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshPhongBuilder';
 import {MeshPhongMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshPhong';
 import {MeshPhysicalMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshPhysical';
 import {MeshStandardBuilderMatNode} from '@polygonjs/polygonjs/src/engine/nodes/mat/MeshStandardBuilder';
@@ -158,6 +159,8 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/crowd/MAT/meshPhong1'): MeshPhongMatNode;
 	node(path: '/crowd/MAT/meshLambertBuilder_INSTANCES'): MeshLambertBuilderMatNode;
 	node(path: '/crowd/MAT/meshStandardBuilder1'): MeshStandardBuilderMatNode;
+	node(path: '/crowd/MAT/meshPhongBuilder_ground'): MeshPhongBuilderMatNode;
+	node(path: '/crowd/material2'): MaterialSopNode;
 	node(path: '/planeWithTexture'): GeoObjNode;
 	node(path: '/planeWithTexture/plane1'): PlaneSopNode;
 	node(path: '/planeWithTexture/material1'): MaterialSopNode;

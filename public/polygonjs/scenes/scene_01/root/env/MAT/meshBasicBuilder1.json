@@ -253,7 +253,6 @@
 					"uuid": "/env/MAT/meshBasicBuilder1-customDepthMaterial",
 					"type": "MeshDepthMaterial",
 					"name": "customDepthMaterial",
-					"side": 1,
 					"depthFunc": 3,
 					"depthTest": true,
 					"depthWrite": true,

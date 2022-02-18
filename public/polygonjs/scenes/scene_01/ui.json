@@ -381,14 +381,14 @@
 				},
 				"material1": {
 					"pos": [
-						350,
-						950
+						100,
+						700
 					]
 				},
 				"OUT": {
 					"pos": [
 						350,
-						1050
+						1000
 					]
 				},
 				"attribDelete1": {
@@ -508,8 +508,46 @@
 									]
 								}
 							}
+						},
+						"meshPhongBuilder_ground": {
+							"pos": [
+								0,
+								300
+							],
+							"nodes": {
+								"globals1": {
+									"pos": [
+										-350,
+										0
+									]
+								},
+								"output1": {
+									"pos": [
+										400,
+										0
+									]
+								},
+								"vec3ToFloat1": {
+									"pos": [
+										-100,
+										0
+									]
+								},
+								"smoothstep1": {
+									"pos": [
+										150,
+										0
+									]
+								}
+							}
 						}
 					}
+				},
+				"material2": {
+					"pos": [
+						600,
+						700
+					]
 				}
 			}
 		},

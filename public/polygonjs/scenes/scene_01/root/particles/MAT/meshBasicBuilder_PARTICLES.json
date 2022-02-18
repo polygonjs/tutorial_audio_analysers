@@ -1184,6 +1184,7 @@
 					"uuid": "/particles/MAT/meshBasicBuilder_PARTICLES-customDepthMaterial",
 					"type": "MeshDepthMaterial",
 					"name": "customDepthMaterial",
+					"side": 1,
 					"depthFunc": 3,
 					"depthTest": true,
 					"depthWrite": true,

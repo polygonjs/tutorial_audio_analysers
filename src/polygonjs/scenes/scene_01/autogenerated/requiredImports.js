@@ -43,6 +43,7 @@ import {MeshBasicMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/M
 import {MeshBasicBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasicBuilder';
 import {MeshLambertBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshLambertBuilder';
 import {MeshPhongMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshPhong';
+import {MeshPhongBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshPhongBuilder';
 import {MeshPhysicalMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshPhysical';
 import {MeshStandardBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshStandardBuilder';
 import {PointsBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/PointsBuilder';
@@ -130,6 +131,7 @@ export const requiredImports_scene_01 = {
 		MeshBasicBuilderMatNode,
 		MeshLambertBuilderMatNode,
 		MeshPhongMatNode,
+		MeshPhongBuilderMatNode,
 		MeshPhysicalMatNode,
 		MeshStandardBuilderMatNode,
 		PointsBuilderMatNode,

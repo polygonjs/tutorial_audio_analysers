@@ -154,12 +154,9 @@
 		},
 		"merge2": {
 			"type": "merge",
-			"params": {
-				"compact": 1
-			},
 			"inputs": [
-				"merge1",
-				"attribDelete1"
+				"material1",
+				"material2"
 			],
 			"cloned_state_overriden": true
 		},
@@ -175,6 +172,11 @@
 		"transform5": {
 			"type": "transform",
 			"params": {
+				"s": [
+					1,
+					1,
+					1.7152524620132954
+				],
 				"scale": 1.7,
 				"pivot": [
 					"$CEX",
@@ -290,14 +292,14 @@
 				"material": "../MAT/meshPhong1"
 			},
 			"inputs": [
-				"merge2"
+				"merge1"
 			],
 			"cloned_state_overriden": true
 		},
 		"OUT": {
 			"type": "null",
 			"inputs": [
-				"material1"
+				"merge2"
 			],
 			"flags": {
 				"display": true
@@ -312,6 +314,16 @@
 			"inputs": [
 				"transform5"
 			]
+		},
+		"material2": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshPhongBuilder_ground"
+			},
+			"inputs": [
+				"attribDelete1"
+			],
+			"cloned_state_overriden": true
 		}
 	},
 	"flags": {
