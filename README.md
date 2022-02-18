@@ -34,11 +34,11 @@ I'm preparing a tutorial on how to create this type of effect, which I'll releas
 
 - 5: you are then asked to login, but you can cancel/skip it and still use the scene. But you need to login in order to save your changes.
 
-![Polygonjs Login](https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_login.jpg)
+<img width="512" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_login.jpg?raw=true" />
 
 - 6: And then press play to start the music and particles simulation:
 
-![Play Button](https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_play_button.jpg)
+<img width="256" src="https://github.com/polygonjs/tutorial_audio_analysers/blob/main/public/images/editor_play_button.jpg?raw=true" />
 
 If you have any trouble installing it, the docs may be able to help: [https://polygonjs.com/docs/](https://polygonjs.com/docs/)
 
