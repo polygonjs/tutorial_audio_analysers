@@ -1,6 +1,6 @@
 {
 	"multiple_panel": {
-		"split_ratio": 0.353125,
+		"split_ratio": 0.5040953090096798,
 		"split_panel0": {
 			"split_ratio": 0.5,
 			"split_panel0": {
@@ -20,7 +20,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"active_folder": 459,
+					"active_folder": null,
 					"linkIndex": 1
 				}
 			},
@@ -36,16 +36,16 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": 361.28205982071927,
-						"y": 34.349381492161406
+						"x": 230.85856348166206,
+						"y": -105.31936951416654
 					},
 					"zoom": 0.5639766126437368
 				},
 				"history": {
 					"2": {
 						"position": {
-							"x": 361.28205982071927,
-							"y": 34.349381492161406
+							"x": 49.2123816562828,
+							"y": 162.01424983215819
 						},
 						"zoom": 0.5639766126437368
 					},
@@ -165,6 +165,13 @@
 						"position": {
 							"x": 361.28205982071927,
 							"y": 34.349381492161406
+						},
+						"zoom": 0.5639766126437368
+					},
+					"499": {
+						"position": {
+							"x": -219.4939877194503,
+							"y": -110.63873902833306
 						},
 						"zoom": 0.5639766126437368
 					},
@@ -721,6 +728,13 @@
 						},
 						"zoom": 0.9872450276613101
 					},
+					"5639": {
+						"position": {
+							"x": 230.85856348166206,
+							"y": -105.31936951416654
+						},
+						"zoom": 0.5639766126437368
+					},
 					"5874": {
 						"position": {
 							"x": -281.0199811226446,
@@ -735,7 +749,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/",
+		"/env/COP",
 		"/",
 		"/",
 		"/",
@@ -747,16 +761,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/particles",
-				"/particles/particlesSystemGpu1",
-				"/particles",
-				"/",
-				"/particles",
-				"/particles/MAT",
-				"/particles/MAT/meshBasicBuilder_PARTICLES",
-				"/particles/MAT",
-				"/particles",
-				"/",
 				"/particles",
 				"/particles/MAT",
 				"/particles/MAT/meshBasicBuilder_PARTICLES",
@@ -846,7 +850,17 @@
 				"/perspectiveCamera_MAIN",
 				"/perspectiveCamera_MAIN/eventsNetwork1",
 				"/perspectiveCamera_MAIN",
-				"/"
+				"/",
+				"/env",
+				"/env/COP",
+				"/env",
+				"/",
+				"/env",
+				"/env/COP",
+				"/env",
+				"/",
+				"/env",
+				"/env/COP"
 			],
 			"2": [],
 			"3": [],
@@ -869,8 +883,9 @@
 	},
 	"fullscreenPanelId": null,
 	"saveOptions": {
-		"compressJs": true,
-		"createZip": true
+		"createExport": true,
+		"compressJs": false,
+		"publishToIntegrations": false
 	},
 	"paramsModal": []
 }

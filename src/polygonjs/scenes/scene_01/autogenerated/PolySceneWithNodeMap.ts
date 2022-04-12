@@ -155,12 +155,12 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/crowd/material1'): MaterialSopNode;
 	node(path: '/crowd/OUT'): NullSopNode;
 	node(path: '/crowd/attribDelete1'): AttribDeleteSopNode;
+	node(path: '/crowd/material2'): MaterialSopNode;
 	node(path: '/crowd/MAT'): MaterialsNetworkSopNode;
 	node(path: '/crowd/MAT/meshPhong1'): MeshPhongMatNode;
 	node(path: '/crowd/MAT/meshLambertBuilder_INSTANCES'): MeshLambertBuilderMatNode;
 	node(path: '/crowd/MAT/meshStandardBuilder1'): MeshStandardBuilderMatNode;
 	node(path: '/crowd/MAT/meshPhongBuilder_ground'): MeshPhongBuilderMatNode;
-	node(path: '/crowd/material2'): MaterialSopNode;
 	node(path: '/planeWithTexture'): GeoObjNode;
 	node(path: '/planeWithTexture/plane1'): PlaneSopNode;
 	node(path: '/planeWithTexture/material1'): MaterialSopNode;

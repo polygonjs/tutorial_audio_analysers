@@ -10,58 +10,64 @@
 		<%= EditorApi.html.head.tags() %>
 	</head>
 	<body>
-		<div id="<%= EditorApi.html.body.polygonjsId('scene_01') %>" class='polygonjs-app'></div>
+		<div id="<%= EditorApi.html.body.polygonjsId('scene_01') %>" class="polygonjs-app"></div>
 		<%= EditorApi.html.body.tags('loader') %>
 
-		<div id='sound-notice-container'>
-			<div id='sound-notice-overlay'></div>
-			<div id='sound-notice-message-body'>
-
-				<div id='headset-container'>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
-						<path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
-					  </svg>
+		<div id="sound-notice-container">
+			<div id="sound-notice-overlay"></div>
+			<div id="sound-notice-message-body">
+				<div id="headset-container">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						fill="currentColor"
+						class="bi bi-headset"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"
+						/>
+					</svg>
 				</div>
 				<p>
 					This is an audio-visual experience
-					<br>
+					<br />
 					brought to you by
-					<a target="_blank" href='https://polygonjs.com'>Polygonjs</a>
+					<a target="_blank" href="https://polygonjs.com">Polygonjs</a>
 				</p>
 
-				<div id='sound-notice-button-container'>
-					<div id='sound-notice-start-button'>START EXPERIENCE</div>
+				<div id="sound-notice-button-container">
+					<div id="sound-notice-start-button">START EXPERIENCE</div>
 				</div>
 			</div>
 		</div>
 
-		<div id='links-container'>
-			<a target="_blank" href='https://polygonjs.com'>
-				<span class='made-with'>Made with Polygonjs </span>
-				<img src='/images/favicon.png?v=1'/>
+		<div id="links-container">
+			<a target="_blank" href="https://polygonjs.com">
+				<span class="made-with">Made with Polygonjs </span>
+				<img src="/images/favicon.png?v=1" />
 			</a>
-			<a target="_blank" href='https://twitter.com/polygonjs'>
-				<img src='/images/twitter.png?v=1'/>
+			<a target="_blank" href="https://twitter.com/polygonjs">
+				<img src="/images/twitter.png?v=1" />
 			</a>
-			<a target="_blank" href='https://github.com/polygonjs/tutorial_audio_analysers'>
-				<img src='/images/github.png?v=1'/>
+			<a target="_blank" href="https://github.com/polygonjs/tutorial_audio_analysers">
+				<img src="/images/github.png?v=1" />
 			</a>
-			<a target="_blank" href='https://polygonjs.com/youtube'>
-				<img src='/images/youtube.png?v=1'/>
+			<a target="_blank" href="https://polygonjs.com/youtube">
+				<img src="/images/youtube.png?v=1" />
 			</a>
 		</div>
 
-		<div id='audio-selectors-container'>
-			<p id='music-author'>
-				Musics by
-				<a target="_blank" href='https://www.scottbuckley.com.au'>Scott Buckley</a>
-			</p>
-			<div id='audio-selectors-list'>
-				<span class='selector'>The Climb</span>
-				<span class='selector'>Goliath</span>
-				<span class='selector'>Pathfinder</span>
-				<span class='selector'>Terminus</span>
-				<span class='selector'>Catalyst</span>
+		<div id="audio-selectors-container">
+			<div id="audio-selectors-toggle"></div>
+			<div id="toggleable-content">
+				<p id="music-author">
+					Musics by
+					<a target="_blank" href="https://www.scottbuckley.com.au">Scott Buckley</a>
+				</p>
+				<div id="audio-selectors-list"></div>
+				<div id="dropzone">Drag & Drop Audio Files</div>
 			</div>
 		</div>
 	</body>

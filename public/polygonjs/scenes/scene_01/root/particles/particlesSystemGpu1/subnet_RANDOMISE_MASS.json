@@ -66,9 +66,7 @@
 			"type": "random",
 			"params": {
 				"seed": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -83,14 +81,10 @@
 			"type": "floatToVec2",
 			"params": {
 				"x": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				},
 				"y": {
-					"overriden_options": {
-						"editable": "true"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [

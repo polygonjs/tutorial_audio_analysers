@@ -33,14 +33,10 @@
 			"type": "cross",
 			"params": {
 				"x": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				},
 				"y": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [

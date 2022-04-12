@@ -83,15 +83,11 @@
 			"type": "floatToVec2",
 			"params": {
 				"x": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				},
 				"y": {
 					"raw_input": 0.76,
-					"overriden_options": {
-						"editable": "true"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -106,9 +102,13 @@
 			"type": "texture",
 			"params": {
 				"uv": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
+				},
+				"blurPixelsCountX": {
+					"overriden_options": {}
+				},
+				"blurPixelsCountY": {
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -187,9 +187,7 @@
 			"type": "vec4ToFloat",
 			"params": {
 				"vec": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -238,9 +236,7 @@
 			"type": "vec2ToFloat",
 			"params": {
 				"vec": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -1047,19 +1043,13 @@
 			"type": "floatToVec3",
 			"params": {
 				"x": {
-					"overriden_options": {
-						"editable": "true"
-					}
+					"overriden_options": {}
 				},
 				"y": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				},
 				"z": {
-					"overriden_options": {
-						"editable": "true"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [

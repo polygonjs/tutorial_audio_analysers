@@ -21,9 +21,7 @@
 			"type": "vec3ToFloat",
 			"params": {
 				"vec": {
-					"overriden_options": {
-						"editable": "false"
-					}
+					"overriden_options": {}
 				}
 			},
 			"inputs": [
@@ -61,10 +59,6 @@
 					"options": {
 						"spare": true,
 						"editable": false
-					},
-					"overriden_options": {
-						"spare": "true",
-						"editable": "false"
 					}
 				}
 			},
@@ -132,11 +126,10 @@
 			"stencilFuncMask": 255,
 			"stencilFail": 7680,
 			"stencilZFail": 7680,
-			"stencilZPass": 7680,
-			"shadowSide": null
+			"stencilZPass": 7680
 		},
 		"onBeforeCompileDataJSON": {
-			"vertexShader": "\n#define PHONG\n\nvarying vec3 vViewPosition;\n\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <uv_pars_vertex>\n#include <uv2_pars_vertex>\n#include <displacementmap_pars_vertex>\n#include <envmap_pars_vertex>\n#include <color_pars_vertex>\n#include <fog_pars_vertex>\n#include <normal_pars_vertex>\n#include <morphtarget_pars_vertex>\n#include <skinning_pars_vertex>\n#include <shadowmap_pars_vertex>\n#include <logdepthbuf_pars_vertex>\n#include <clipping_planes_pars_vertex>\n\nvoid main() {\n\n\t#include <uv_vertex>\n\t#include <uv2_vertex>\n\t#include <color_vertex>\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/globals1\n\tv_POLY_globals1_position = vec3(position);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tvec3 transformed = position;\n\tvec3 objectNormal = normal;\n\t#ifdef USE_TANGENT\n\t\tvec3 objectTangent = vec3( tangent.xyz );\n\t#endif\n\n\n\n\n// removed:\n//\t#include <beginnormal_vertex>\n\t#include <morphnormal_vertex>\n\t#include <skinbase_vertex>\n\t#include <skinnormal_vertex>\n\t#include <defaultnormal_vertex>\n\t#include <normal_vertex>\n\n// removed:\n//\t#include <begin_vertex>\n\t#include <morphtarget_vertex>\n\t#include <skinning_vertex>\n\t#include <displacementmap_vertex>\n\t#include <project_vertex>\n\t#include <logdepthbuf_vertex>\n\t#include <clipping_planes_vertex>\n\n\tvViewPosition = - mvPosition.xyz;\n\n\t#include <worldpos_vertex>\n\t#include <envmap_vertex>\n\t#include <shadowmap_vertex>\n\t#include <fog_vertex>\n\n}\n",
+			"vertexShader": "\n#define PHONG\n\nvarying vec3 vViewPosition;\n\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <uv_pars_vertex>\n#include <uv2_pars_vertex>\n#include <displacementmap_pars_vertex>\n#include <envmap_pars_vertex>\n#include <color_pars_vertex>\n#include <fog_pars_vertex>\n#include <normal_pars_vertex>\n#include <morphtarget_pars_vertex>\n#include <skinning_pars_vertex>\n#include <shadowmap_pars_vertex>\n#include <logdepthbuf_pars_vertex>\n#include <clipping_planes_pars_vertex>\n\nvoid main() {\n\n\t#include <uv_vertex>\n\t#include <uv2_vertex>\n\t#include <color_vertex>\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/globals1\n\tv_POLY_globals1_position = vec3(position);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tvec3 transformed = position;\n\tvec3 objectNormal = normal;\n\t#ifdef USE_TANGENT\n\t\tvec3 objectTangent = vec3( tangent.xyz );\n\t#endif\n\n\n\n\t#include <morphcolor_vertex>\n\n// removed:\n//\t#include <beginnormal_vertex>\n\t#include <morphnormal_vertex>\n\t#include <skinbase_vertex>\n\t#include <skinnormal_vertex>\n\t#include <defaultnormal_vertex>\n\t#include <normal_vertex>\n\n// removed:\n//\t#include <begin_vertex>\n\t#include <morphtarget_vertex>\n\t#include <skinning_vertex>\n\t#include <displacementmap_vertex>\n\t#include <project_vertex>\n\t#include <logdepthbuf_vertex>\n\t#include <clipping_planes_vertex>\n\n\tvViewPosition = - mvPosition.xyz;\n\n\t#include <worldpos_vertex>\n\t#include <envmap_vertex>\n\t#include <shadowmap_vertex>\n\t#include <fog_vertex>\n\n}\n",
 			"fragmentShader": "\n#define PHONG\n\nuniform vec3 diffuse;\nuniform vec3 emissive;\nuniform vec3 specular;\nuniform float shininess;\nuniform float opacity;\n\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <packing>\n#include <dithering_pars_fragment>\n#include <color_pars_fragment>\n#include <uv_pars_fragment>\n#include <uv2_pars_fragment>\n#include <map_pars_fragment>\n#include <alphamap_pars_fragment>\n#include <alphatest_pars_fragment>\n#include <aomap_pars_fragment>\n#include <lightmap_pars_fragment>\n#include <emissivemap_pars_fragment>\n#include <envmap_common_pars_fragment>\n#include <envmap_pars_fragment>\n#include <cube_uv_reflection_fragment>\n#include <fog_pars_fragment>\n#include <bsdfs>\n#include <lights_pars_begin>\n#include <normal_pars_fragment>\n#include <lights_phong_pars_fragment>\n#include <shadowmap_pars_fragment>\n#include <bumpmap_pars_fragment>\n#include <normalmap_pars_fragment>\n#include <specularmap_pars_fragment>\n#include <logdepthbuf_pars_fragment>\n#include <clipping_planes_pars_fragment>\n\nvoid main() {\n\n\t#include <clipping_planes_fragment>\n\n\tvec4 diffuseColor = vec4( diffuse, opacity );\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/vec3ToFloat1\n\tfloat v_POLY_vec3ToFloat1_z = v_POLY_globals1_position.z;\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/smoothstep1\n\tfloat v_POLY_smoothstep1_val = smoothstep(-0.9, 1.6, v_POLY_vec3ToFloat1_z);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tdiffuseColor.a = v_POLY_smoothstep1_val;\n\n\n\n\tReflectedLight reflectedLight = ReflectedLight( vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ), vec3( 0.0 ) );\n\tvec3 totalEmissiveRadiance = emissive;\n\n\t#include <logdepthbuf_fragment>\n\t#include <map_fragment>\n\t#include <color_fragment>\n\t#include <alphamap_fragment>\n\t#include <alphatest_fragment>\n\t#include <specularmap_fragment>\n\t#include <normal_fragment_begin>\n\t#include <normal_fragment_maps>\n\t#include <emissivemap_fragment>\n\n\t// accumulation\n\t#include <lights_phong_fragment>\n\t#include <lights_fragment_begin>\n\t#include <lights_fragment_maps>\n\t#include <lights_fragment_end>\n\n\t// modulation\n\t#include <aomap_fragment>\n\n\tvec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + reflectedLight.directSpecular + reflectedLight.indirectSpecular + totalEmissiveRadiance;\n\n\t#include <envmap_fragment>\n\t#include <output_fragment>\n\t#include <tonemapping_fragment>\n\t#include <encodings_fragment>\n\t#include <fog_fragment>\n\t#include <premultiplied_alpha_fragment>\n\t#include <dithering_fragment>\n\n}\n",
 			"timeDependent": false,
 			"resolutionDependent": false,
@@ -153,7 +146,6 @@
 					"uuid": "/crowd/MAT/meshPhongBuilder_ground-customDepthMaterial",
 					"type": "MeshDepthMaterial",
 					"name": "customDepthMaterial",
-					"side": 1,
 					"depthFunc": 3,
 					"depthTest": true,
 					"depthWrite": true,
@@ -166,7 +158,7 @@
 					"stencilFail": 7680,
 					"stencilZFail": 7680,
 					"stencilZPass": 7680,
-					"shadowSide": null
+					"depthPacking": 3201
 				},
 				"onBeforeCompileDataJSON": {
 					"vertexShader": "\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <uv_pars_vertex>\n#include <displacementmap_pars_vertex>\n#include <morphtarget_pars_vertex>\n#include <skinning_pars_vertex>\n#include <logdepthbuf_pars_vertex>\n#include <clipping_planes_pars_vertex>\n\n// This is used for computing an equivalent of gl_FragCoord.z that is as high precision as possible.\n// Some platforms compute gl_FragCoord at a lower precision which makes the manually computed value better for\n// depth-based postprocessing effects. Reproduced on iPad with A10 processor / iPadOS 13.3.1.\nvarying vec2 vHighPrecisionZW;\n\nvoid main() {\n\n\t#include <uv_vertex>\n\n\t#include <skinbase_vertex>\n\n\t#ifdef USE_DISPLACEMENTMAP\n\n// removed:\n//\t\t#include <beginnormal_vertex>\n\t\t#include <morphnormal_vertex>\n\t\t#include <skinnormal_vertex>\n\n\t#endif\n\n// removed:\n//\t#include <begin_vertex>\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/globals1\n\tv_POLY_globals1_position = vec3(position);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tvec3 transformed = position;\n\tvec3 objectNormal = normal;\n\t#ifdef USE_TANGENT\n\t\tvec3 objectTangent = vec3( tangent.xyz );\n\t#endif\n\n\n\n\t#include <morphtarget_vertex>\n\t#include <skinning_vertex>\n\t#include <displacementmap_vertex>\n\t#include <project_vertex>\n\t#include <logdepthbuf_vertex>\n\t#include <clipping_planes_vertex>\n\n\tvHighPrecisionZW = gl_Position.zw;\n\n}\n",
@@ -197,8 +189,7 @@
 					"stencilFuncMask": 255,
 					"stencilFail": 7680,
 					"stencilZFail": 7680,
-					"stencilZPass": 7680,
-					"shadowSide": null
+					"stencilZPass": 7680
 				},
 				"onBeforeCompileDataJSON": {
 					"vertexShader": "\n#define DISTANCE\n\nvarying vec3 vWorldPosition;\n\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <uv_pars_vertex>\n#include <displacementmap_pars_vertex>\n#include <morphtarget_pars_vertex>\n#include <skinning_pars_vertex>\n#include <clipping_planes_pars_vertex>\n\nvoid main() {\n\n\t#include <uv_vertex>\n\n\t#include <skinbase_vertex>\n\n\t#ifdef USE_DISPLACEMENTMAP\n\n// removed:\n//\t\t#include <beginnormal_vertex>\n\t\t#include <morphnormal_vertex>\n\t\t#include <skinnormal_vertex>\n\n\t#endif\n\n// removed:\n//\t#include <begin_vertex>\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/globals1\n\tv_POLY_globals1_position = vec3(position);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tvec3 transformed = position;\n\tvec3 objectNormal = normal;\n\t#ifdef USE_TANGENT\n\t\tvec3 objectTangent = vec3( tangent.xyz );\n\t#endif\n\n\n\n\t#include <morphtarget_vertex>\n\t#include <skinning_vertex>\n\t#include <displacementmap_vertex>\n\t#include <project_vertex>\n\t#include <worldpos_vertex>\n\t#include <clipping_planes_vertex>\n\n\tvWorldPosition = worldPosition.xyz;\n\n}\n",
@@ -230,7 +221,7 @@
 					"stencilFail": 7680,
 					"stencilZFail": 7680,
 					"stencilZPass": 7680,
-					"shadowSide": null
+					"depthPacking": 3200
 				},
 				"onBeforeCompileDataJSON": {
 					"vertexShader": "\n#include <common>\n\n\n\n// /crowd/MAT/meshPhongBuilder_ground/globals1\nvarying vec3 v_POLY_globals1_position;\n\n\n\n\n#include <uv_pars_vertex>\n#include <displacementmap_pars_vertex>\n#include <morphtarget_pars_vertex>\n#include <skinning_pars_vertex>\n#include <logdepthbuf_pars_vertex>\n#include <clipping_planes_pars_vertex>\n\n// This is used for computing an equivalent of gl_FragCoord.z that is as high precision as possible.\n// Some platforms compute gl_FragCoord at a lower precision which makes the manually computed value better for\n// depth-based postprocessing effects. Reproduced on iPad with A10 processor / iPadOS 13.3.1.\nvarying vec2 vHighPrecisionZW;\n\nvoid main() {\n\n\t#include <uv_vertex>\n\n\t#include <skinbase_vertex>\n\n\t#ifdef USE_DISPLACEMENTMAP\n\n// removed:\n//\t\t#include <beginnormal_vertex>\n\t\t#include <morphnormal_vertex>\n\t\t#include <skinnormal_vertex>\n\n\t#endif\n\n// removed:\n//\t#include <begin_vertex>\n\n\n\n\t// /crowd/MAT/meshPhongBuilder_ground/globals1\n\tv_POLY_globals1_position = vec3(position);\n\t\n\t// /crowd/MAT/meshPhongBuilder_ground/output1\n\tvec3 transformed = position;\n\tvec3 objectNormal = normal;\n\t#ifdef USE_TANGENT\n\t\tvec3 objectTangent = vec3( tangent.xyz );\n\t#endif\n\n\n\n\t#include <morphtarget_vertex>\n\t#include <skinning_vertex>\n\t#include <displacementmap_vertex>\n\t#include <project_vertex>\n\t#include <logdepthbuf_vertex>\n\t#include <clipping_planes_vertex>\n\n\tvHighPrecisionZW = gl_Position.zw;\n\n}\n",

@@ -1,4 +1,8 @@
 [
 	"audio/sb_theclimb.short.mp3?timestamp=1644783589273",
-	"tex/eso0932a.jpg?timestamp=1644869953799"
+	"tex/eso0932a.jpg?timestamp=1644869953799",
+	"https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master//textures/uv.jpg",
+	"https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_dennis_posed_004_OBJ/rp_dennis_posed_004_1k.obj",
+	"https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/models/resources/renderpeople.com/rp_mei_posed_001_OBJ/rp_mei_posed_001_1k.obj?t=2",
+	"https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/textures/piz_compressed.exr"
 ]

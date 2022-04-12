@@ -2,7 +2,7 @@ import {SceneJsonExporterData} from '@polygonjs/polygonjs/dist/src/engine/io/jso
 import {BaseViewerType} from '@polygonjs/polygonjs/dist/src/engine/viewers/_Base';
 import {PolySceneWithNodeMap_scene_01} from './PolySceneWithNodeMap';
 
-type OnProgressCallback = (ratio: number) => void;
+type OnProgressCallback = (ratio: number, args: any) => void;
 type ConfigureSceneData = (sceneData: SceneJsonExporterData) => void;
 
 interface LoadSceneAndMountAsyncOptions {
@@ -12,6 +12,10 @@ interface LoadSceneAndMountAsyncOptions {
 	loadModules?: boolean;
 	runRegister?: boolean;
 	configureSceneData?: ConfigureSceneData;
+	sceneDataRoot?: string;
+	assetsRoot?: string;
+	libsRootPrefix?: string;
+	autoPlay?: boolean;
 }
 interface LoadedData {
 	scene: PolySceneWithNodeMap_scene_01;
