@@ -36,10 +36,10 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": 230.85856348166206,
-						"y": -105.31936951416654
+						"x": -218.04321567807517,
+						"y": -106.17713668909647
 					},
-					"zoom": 0.5639766126437368
+					"zoom": 0.4995510562414269
 				},
 				"history": {
 					"2": {
@@ -125,6 +125,13 @@
 							"y": -223.4753927188999
 						},
 						"zoom": 0.4249766126437366
+					},
+					"331": {
+						"position": {
+							"x": -233.68934025638802,
+							"y": -561.1986673274826
+						},
+						"zoom": 0.6849766126437369
 					},
 					"352": {
 						"position": {
@@ -574,6 +581,13 @@
 						},
 						"zoom": 0.8993039667232366
 					},
+					"3331": {
+						"position": {
+							"x": -218.04321567807517,
+							"y": -106.17713668909647
+						},
+						"zoom": 0.4995510562414269
+					},
 					"3363": {
 						"position": {
 							"x": -171.29743865343355,
@@ -749,7 +763,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/env/COP",
+		"/particles/particlesSystemGpu1",
 		"/",
 		"/",
 		"/",
@@ -761,10 +775,6 @@
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
-				"/particles",
-				"/particles/MAT",
-				"/particles/MAT/meshBasicBuilder_PARTICLES",
-				"/particles/MAT",
 				"/particles",
 				"/",
 				"/positionalAudio1",
@@ -860,7 +870,11 @@
 				"/env",
 				"/",
 				"/env",
-				"/env/COP"
+				"/env/COP",
+				"/env",
+				"/",
+				"/particles",
+				"/particles/particlesSystemGpu1"
 			],
 			"2": [],
 			"3": [],

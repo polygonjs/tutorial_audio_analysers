@@ -1015,7 +1015,7 @@
 			"glslVersion": null,
 			"uniforms": {
 				"v_POLY_texture_texture1": {
-					"value": 0
+					"value": null
 				},
 				"v_POLY_param_mouseCenter": {
 					"type": "v3",
